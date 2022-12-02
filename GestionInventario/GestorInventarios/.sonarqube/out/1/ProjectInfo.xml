@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>CapaControladorGestorInventarios</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>bf1d7e31-853a-4a98-b6a0-5f444a4abcb4</ProjectGuid>
+  <FullPath>D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\CapaControladorGestorInventarios.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\.sonarqube\conf\1\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\.sonarqube\out\1\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\.sonarqube\out\1</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+</ProjectInfo>

@@ -1,0 +1,24 @@
+C:\Users\Kevin\source\repos\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\source\repos\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\source\repos\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\source\repos\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\source\repos\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\Desktop\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\Desktop\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\Desktop\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Downloads\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Downloads\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Downloads\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Downloads\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Downloads\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Downloads\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.AssemblyReference.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb

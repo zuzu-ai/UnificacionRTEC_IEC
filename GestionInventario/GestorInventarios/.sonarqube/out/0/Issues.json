@@ -1,0 +1,3699 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.3.0.0",
+        "fileVersion": "4.3.0-3.22465.2 (7d8de40e)",
+        "semanticVersion": "4.3.0",
+        "language": "es-MX"
+      },
+      "results": [
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 30,
+                  "endLine": 220,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 30,
+                  "endLine": 247,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 274,
+                  "startColumn": 30,
+                  "endLine": 274,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 301,
+                  "startColumn": 30,
+                  "endLine": 301,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 356,
+                  "startColumn": 34,
+                  "endLine": 356,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 346,
+                  "startColumn": 17,
+                  "endLine": 346,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 374,
+                  "startColumn": 34,
+                  "endLine": 374,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 17,
+                  "endLine": 364,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 392,
+                  "startColumn": 34,
+                  "endLine": 392,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 382,
+                  "startColumn": 17,
+                  "endLine": 382,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 409,
+                  "startColumn": 34,
+                  "endLine": 409,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 400,
+                  "startColumn": 17,
+                  "endLine": 400,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 451,
+                  "startColumn": 30,
+                  "endLine": 451,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 478,
+                  "startColumn": 30,
+                  "endLine": 478,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 505,
+                  "startColumn": 30,
+                  "endLine": 505,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 30,
+                  "endLine": 545,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 570,
+                  "startColumn": 30,
+                  "endLine": 570,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'dato' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 551,
+                  "startColumn": 20,
+                  "endLine": 551,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 596,
+                  "startColumn": 30,
+                  "endLine": 596,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'dato' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 577,
+                  "startColumn": 20,
+                  "endLine": 577,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 622,
+                  "startColumn": 30,
+                  "endLine": 622,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'dato' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 603,
+                  "startColumn": 20,
+                  "endLine": 603,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 650,
+                  "startColumn": 30,
+                  "endLine": 650,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 677,
+                  "startColumn": 30,
+                  "endLine": 677,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 704,
+                  "startColumn": 30,
+                  "endLine": 704,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 744,
+                  "startColumn": 30,
+                  "endLine": 744,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 56,
+                  "endLine": 144,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 56,
+                  "endLine": 166,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 17,
+                  "endLine": 204,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 21,
+                  "endLine": 211,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 17,
+                  "endLine": 231,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 238,
+                  "startColumn": 21,
+                  "endLine": 238,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 258,
+                  "startColumn": 17,
+                  "endLine": 258,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 21,
+                  "endLine": 265,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 17,
+                  "endLine": 283,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 285,
+                  "startColumn": 17,
+                  "endLine": 285,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 21,
+                  "endLine": 292,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 353,
+                  "startColumn": 17,
+                  "endLine": 353,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 358,
+                  "startColumn": 17,
+                  "endLine": 358,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 371,
+                  "startColumn": 16,
+                  "endLine": 371,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 376,
+                  "startColumn": 17,
+                  "endLine": 376,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 389,
+                  "startColumn": 17,
+                  "endLine": 389,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 17,
+                  "endLine": 394,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 411,
+                  "startColumn": 17,
+                  "endLine": 411,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 435,
+                  "startColumn": 17,
+                  "endLine": 435,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 442,
+                  "startColumn": 21,
+                  "endLine": 442,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 17,
+                  "endLine": 462,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 469,
+                  "startColumn": 21,
+                  "endLine": 469,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 489,
+                  "startColumn": 17,
+                  "endLine": 489,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 496,
+                  "startColumn": 21,
+                  "endLine": 496,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 529,
+                  "startColumn": 17,
+                  "endLine": 529,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 536,
+                  "startColumn": 21,
+                  "endLine": 536,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 555,
+                  "startColumn": 17,
+                  "endLine": 555,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 581,
+                  "startColumn": 17,
+                  "endLine": 581,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 607,
+                  "startColumn": 17,
+                  "endLine": 607,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 634,
+                  "startColumn": 17,
+                  "endLine": 634,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 641,
+                  "startColumn": 21,
+                  "endLine": 641,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 661,
+                  "startColumn": 17,
+                  "endLine": 661,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 668,
+                  "startColumn": 21,
+                  "endLine": 668,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 686,
+                  "startColumn": 17,
+                  "endLine": 686,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 688,
+                  "startColumn": 17,
+                  "endLine": 688,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 695,
+                  "startColumn": 21,
+                  "endLine": 695,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 728,
+                  "startColumn": 17,
+                  "endLine": 728,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 735,
+                  "startColumn": 21,
+                  "endLine": 735,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 779,
+                  "startColumn": 13,
+                  "endLine": 779,
+                  "endColumn": 316
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'cn' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 26,
+                  "endLine": 14,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'metodoInsertar'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 362,
+                  "startColumn": 21,
+                  "endLine": 362,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 21,
+                  "endLine": 344,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'metodoInsertar'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 380,
+                  "startColumn": 21,
+                  "endLine": 380,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 21,
+                  "endLine": 344,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'metodoInsertar'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 398,
+                  "startColumn": 21,
+                  "endLine": 398,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 21,
+                  "endLine": 344,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 31,
+                  "endLine": 19,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 39,
+                  "endLine": 23,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 31,
+                  "endLine": 31,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1125",
+          "level": "warning",
+          "message": "Remove the unnecessary Boolean literal(s).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 39,
+                  "endLine": 34,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 13,
+                  "endLine": 33,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1066",
+          "level": "warning",
+          "message": "Merge this if statement with the enclosing one.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 17,
+                  "endLine": 36,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 18,
+                  "endLine": 34,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 40,
+                  "endLine": 77,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 24,
+                  "endLine": 76,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to cadena."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 39,
+                  "endLine": 93,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 20,
+                  "endLine": 89,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 39,
+                  "endLine": 118,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 24,
+                  "endLine": 116,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1168",
+          "level": "warning",
+          "message": "Return an empty collection instead of null.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 17,
+                  "endLine": 135,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 39,
+                  "endLine": 167,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 24,
+                  "endLine": 165,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 39,
+                  "endLine": 145,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 24,
+                  "endLine": 143,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 27,
+                  "endLine": 123,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'bytefoto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 42,
+                  "endLine": 112,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 13,
+                  "endLine": 222,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 13,
+                  "endLine": 249,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 221,
+                  "startColumn": 13,
+                  "endLine": 222,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 13,
+                  "endLine": 249,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 206,
+                  "startColumn": 39,
+                  "endLine": 206,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 203,
+                  "startColumn": 24,
+                  "endLine": 203,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 233,
+                  "startColumn": 39,
+                  "endLine": 233,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 24,
+                  "endLine": 230,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 274,
+                  "startColumn": 13,
+                  "endLine": 276,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 275,
+                  "startColumn": 13,
+                  "endLine": 276,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 260,
+                  "startColumn": 39,
+                  "endLine": 260,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 257,
+                  "startColumn": 24,
+                  "endLine": 257,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 301,
+                  "startColumn": 13,
+                  "endLine": 303,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 302,
+                  "startColumn": 13,
+                  "endLine": 303,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 39,
+                  "endLine": 287,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 24,
+                  "endLine": 284,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 420,
+                  "startColumn": 41,
+                  "endLine": 420,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 418,
+                  "startColumn": 20,
+                  "endLine": 418,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 10 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 305,
+                  "startColumn": 35,
+                  "endLine": 305,
+                  "endColumn": 228
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 451,
+                  "startColumn": 13,
+                  "endLine": 453,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 478,
+                  "startColumn": 13,
+                  "endLine": 480,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 505,
+                  "startColumn": 13,
+                  "endLine": 507,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 479,
+                  "startColumn": 13,
+                  "endLine": 480,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 464,
+                  "startColumn": 39,
+                  "endLine": 464,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 461,
+                  "startColumn": 24,
+                  "endLine": 461,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 417,
+                  "startColumn": 22,
+                  "endLine": 417,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 506,
+                  "startColumn": 13,
+                  "endLine": 507,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 39,
+                  "endLine": 491,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 488,
+                  "startColumn": 24,
+                  "endLine": 488,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 514,
+                  "startColumn": 41,
+                  "endLine": 514,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 512,
+                  "startColumn": 20,
+                  "endLine": 512,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 452,
+                  "startColumn": 13,
+                  "endLine": 453,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 437,
+                  "startColumn": 39,
+                  "endLine": 437,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 434,
+                  "startColumn": 24,
+                  "endLine": 434,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 13,
+                  "endLine": 547,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 511,
+                  "startColumn": 22,
+                  "endLine": 511,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 570,
+                  "startColumn": 13,
+                  "endLine": 572,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 596,
+                  "startColumn": 13,
+                  "endLine": 598,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 571,
+                  "startColumn": 13,
+                  "endLine": 572,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 557,
+                  "startColumn": 39,
+                  "endLine": 557,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 554,
+                  "startColumn": 24,
+                  "endLine": 554,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 597,
+                  "startColumn": 13,
+                  "endLine": 598,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 546,
+                  "startColumn": 13,
+                  "endLine": 547,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 583,
+                  "startColumn": 39,
+                  "endLine": 583,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 580,
+                  "startColumn": 24,
+                  "endLine": 580,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 531,
+                  "startColumn": 39,
+                  "endLine": 531,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 528,
+                  "startColumn": 24,
+                  "endLine": 528,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 622,
+                  "startColumn": 13,
+                  "endLine": 624,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 623,
+                  "startColumn": 13,
+                  "endLine": 624,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 609,
+                  "startColumn": 39,
+                  "endLine": 609,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 606,
+                  "startColumn": 24,
+                  "endLine": 606,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'dato'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 577,
+                  "startColumn": 20,
+                  "endLine": 577,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 650,
+                  "startColumn": 13,
+                  "endLine": 652,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'dato'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 551,
+                  "startColumn": 20,
+                  "endLine": 551,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 677,
+                  "startColumn": 13,
+                  "endLine": 679,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 704,
+                  "startColumn": 13,
+                  "endLine": 706,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 651,
+                  "startColumn": 13,
+                  "endLine": 652,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 636,
+                  "startColumn": 39,
+                  "endLine": 636,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 633,
+                  "startColumn": 24,
+                  "endLine": 633,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'dato'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 603,
+                  "startColumn": 20,
+                  "endLine": 603,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 678,
+                  "startColumn": 13,
+                  "endLine": 679,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 663,
+                  "startColumn": 39,
+                  "endLine": 663,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 660,
+                  "startColumn": 24,
+                  "endLine": 660,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 705,
+                  "startColumn": 13,
+                  "endLine": 706,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 690,
+                  "startColumn": 39,
+                  "endLine": 690,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 687,
+                  "startColumn": 24,
+                  "endLine": 687,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'date'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 712,
+                  "startColumn": 13,
+                  "endLine": 712,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'date'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 710,
+                  "startColumn": 22,
+                  "endLine": 710,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'fecha'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 718,
+                  "startColumn": 22,
+                  "endLine": 718,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 754,
+                  "startColumn": 41,
+                  "endLine": 754,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 752,
+                  "startColumn": 20,
+                  "endLine": 752,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 767,
+                  "startColumn": 41,
+                  "endLine": 767,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 765,
+                  "startColumn": 20,
+                  "endLine": 765,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 730,
+                  "startColumn": 39,
+                  "endLine": 730,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 727,
+                  "startColumn": 24,
+                  "endLine": 727,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 751,
+                  "startColumn": 22,
+                  "endLine": 751,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 764,
+                  "startColumn": 22,
+                  "endLine": 764,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaModeloGestorInventarios/Sentencias.cs",
+                "region": {
+                  "startLine": 778,
+                  "startColumn": 22,
+                  "endLine": 778,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS0168": {
+          "id": "CS0168",
+          "shortDescription": "La variable está declarada pero nunca se usa",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0168)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS0219": {
+          "id": "CS0219",
+          "shortDescription": "La variable está asignada pero nunca se usa su valor",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0219)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1066": {
+          "id": "S1066",
+          "shortDescription": "Collapsible \"if\" statements should be merged",
+          "fullDescription": "Merging collapsible if statements increases the code’s readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1066",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S107": {
+          "id": "S107",
+          "shortDescription": "Methods should not have too many parameters",
+          "fullDescription": "A long parameter list can indicate that a new structure should be created to wrap the numerous parameters or that the function is doing too many things.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-107",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S108": {
+          "id": "S108",
+          "shortDescription": "Nested blocks of code should not be left empty",
+          "fullDescription": "Most of the time a block of code is empty when a piece of code is really missing. So such empty block must be either filled or removed.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-108",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1117": {
+          "id": "S1117",
+          "shortDescription": "Local variables should not shadow class fields",
+          "fullDescription": "Overriding or shadowing a variable declared in an outer scope can strongly impact the readability, and therefore the maintainability, of a piece of code. Further, it could lead maintainers to introduce bugs because they think they’re using one variable but are really using another.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1117",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General exceptions should never be thrown",
+          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1125": {
+          "id": "S1125",
+          "shortDescription": "Boolean literals should not be redundant",
+          "fullDescription": "Redundant Boolean literals should be removed from expressions to improve readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1125",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1168": {
+          "id": "S1168",
+          "shortDescription": "Empty arrays and collections should be returned instead of null",
+          "fullDescription": "Returning null instead of an actual array, collection or map forces callers of the method to explicitly test for nullity, making them more complex and less readable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1168",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1854": {
+          "id": "S1854",
+          "shortDescription": "Unused assignments should be removed",
+          "fullDescription": "A dead store happens when a local variable is assigned a value that is not read by any subsequent instruction. Calculating or retrieving a value only to then overwrite it or throw it away, could indicate a serious error in the code. Even if it’s not an error, it is at best a waste of resources. Therefore all calculated values should be used.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1854",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2077": {
+          "id": "S2077",
+          "shortDescription": "Formatting SQL queries is security-sensitive",
+          "fullDescription": "Formatted SQL queries can be difficult to maintain, debug and can increase the risk of SQL injection when concatenating untrusted values into the query. However, this rule doesn’t detect SQL injections (unlike rule {rule:csharpsquid:S3649}), the goal is only to highlight complex/formatted queries.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2077",
+          "properties": {
+            "category": "Major Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2486": {
+          "id": "S2486",
+          "shortDescription": "Generic exceptions should not be ignored",
+          "fullDescription": "When exceptions occur, it is usually a bad idea to simply ignore them. Instead, it is better to handle them properly, or at least to log them.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2486",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4144": {
+          "id": "S4144",
+          "shortDescription": "Methods should not have identical implementations",
+          "fullDescription": "When two methods have the same implementation, either it was a mistake - something else was intended - or the duplication was intentional, but may be confusing to maintainers. In the latter case, one implementation should invoke the other.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

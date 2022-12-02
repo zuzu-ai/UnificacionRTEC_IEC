@@ -1,0 +1,6 @@
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.csproj.AssemblyReference.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.csproj.CoreCompileInputs.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.pdb

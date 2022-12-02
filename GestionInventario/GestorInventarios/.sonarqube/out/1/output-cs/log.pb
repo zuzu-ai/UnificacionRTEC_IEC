@@ -1,0 +1,1 @@
+Roslyn version: 4.3.0.0Language version: CSharp7_3!Concurrent execution: enabledõðFile 'D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de GraduaciÃ³n II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated
