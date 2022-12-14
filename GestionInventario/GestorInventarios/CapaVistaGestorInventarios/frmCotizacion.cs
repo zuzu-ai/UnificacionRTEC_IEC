@@ -26,9 +26,6 @@ namespace CapaVistaGestorInventarios
 			controlador.bloqueabotones(g.obtienenombretusuario, btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnAyuda);
 			rbnActivoE.Checked = true;
 			rbnActivoD.Checked = true;
-			//txtTotal.Text = "0.00";
-			//txtCantidad.Value = 0;
-			//txtDescuento.Text = "0";
 			LlenarTabla();
 			controlador.LlenarCBX(cbxInventario, "inventarioe", "nombre");
 		}
@@ -43,8 +40,6 @@ namespace CapaVistaGestorInventarios
 			txtCantidad.Value = 0;
 			seleccionE = "";
 			seleccionD = "";
-			//txtDescuento.Text = "0";
-			//txtDescuento.Enabled = false;
 		}
 		public void deshabilitarE()
 		{
@@ -79,8 +74,6 @@ namespace CapaVistaGestorInventarios
 			dtpFecha.Value = DateTime.Now;
 			txtTotal.Text = "0.00";
 			rbnActivoE.Checked = true;
-			//txtCantidad.Value = 0;
-			//txtDescuento.Text = "0";
 		}
 		public void limpiarD()
 		{
@@ -125,12 +118,11 @@ namespace CapaVistaGestorInventarios
 			else if (seleccionE == "" && seleccionD != "") { LlenarTabla(); }
 			else if (seleccionE == "" && seleccionD == "") { LlenarTabla(); }
 		}
-		public void LlenarDetalles() //Jaime López 0901-18-735
+		public void LlenarDetalles()
 		{
 			try
 			{
 				DataTable dt = controlador.ActualizaDetalles("cotizacionD", txtIDE.Text);
-				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvDetalles.DataSource = dt;
 			}
 			catch
@@ -138,12 +130,11 @@ namespace CapaVistaGestorInventarios
 
 			}
 		}
-		public void LlenarTabla() //Jaime López 0901-18-735
+		public void LlenarTabla()
 		{
 			try
 			{
 				DataTable dt = controlador.ActualizarDGV("cotizacionE", "id_encabezado");
-				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvCotizaciones.DataSource = dt;
 			}
 			catch
@@ -244,67 +235,24 @@ namespace CapaVistaGestorInventarios
 
 		private void cbxProducto_SelectedIndexChanged(object sender, EventArgs e)
 		{
-
-			//if (txtPorcentaje.Text != "")
-			//{
 			if (cbxProducto.Text != "")
 			{
 				controlador.IDProducto(txtProducto, "inventariod", "ID_Detalle", cbxProducto.Text, txtInventario.Text);
 				txtDisponibilidad.Text = controlador.BuscaDato("inventariod", "cantidad", "ID_Detalle", txtProducto.Text);
 				txtPrecio.Text = controlador.BuscaDato("inventariod", "Precio_Venta", "ID_Detalle", txtProducto.Text);
-
-				//if (txtCantidad.Text != "" && txtPorcentaje.Text != "")
-				//{
 				string preciounitario = txtPrecio.Text;
-				//string valor = txtPorcentaje.Text;
 				string cantidad = txtCantidad.Text;
-				//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-				//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-				//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-				//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 				txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
 			}
-			//txtSubtotal.Text = nuevosubtotal;
-			//txtPrecio.Text = nuevopreciou;
-			//}
-			//else
-			//{
-			//if (txtCantidad.Text == "")
-			//{
-			//txtSubtotal.Text = "";
-			//}
-			//else if (txtDescuento.Text == "")
-			//{
-			//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-			//}
-			//}
-			//}
-			//else
-			//{
-			//if (cbxProducto.Text != "")
-			//{
-			//controlador.IDProducto(txtProducto, "inventariod", "pkid", cbxProducto.Text, txtInventario.Text);
-			//txtDisponibilidad.Text = controlador.BuscaDato("inventariod", "cantidad", "pkid", txtProducto.Text);
-			//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-			//}
 			else
 			{
 				txtProducto.Text = "";
 				txtDisponibilidad.Text = "";
 				txtPrecio.Text = "0";
 				txtCantidad.Value = 0;
-				//rbnNinguno.Checked = true;
-				//txtPorcentaje.Text = "0";
 				txtSubtotal.Text = "0";
 			}
-			//}
 		}
-
-		private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
-		{
-		}
-
 		private void rbnActivoD_CheckedChanged(object sender, EventArgs e)
 		{
 			if (rbnActivoD.Checked == true)
@@ -394,7 +342,6 @@ namespace CapaVistaGestorInventarios
 			if (txtProyecto.Text != "")
 			{
 				habilitarE();
-				//txtID.Text = (controlador.idSiguienteDeNuevoIngreso("inventariod", "pkid")).ToString();
 				accionE = "2";
 			}
 			else { MessageBox.Show("No hay ningún registro seleccionado para modificar."); }
@@ -405,7 +352,6 @@ namespace CapaVistaGestorInventarios
 			if (txtInventario.Text != "")
 			{
 				habilitarD();
-				//txtID.Text = (controlador.idSiguienteDeNuevoIngreso("inventariod", "pkid")).ToString();
 				accionD = "2";
 			}
 			else { MessageBox.Show("No hay ningún registro seleccionado para modificar."); }
@@ -601,20 +547,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -622,10 +559,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -635,20 +568,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -656,10 +580,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -668,20 +588,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -689,10 +600,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -702,20 +609,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -723,10 +621,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -736,20 +630,12 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
+
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -757,10 +643,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -770,20 +652,12 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
+
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -791,10 +665,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -804,20 +674,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -825,10 +686,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -837,20 +694,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -858,10 +706,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
@@ -871,20 +715,11 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -892,10 +727,6 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }

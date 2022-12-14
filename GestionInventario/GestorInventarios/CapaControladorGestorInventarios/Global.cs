@@ -27,8 +27,6 @@ namespace CapaControladorGestorInventarios
 			get { return fechat; }
 			set { fechat = value; }
 		}
-
-		//Obtiene Usuario
 		public string obtieneusuario
 		{
 			get { return usuario; }

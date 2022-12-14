@@ -31,30 +31,11 @@ namespace CapaVistaGestorInventarios
 			navegadorMantenimientos1.LlenarCombobox(cbxPuesto, "puesto", "pkid", "nombre", "estado");
 			navegadorMantenimientos1.LlenarCombobox(cbxJornada, "jornada", "pkid", "nombre", "estado");
 
-			//inicio de elementos para dar de baja
 			navegadorMantenimientos1.campoEstado = "estado";
-			//fin de elementos para dar de baja
-
-			/* Inicio ID Aplicacion usada para reportes y ayudas */
-			navegadorMantenimientos1.idAplicacion = "2016";
-			navegadorMantenimientos1.idmodulo = "2";
-			/* Inicio ID Aplicacion usada para reportes y ayudas */
-
-			//inicio de elementos para ejecutar la ayuda
-			navegadorMantenimientos1.tablaAyuda = "Aplicacion";
-			navegadorMantenimientos1.campoAyuda = "pkId";
-			//fin de elementos para ejecutar la ayuda
-
-
-			// Inicio datos para ejecurar reportes
-			//navegadorMantenimientos1.LlamarRutaReporte("ruta", "idAplicacion", "Reporte");
-			// Final datos para ejecutar reportes
 
 			navegadorMantenimientos1.ObtenerNombreDGV(this.dgvVistaPrevia);
 			navegadorMantenimientos1.LlenarTabla();
 			navegadorMantenimientos1.ObtenerReferenciaFormActual(this);
-			//String cadena = txtprueba.Text;
-			//navegador1.pruebaMensaje(cadena);
 			chbxNoContratacion.Checked = false;
 			chbxNoDespido.Checked = false;
 		}
@@ -239,7 +220,7 @@ namespace CapaVistaGestorInventarios
 					controlador.insertaFoto(id, imagen);
 				}
 			}
-			catch (Exception ex) { /*MessageBox.Show("Error: " + ex);*/ }
+			catch (Exception ex) {}
 		}
 
 		private void pbFoto_LoadCompleted(object sender, AsyncCompletedEventArgs e)

@@ -492,3 +492,7 @@ insert into tipousuario values ("3", "Visitante", "1");
 insert into pregunta values ("1", "¿Año de nacimiento?", "1");
 
 insert into usuario values ("1", "1", "1", "admin","LKAekHU9EtweB49HAaTRfg==","1","1","1");
+
+insert into categoria values ("1","1","1","Ninguna","1");
+insert into categoria values ("2","2","1","Ninguna","1");
+insert into categoria values ("3","3","2","Ninguna","1");

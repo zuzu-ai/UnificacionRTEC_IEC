@@ -86,12 +86,11 @@ namespace CapaVistaGestorInventarios
 			txtMax.Enabled = true;
 			dgvProveedores.Enabled = true;
 		}
-		public void LlenarTabla() //Jaime López 0901-18-735
+		public void LlenarTabla()
 		{
 			try
 			{
 				DataTable dt = controlador.ActualizarDGV("inventariod", "id_detalle");
-				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvVistaPrevia.DataSource = dt;
 			}
 			catch
@@ -99,29 +98,18 @@ namespace CapaVistaGestorInventarios
 
 			}
 		}
-		public void LlenarProveedores() //Jaime López 0901-18-735
+		public void LlenarProveedores()
 		{
 			try
 			{
 				DataTable dt = controlador.LlenarProveedores("proveedor");
-				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvProveedores.DataSource = dt;
-				//dgvProveedores.Columns.Add("Añadir", "Añadir");
 
 				DataGridViewCheckBoxColumn dgvCmb = new DataGridViewCheckBoxColumn();
 				dgvCmb.ValueType = typeof(bool);
 				dgvCmb.Name = "Añadir";
 				dgvCmb.HeaderText = "";
 				dgvProveedores.Columns.Add(dgvCmb);
-
-				/*DataGridViewCheckBoxColumn ChbxDetalle = dgvProveedores.Columns["Añadir"] as DataGridViewCheckBoxColumn;
-
-				int cantidad = dgvProveedores.Rows.Count;
-
-				for (int i = 0; i < cantidad; i++)
-				{
-					dgvProveedores["Añadir",i]
-				}*/
 			}
 			catch
 			{
@@ -164,7 +152,6 @@ namespace CapaVistaGestorInventarios
 				else if (accion == "2")
 				{
 						bool bChecked = Convert.ToBoolean(row.Cells["Añadir"].Value);
-						//bool bChecked = (bool)dgvProveedores.Rows[2].Cells["Añadir"].EditedFormattedValue;
 						string idproveedor = row.Cells["ID_Proveedor"].Value.ToString();
 
 						if (bChecked == true)
@@ -185,8 +172,6 @@ namespace CapaVistaGestorInventarios
 						}
 						else if (bChecked == false)
 						{
-						/*if (dgvProveedores.Rows[2].Cells["Pagar"].EditedFormattedValue != null)
-						{*/
 							try
 							{
 								Boolean coincide = controlador.registroexiste("proveedord", idproveedor, txtIdProveedores.Text);
@@ -199,7 +184,6 @@ namespace CapaVistaGestorInventarios
 								}
 							}
 							catch (Exception except) { }
-						//}
 					}
 				}
 			}
@@ -375,7 +359,6 @@ namespace CapaVistaGestorInventarios
 			if (txtNombre.Text != "")
 			{
 				habilitar();
-				//txtID.Text = (controlador.idSiguienteDeNuevoIngreso("inventariod", "pkid")).ToString();
 				accion = "2";
 			}
 			else { MessageBox.Show("No hay ningún registro seleccionado para modificar."); }

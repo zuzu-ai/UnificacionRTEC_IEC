@@ -24,8 +24,6 @@ namespace CapaVistaGestorInventarios
 			LlenarTabla();
 			controlador.LlenarCBX(cbxInventario, "inventarioe", "Nombre");
 			controlador.LlenarCBX(cbxTransaccion, "tipotransac", "Nombre");
-
-			//LlenarIncidencias();
 		}
 		public void deshabilitar()
 		{
@@ -68,12 +66,11 @@ namespace CapaVistaGestorInventarios
 			controlador.LlenarCBX(cbxTransaccion, "tipotransac", "Nombre");
 			LlenarTabla();
 		}
-		public void LlenarTabla() //Jaime López 0901-18-735
+		public void LlenarTabla()
 		{
 			try
 			{
 				DataTable dt = controlador.ActualizarDGV("transacciones", "id_transacciones");
-				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvVistaPrevia.DataSource = dt;
 			}
 			catch
@@ -196,7 +193,6 @@ namespace CapaVistaGestorInventarios
 			if (txtInventario.Text != "")
 			{
 				habilitar();
-				//txtID.Text = (controlador.idSiguienteDeNuevoIngreso("inventariod", "pkid")).ToString();
 				accion = "2";
 			}
 			else { MessageBox.Show("No hay ningún registro seleccionado para modificar."); }

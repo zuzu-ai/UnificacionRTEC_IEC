@@ -45,7 +45,6 @@ namespace CapaVistaGestorInventarios
 			frmLogin form = new frmLogin();
 			if (form.ShowDialog() == DialogResult.OK)
 			{
-				//txtUsuario.Text = form.usuario();
 			}
 			else
 			{ this.Close(); }
@@ -57,7 +56,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmPuesto form = new frmPuesto();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -69,7 +67,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmJornada form = new frmJornada();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -81,7 +78,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmBodega form = new frmBodega();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -93,7 +89,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmEmpleado form = new frmEmpleado();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -105,7 +100,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmTipoUsuario form = new frmTipoUsuario();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -117,7 +111,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmUsuario form = new frmUsuario();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -129,7 +122,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmClasificacion form = new frmClasificacion();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -141,7 +133,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmMarca form = new frmMarca();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -153,7 +144,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmPregunta form = new frmPregunta();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -165,7 +155,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmUbicacion form = new frmUbicacion();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -177,7 +166,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmProveedor form = new frmProveedor();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -189,7 +177,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmCategoria form = new frmCategoria();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -201,7 +188,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmTransaccion form = new frmTransaccion();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -213,7 +199,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmAlmacenamiento form = new frmAlmacenamiento();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -225,7 +210,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmInventario form = new frmInventario();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -241,7 +225,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmSucursal form = new frmSucursal();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -253,13 +236,11 @@ namespace CapaVistaGestorInventarios
 			{
 				frmProducto form = new frmProducto();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 					try
 					{
 						frmRecordatorios frm = new frmRecordatorios();
 						frm.MdiParent = this;
-						//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 						frm.Show();
 					}
 					catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -274,7 +255,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmGestor form = new frmGestor();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -286,7 +266,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmCotizacion form = new frmCotizacion();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
@@ -298,7 +277,6 @@ namespace CapaVistaGestorInventarios
 			{
 				frmConsultaProducto form = new frmConsultaProducto();
 				form.MdiParent = this;
-				//bitacora.guardarEnBitacora(IdUsuario, "1", "0002", "Entrada a la Vista");
 				form.Show();
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }

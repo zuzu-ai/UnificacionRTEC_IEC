@@ -49,7 +49,6 @@ namespace CapaVistaGestorInventarios
 					cbxCategoria2.Visible = true;
 					break;
 				case "":
-					//chbxlistTipo.SelectedIndex = ;
 					chbxlistTipo.SetItemChecked(0, false);
 					chbxlistTipo.SetItemChecked(1, false);
 					chbxlistTipo.SetItemChecked(2, false);
@@ -104,7 +103,6 @@ namespace CapaVistaGestorInventarios
 				chbxlistTipo.SetItemChecked(2, true);
 				cbxCategoria1.Visible = false;
 				cbxCategoria2.Visible = true;
-				//controlador.NombreID(cbxCategoria3, "categoria", "pkid", txtCategoria.Text);
 			}
 			
 		}
@@ -184,17 +182,14 @@ namespace CapaVistaGestorInventarios
 
 			if (chbxlistTipo.SelectedIndex == 0)
 			{
-				//txtTipo.Text = "1";
 				controlador.LlenarCategoria(cbxCategoria1, "categoria", "nombre", "1","1");
 			}
 			else if (chbxlistTipo.SelectedIndex == 1)
 			{
-				//txtTipo.Text = "2";
 				controlador.LlenarCategoria(cbxCategoria1, "categoria", "nombre", "1","1");
 			}
 			else if (chbxlistTipo.SelectedIndex == 2)
 			{
-				//txtTipo.Text = "3";
 				controlador.LlenarCategoria(cbxCategoria1, "categoria", "nombre", "2","2");
 			}
 			else { }
@@ -313,8 +308,6 @@ namespace CapaVistaGestorInventarios
 			chbxlistTipo.SetItemChecked(2, false);
 			if (cbxCategoria1.Items.Count != 0 || cbxCategoria2.Items.Count!=0)
 			{
-				//cbxCategoria1.SelectedIndex = 0;
-				//cbxCategoria2.SelectedIndex = 0;
 			}
 			else { }
 			txtNombre.Text = "";rbnActivo.Checked = true;
@@ -327,7 +320,6 @@ namespace CapaVistaGestorInventarios
 			if (txtNombre.Text != "")
 			{
 				habilitar();
-				//txtID.Text = (controlador.idSiguienteDeNuevoIngreso("categoria", "pkid")).ToString();
 				accion = "2";
 			}
 			else
@@ -411,7 +403,6 @@ namespace CapaVistaGestorInventarios
 			try
 			{
 				DataTable dt = controlador.ActualizarDGV("categoria", "id_categoria");
-				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvVistaPrevia.DataSource = dt;
 			}
 			catch

@@ -24,33 +24,12 @@ namespace CapaVistaGestorInventarios
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
 			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "tipoalmacen", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			//navegador1.LlenarCombobox(cbxIDPuesto, "puesto", "pkIdPuesto", "nombre", "estado");
-			//navegador1.LlenarCombobox(cbxIDEmpresa, "empresa", "idEmpresa", "nombre", "estatus");
 
-			//inicio de elementos para dar de baja
 			navegadorMantenimientos1.campoEstado = "Estado";
-			//fin de elementos para dar de baja
-
-			/* Inicio ID Aplicacion usada para reportes y ayudas */
-			navegadorMantenimientos1.idAplicacion = "2016";
-			navegadorMantenimientos1.idmodulo = "2";
-			/* Inicio ID Aplicacion usada para reportes y ayudas */
-
-			//inicio de elementos para ejecutar la ayuda
-			navegadorMantenimientos1.tablaAyuda = "Aplicacion";
-			navegadorMantenimientos1.campoAyuda = "pkId";
-			//fin de elementos para ejecutar la ayuda
-
-
-			// Inicio datos para ejecurar reportes
-			//navegadorMantenimientos1.LlamarRutaReporte("ruta", "idAplicacion", "Reporte");
-			// Final datos para ejecutar reportes
 
 			navegadorMantenimientos1.ObtenerNombreDGV(this.dgvVistaPrevia);
 			navegadorMantenimientos1.LlenarTabla();
 			navegadorMantenimientos1.ObtenerReferenciaFormActual(this);
-			//String cadena = txtprueba.Text;
-			//navegador1.pruebaMensaje(cadena);
 		}
 
 		private void rbnActivo_CheckedChanged(object sender, EventArgs e)
