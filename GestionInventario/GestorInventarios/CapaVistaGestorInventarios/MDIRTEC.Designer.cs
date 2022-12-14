@@ -52,6 +52,7 @@ namespace CapaVistaGestorInventarios
 			this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ingresoDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gestiónDeInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.cotizaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tipoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,7 @@ namespace CapaVistaGestorInventarios
 			this.txtidtusuario = new System.Windows.Forms.TextBox();
 			this.txtId = new System.Windows.Forms.TextBox();
 			this.txtUsuario = new System.Windows.Forms.TextBox();
-			this.cotizaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.consultaDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -227,7 +228,8 @@ namespace CapaVistaGestorInventarios
 			this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresoDeProductosToolStripMenuItem,
             this.gestiónDeInventarioToolStripMenuItem,
-            this.cotizaciónToolStripMenuItem});
+            this.cotizaciónToolStripMenuItem,
+            this.consultaDeProductosToolStripMenuItem});
 			this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
 			this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
 			this.procesosToolStripMenuItem.Text = "Procesos";
@@ -235,16 +237,23 @@ namespace CapaVistaGestorInventarios
 			// ingresoDeProductosToolStripMenuItem
 			// 
 			this.ingresoDeProductosToolStripMenuItem.Name = "ingresoDeProductosToolStripMenuItem";
-			this.ingresoDeProductosToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+			this.ingresoDeProductosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
 			this.ingresoDeProductosToolStripMenuItem.Text = "Ingreso de Productos";
 			this.ingresoDeProductosToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeProductosToolStripMenuItem_Click);
 			// 
 			// gestiónDeInventarioToolStripMenuItem
 			// 
 			this.gestiónDeInventarioToolStripMenuItem.Name = "gestiónDeInventarioToolStripMenuItem";
-			this.gestiónDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+			this.gestiónDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
 			this.gestiónDeInventarioToolStripMenuItem.Text = "Gestión de Inventario";
 			this.gestiónDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.gestiónDeInventarioToolStripMenuItem_Click);
+			// 
+			// cotizaciónToolStripMenuItem
+			// 
+			this.cotizaciónToolStripMenuItem.Name = "cotizaciónToolStripMenuItem";
+			this.cotizaciónToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+			this.cotizaciónToolStripMenuItem.Text = "Cotización";
+			this.cotizaciónToolStripMenuItem.Click += new System.EventHandler(this.cotizaciónToolStripMenuItem_Click);
 			// 
 			// seguridadToolStripMenuItem
 			// 
@@ -307,12 +316,12 @@ namespace CapaVistaGestorInventarios
 			this.txtUsuario.TabIndex = 8;
 			this.txtUsuario.Visible = false;
 			// 
-			// cotizaciónToolStripMenuItem
+			// consultaDeProductosToolStripMenuItem
 			// 
-			this.cotizaciónToolStripMenuItem.Name = "cotizaciónToolStripMenuItem";
-			this.cotizaciónToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-			this.cotizaciónToolStripMenuItem.Text = "Cotización";
-			this.cotizaciónToolStripMenuItem.Click += new System.EventHandler(this.cotizaciónToolStripMenuItem_Click);
+			this.consultaDeProductosToolStripMenuItem.Name = "consultaDeProductosToolStripMenuItem";
+			this.consultaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+			this.consultaDeProductosToolStripMenuItem.Text = "Consulta de Productos";
+			this.consultaDeProductosToolStripMenuItem.Click += new System.EventHandler(this.consultaDeProductosToolStripMenuItem_Click);
 			// 
 			// MDIRTEC
 			// 
@@ -373,6 +382,7 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.ToolStripMenuItem sucursalToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem ingresoDeProductosToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem cotizaciónToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem consultaDeProductosToolStripMenuItem;
 	}
 }
 

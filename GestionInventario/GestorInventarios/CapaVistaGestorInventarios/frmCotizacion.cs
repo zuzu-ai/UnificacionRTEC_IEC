@@ -26,8 +26,8 @@ namespace CapaVistaGestorInventarios
 			controlador.bloqueabotones(g.obtienenombretusuario, btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnAyuda);
 			rbnActivoE.Checked = true;
 			rbnActivoD.Checked = true;
-			txtTotal.Text = "0.00";
-			txtCantidad.Value = 0;
+			//txtTotal.Text = "0.00";
+			//txtCantidad.Value = 0;
 			//txtDescuento.Text = "0";
 			LlenarTabla();
 			controlador.LlenarCBX(cbxInventario, "inventarioe", "nombre");
@@ -61,16 +61,16 @@ namespace CapaVistaGestorInventarios
 			cbxInventario.Enabled = false;
 			cbxProducto.Enabled = false;
 			txtCantidad.Enabled = false;
-			//txtDescuento.Text = "0";
-			//txtDescuento.Enabled = false;
+			txtDescuento.Text = "0";
+			txtDescuento.Enabled = false;
 		}
 		public void habilitarD()
 		{
 			cbxInventario.Enabled = true;
 			cbxProducto.Enabled = true;
 			txtCantidad.Enabled = true;
-			//txtDescuento.Text = "0";
-			//txtDescuento.Enabled = false;
+			txtDescuento.Text = "0";
+			txtDescuento.Enabled = true;
 		}
 		public void limpiarE()
 		{
@@ -88,14 +88,14 @@ namespace CapaVistaGestorInventarios
 			cbxInventario.Text = "";
 			cbxProducto.Text = "";
 			txtDisponibilidad.Text = "";
-			txtPrecio.Text = "";
-			txtSubtotal.Text = "";
+			txtPrecio.Text = "0";
+			txtSubtotal.Text = "0";
 			accionE = "";
 			txtInventario.Text = "";
 			txtProducto.Text = "";
 			rbnActivoD.Checked = true;
 			txtCantidad.Value = 0;
-			//txtDescuento.Text = "0";
+			txtDescuento.Text = "0";
 		}
 		public void actualizar()
 		{
@@ -142,7 +142,7 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				DataTable dt = controlador.ActualizarDGV("cotizacionE");
+				DataTable dt = controlador.ActualizarDGV("cotizacionE", "id_encabezado");
 				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvCotizaciones.DataSource = dt;
 			}
@@ -238,7 +238,7 @@ namespace CapaVistaGestorInventarios
 
 		private void txtInventario_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxInventario, "inventarioe", "nombre", txtInventario.Text);
+			controlador.NombreID(cbxInventario, "inventarioe", "nombre", txtInventario.Text, "ID_Encabezado");
 			controlador.LlenarCBXProducto(cbxProducto, "inventariod", "nombre", txtInventario.Text);
 		}
 
@@ -292,11 +292,11 @@ namespace CapaVistaGestorInventarios
 			{
 				txtProducto.Text = "";
 				txtDisponibilidad.Text = "";
-				txtPrecio.Text = "";
+				txtPrecio.Text = "0";
 				txtCantidad.Value = 0;
 				//rbnNinguno.Checked = true;
 				//txtPorcentaje.Text = "0";
-				txtSubtotal.Text = "";
+				txtSubtotal.Text = "0";
 			}
 			//}
 		}
@@ -524,7 +524,7 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO cotizacionD VALUES( '" + txtIDD.Text + "', '" + txtIDE.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtSubtotal.Text + "', '" +/* txtDescuento.Text + "', '" + txtGanancia.Text + "', '" +*/ txtEstadoD.Text + "');";
+						query = "INSERT INTO cotizacionD VALUES( '" + txtIDD.Text + "', '" + txtIDE.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtDescuento.Text + "', '" + txtSubtotal.Text + "', '" +/* txtDescuento.Text + "', '" + txtGanancia.Text + "', '" +*/ txtEstadoD.Text + "');";
 
 						string totalcotizacion = controlador.BuscaDato("cotizacione", "total", "ID_Encabezado", txtIDE.Text);
 						string modificar = txtSubtotal.Text;
@@ -547,7 +547,7 @@ namespace CapaVistaGestorInventarios
 				case "2":
 					try
 					{
-						query = "UPDATE cotizacionD SET Fk_Inventario ='" + txtInventario.Text + "', Fk_Producto ='" + txtProducto.Text + "', cantidad ='" + txtCantidad.Text + "', precio ='" + txtPrecio.Text + "', subtotal ='" + txtSubtotal.Text + "', estado='" + txtEstadoD.Text + "' WHERE ID_Detalle = '" + txtIDD.Text + "';";
+						query = "UPDATE cotizacionD SET Fk_Inventario ='" + txtInventario.Text + "', Fk_Producto ='" + txtProducto.Text + "', cantidad ='" + txtCantidad.Text + "', precio ='" + txtPrecio.Text + "', descuento ='" + txtDescuento.Text + "', subtotal ='" + txtSubtotal.Text + "', estado='" + txtEstadoD.Text + "' WHERE ID_Detalle = '" + txtIDD.Text + "';";
 
 						string totalcotizacion = controlador.BuscaDato("cotizacione", "total", "ID_Encabezado", txtIDE.Text);
 						string inicial = controlador.BuscaDato("cotizaciond", "subtotal", "ID_Detalle", txtIDD.Text);
@@ -912,8 +912,9 @@ namespace CapaVistaGestorInventarios
 				txtProducto.Text = dgvDetalles.CurrentRow.Cells[3].Value.ToString();
 				txtCantidad.Text = dgvDetalles.CurrentRow.Cells[4].Value.ToString();
 				txtPrecio.Text = dgvDetalles.CurrentRow.Cells[5].Value.ToString();
-				txtSubtotal.Text= dgvDetalles.CurrentRow.Cells[6].Value.ToString();
-				txtEstadoD.Text = dgvDetalles.CurrentRow.Cells[7].Value.ToString();
+				txtDescuento.Text= dgvDetalles.CurrentRow.Cells[6].Value.ToString();
+				txtSubtotal.Text = dgvDetalles.CurrentRow.Cells[7].Value.ToString();
+				txtEstadoD.Text = dgvDetalles.CurrentRow.Cells[8].Value.ToString();
 			}
 			catch (Exception exc) { }
 		}
@@ -923,6 +924,21 @@ namespace CapaVistaGestorInventarios
 			g.cotizacionseleccionada = txtIDE.Text;
 			Reporte15 reporte= new Reporte15();
 			reporte.Show();
+		}
+
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
+			if (txtDescuento.Text == "")
+			{
+
+			}
+			else
+			{
+				string preciounitario = txtPrecio.Text;
+				string porcentaje = (Convert.ToDouble(txtPrecio.Text)*Convert.ToDouble(txtDescuento.Text)).ToString();
+				string cantidad = txtCantidad.Text;
+				txtSubtotal.Text = (( Convert.ToDouble(preciounitario)-Convert.ToDouble(porcentaje))*Convert.ToDouble(cantidad)).ToString();
+			}
 		}
 	}
 }

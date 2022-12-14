@@ -90,7 +90,7 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				DataTable dt = controlador.ActualizarDGV("inventariod");
+				DataTable dt = controlador.ActualizarDGV("inventariod", "id_detalle");
 				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvVistaPrevia.DataSource = dt;
 			}
@@ -136,12 +136,12 @@ namespace CapaVistaGestorInventarios
 				{
 
 					bool bChecked = Convert.ToBoolean(row.Cells["Añadir"].Value);
-					string idproveedor = row.Cells["pkid"].Value.ToString();
+					string idproveedor = row.Cells["ID_Proveedor"].Value.ToString();
 					if (bChecked)
 					{
 						try
 						{
-							Boolean coincide = controlador.idcoincidente("proveedore", txtIdProveedores.Text);
+							Boolean coincide = controlador.idcoincidente("proveedore", txtIdProveedores.Text, "id_encabezado");
 							if (coincide == false)
 							{
 								string query1 = "INSERT INTO proveedore VALUES('" + txtIdProveedores.Text + "', '1');";
@@ -239,42 +239,42 @@ namespace CapaVistaGestorInventarios
 
 		private void txtIdInventario_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxInventario, "inventarioe", "nombre", txtIdInventario.Text);
+			controlador.NombreID(cbxInventario, "inventarioe", "nombre", txtIdInventario.Text, "id_encabezado");
 		}
 
 		private void txtIdMarca_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxMarca, "marca", "nombre", txtIdMarca.Text);
+			controlador.NombreID(cbxMarca, "marca", "nombre", txtIdMarca.Text, "id_marca");
 		}
 
 		private void txtIdAlmacenamiento_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxAlmacenamiento, "tipoalmacen", "nombre", txtIdAlmacenamiento.Text);
+			controlador.NombreID(cbxAlmacenamiento, "tipoalmacen", "nombre", txtIdAlmacenamiento.Text, "id_tipo_almacenamiento");
 		}
 
 		private void txtIdSucursal_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxSucursal, "sucursal", "nombre", txtIdSucursal.Text);
+			controlador.NombreID(cbxSucursal, "sucursal", "nombre", txtIdSucursal.Text, "id_sucursal");
 		}
 
 		private void txtIdUbicacion_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxUbicacion, "ubicacion", "nombre", txtIdUbicacion.Text);
+			controlador.NombreID(cbxUbicacion, "ubicacion", "nombre", txtIdUbicacion.Text, "id_ubicacion");
 		}
 
 		private void txtIdCat1_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxCat1, "categoria", "nombre", txtIdCat1.Text);
+			controlador.NombreID(cbxCat1, "categoria", "nombre", txtIdCat1.Text, "id_categoria");
 		}
 
 		private void txtIdCat2_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxCat2, "categoria", "nombre", txtIdCat2.Text);
+			controlador.NombreID(cbxCat2, "categoria", "nombre", txtIdCat2.Text, "id_categoria");
 		}
 
 		private void txtIdCat3_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxCat3, "categoria", "nombre", txtIdCat3.Text);
+			controlador.NombreID(cbxCat3, "categoria", "nombre", txtIdCat3.Text, "id_categoria");
 		}
 		private void cbxCat1_SelectedIndexChanged(object sender, EventArgs e)
 		{
@@ -349,7 +349,7 @@ namespace CapaVistaGestorInventarios
 
 		private void txtIdBodega_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxBodega, "bodega", "nombre", txtIdBodega.Text);
+			controlador.NombreID(cbxBodega, "bodega", "nombre", txtIdBodega.Text, "id_bodega");
 		}
 
 		private void cbxUbicacion_SelectedIndexChanged(object sender, EventArgs e)
@@ -496,6 +496,7 @@ namespace CapaVistaGestorInventarios
 		}
 		private void dgvProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
+			
 		}
 		public void actualizar()
 		{

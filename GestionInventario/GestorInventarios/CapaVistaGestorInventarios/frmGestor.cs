@@ -72,7 +72,7 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				DataTable dt = controlador.ActualizarDGV("transacciones");
+				DataTable dt = controlador.ActualizarDGV("transacciones", "id_transacciones");
 				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvVistaPrevia.DataSource = dt;
 			}
@@ -400,12 +400,12 @@ namespace CapaVistaGestorInventarios
 
 		private void txtInventario_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxInventario, "inventarioe", "Nombre", txtInventario.Text);
+			controlador.NombreID(cbxInventario, "inventarioe", "Nombre", txtInventario.Text, "id_encabezado");
 		}
 
 		private void txtTransaccion_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreID(cbxTransaccion, "tipotransac", "Nombre", txtTransaccion.Text);
+			controlador.NombreID(cbxTransaccion, "tipotransac", "Nombre", txtTransaccion.Text, "id_tipo_transaccion");
 		}
 
 		private void btnImprimir_Click(object sender, EventArgs e)

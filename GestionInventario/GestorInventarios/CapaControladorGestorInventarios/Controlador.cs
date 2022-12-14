@@ -103,11 +103,11 @@ namespace CapaControladorGestorInventarios
                 MessageBox.Show("Error en la capa controlador, revisar la funcion metodoLlenarCombo");
             }
         }
-        public void NombreID(ComboBox combo, string tabla, string campobuscado, string nombre)
+        public void NombreID(ComboBox combo, string tabla, string campobuscado, string nombre, string campoid)
         {
             try
             {
-                sn.NombreID(combo, tabla, campobuscado, nombre);
+                sn.NombreID(combo, tabla, campobuscado, nombre, campoid);
             }
             catch
             {
@@ -130,11 +130,11 @@ namespace CapaControladorGestorInventarios
         {
             sn.metodoEliminar(query);
         }
-        public DataTable ActualizarDGV(string tablaDB)
+        public DataTable ActualizarDGV(string tablaDB, string campoid)
         {
             //cambiado 18/10/2021-01:30pm, todo el odbc se paso a realizar solo en la modelo
             //para aumentar la seguridad
-            return sn.ActualizarDGV(tablaDB);
+            return sn.ActualizarDGV(tablaDB, campoid);
         }
         public void LlenarCBX(ComboBox cbx, string tabla, string campobuscado)
         {
@@ -189,10 +189,10 @@ namespace CapaControladorGestorInventarios
             chequeado = sn.encuentraProveedor(fkproveedore, fkproveedor, nombre);
             return chequeado;
         }
-        public Boolean idcoincidente(string tabla, string pkid)
+        public Boolean idcoincidente(string tabla, string pkid, string campoid)
         {
             Boolean chequeado = false;
-            chequeado = sn.idcoincidente(tabla, pkid);
+            chequeado = sn.idcoincidente(tabla, pkid, campoid);
             return chequeado;
         }
         public Boolean registroexiste(string tabla, string fkproveedores, string fkproveedore)
@@ -265,6 +265,22 @@ namespace CapaControladorGestorInventarios
             //cambiado 18/10/2021-01:30pm, todo el odbc se paso a realizar solo en la modelo
             //para aumentar la seguridad
             return sn.CargarRecordatorio(sql);
+        }
+        public DataTable ObtenerProveedores(string encabezado)
+        {
+            //cambiado 18/10/2021-01:30pm, todo el odbc se paso a realizar solo en la modelo
+            //para aumentar la seguridad
+            return sn.ObtenerProveedores(encabezado);
+        }
+        public void autocompletar(TextBox txt, string texto)
+        {
+            sn.autocompletar(txt, texto);
+        }
+        public DataTable LlenarProductos()
+        {
+            //cambiado 18/10/2021-01:30pm, todo el odbc se paso a realizar solo en la modelo
+            //para aumentar la seguridad
+            return sn.LlenarProductos();
         }
     }
 }

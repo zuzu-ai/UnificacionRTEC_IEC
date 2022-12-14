@@ -65,15 +65,15 @@ namespace CapaVistaGestorInventarios
 			{
 				if (txtTipo.Text == "1")
 				{
-					controlador.NombreID(cbxCategoria1, "categoria", "nombre", txtCategoria.Text);
+					controlador.NombreID(cbxCategoria1, "categoria", "nombre", txtCategoria.Text, "id_categoria");
 				}
 				else if (txtTipo.Text == "2")
 				{
-					controlador.NombreID(cbxCategoria1, "categoria", "nombre", txtCategoria.Text);
+					controlador.NombreID(cbxCategoria1, "categoria", "nombre", txtCategoria.Text, "id_categoria");
 				}
 				else if (txtTipo.Text == "3")
 				{
-					controlador.NombreID(cbxCategoria2, "categoria", "nombre", txtCategoria.Text);
+					controlador.NombreID(cbxCategoria2, "categoria", "nombre", txtCategoria.Text, "id_categoria");
 				}
 				else { }
 			}
@@ -88,7 +88,7 @@ namespace CapaVistaGestorInventarios
 				chbxlistTipo.SetItemChecked(0, true);
 				cbxCategoria1.Visible = true;
 				cbxCategoria2.Visible = false;
-				controlador.NombreID(cbxCategoria1, "categoria", "pkid", txtCategoria.Text);
+				controlador.NombreID(cbxCategoria1, "categoria", "id_categoria", txtCategoria.Text, "id_categoria");
 			}
 			else if (txtTipo.Text == "2")
 			{
@@ -96,7 +96,7 @@ namespace CapaVistaGestorInventarios
 				chbxlistTipo.SetItemChecked(1, true);
 				cbxCategoria1.Visible = true;
 				cbxCategoria2.Visible = false;
-				controlador.NombreID(cbxCategoria2, "categoria", "pkid", txtCategoria.Text);
+				controlador.NombreID(cbxCategoria2, "categoria", "id_categoria", txtCategoria.Text, "id_categoria");
 			}
 			else if (txtTipo.Text == "3")
 			{
@@ -143,15 +143,15 @@ namespace CapaVistaGestorInventarios
 		{
 			if (txtTipo.Text == "1")
 			{
-				controlador.IDCATE(txtCategoria, "categoria", "pkid", cbxCategoria1.Text, "1");
+				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria1.Text, "1");
 			}
 			else if (txtTipo.Text == "2")
 			{
-				controlador.IDCATE(txtCategoria, "categoria", "pkid", cbxCategoria1.Text, "1");
+				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria1.Text, "1");
 			}
 			else if (txtTipo.Text == "3")
 			{
-				controlador.IDCATE(txtCategoria, "categoria", "pkid", cbxCategoria2.Text, "1");
+				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria2.Text, "1");
 			}
 			else { }
 		}
@@ -313,12 +313,12 @@ namespace CapaVistaGestorInventarios
 			chbxlistTipo.SetItemChecked(2, false);
 			if (cbxCategoria1.Items.Count != 0 || cbxCategoria2.Items.Count!=0)
 			{
-				cbxCategoria1.SelectedIndex = 0;
-				cbxCategoria2.SelectedIndex = 0;
+				//cbxCategoria1.SelectedIndex = 0;
+				//cbxCategoria2.SelectedIndex = 0;
 			}
 			else { }
 			txtNombre.Text = "";rbnActivo.Checked = true;
-			txtID.Text = (controlador.idSiguienteDeNuevoIngreso("categoria", "pkid")).ToString();
+			txtID.Text = (controlador.idSiguienteDeNuevoIngreso("categoria", "id_categoria")).ToString();
 			accion = "1";
 		}
 
@@ -348,6 +348,8 @@ namespace CapaVistaGestorInventarios
 			chbxlistTipo.SetItemChecked(1, false);
 			chbxlistTipo.SetItemChecked(2, false);
 			rbnActivo.Checked = true;
+			controlador.LlenarCA(cbxCategoria1, "categoria", "nombre", "1", "1");
+			controlador.LlenarCA(cbxCategoria2, "categoria", "nombre", "2", "1");
 		}
 
 		private void btnGuardar_Click(object sender, EventArgs e)
@@ -363,17 +365,21 @@ namespace CapaVistaGestorInventarios
 						MessageBox.Show("Registro guardado con éxito");
 						deshabilitar();
 						LlenarTabla();
+						controlador.LlenarCA(cbxCategoria1, "categoria", "nombre", "1", "1");
+						controlador.LlenarCA(cbxCategoria2, "categoria", "nombre", "2", "1");
 					}
 					catch (Exception excep) { deshabilitar(); }
 					break;
 				case "2":
 					try
 					{
-						query = "UPDATE categoria SET tipo = '" + txtTipo.Text + "', catsup = '" + txtCategoria.Text + "', nombre = '" + txtNombre.Text + "', estado = '" + txtEstado.Text + "' WHERE pkid = '" + txtID.Text + "';";
+						query = "UPDATE categoria SET tipo = '" + txtTipo.Text + "', catsup = '" + txtCategoria.Text + "', nombre = '" + txtNombre.Text + "', estado = '" + txtEstado.Text + "' WHERE id_categoria = '" + txtID.Text + "';";
 						MessageBox.Show(query);
 						controlador.metodoModificar(query);
 						deshabilitar();
 						LlenarTabla();
+						controlador.LlenarCA(cbxCategoria1, "categoria", "nombre", "1", "1");
+						controlador.LlenarCA(cbxCategoria2, "categoria", "nombre", "2", "1");
 					}
 					catch (Exception ex) { deshabilitar(); }
 					break;
@@ -388,10 +394,12 @@ namespace CapaVistaGestorInventarios
 		{
 			if (txtNombre.Text != "")
 			{
-				string query = query = "UPDATE categoria SET estado = 0 where pkid = '" + txtID.Text + "';";
+				string query = query = "UPDATE categoria SET estado = 0 where id_categoria = '" + txtID.Text + "';";
 				controlador.metodoDarBaja(query);
 				LlenarTabla();
 				deshabilitar();
+				controlador.LlenarCA(cbxCategoria1, "categoria", "nombre", "1", "1");
+				controlador.LlenarCA(cbxCategoria2, "categoria", "nombre", "2", "1");
 			}
 			else
 			{
@@ -402,7 +410,7 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				DataTable dt = controlador.ActualizarDGV("categoria");
+				DataTable dt = controlador.ActualizarDGV("categoria", "id_categoria");
 				//dvgConsulta.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 				dgvVistaPrevia.DataSource = dt;
 			}
@@ -442,15 +450,15 @@ namespace CapaVistaGestorInventarios
 		{
 			if (txtTipo.Text == "1")
 			{
-				controlador.IDCATE(txtCategoria, "categoria", "pkid", cbxCategoria1.Text, "1");
+				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria1.Text, "1");
 			}
 			else if (txtTipo.Text == "2")
 			{
-				controlador.IDCATE(txtCategoria, "categoria", "pkid", cbxCategoria1.Text, "1");
+				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria1.Text, "1");
 			}
 			else if (txtTipo.Text == "3")
 			{
-				controlador.IDCATE(txtCategoria, "categoria", "pkid", cbxCategoria2.Text, "2");
+				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria2.Text, "2");
 			}
 			else { }
 		}
