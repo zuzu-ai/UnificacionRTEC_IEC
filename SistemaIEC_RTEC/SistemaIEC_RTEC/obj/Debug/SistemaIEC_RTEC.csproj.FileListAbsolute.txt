@@ -1,0 +1,15 @@
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\SistemaIEC_RTEC.exe.config
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\SistemaIEC_RTEC.exe
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\SistemaIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.IEC_RTEC.resources
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.Properties.Resources.resources
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.csproj.GenerateResource.cache
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.exe
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\CapaControladorIEC_RTEC.dll
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\CapaModeloIEC_RTEC.dll
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\CapaControladorIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\bin\Debug\CapaModeloIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\SistemaIEC_RTEC\SistemaIEC_RTEC\obj\Debug\SistemaIEC_RTEC.csproj.CopyComplete
