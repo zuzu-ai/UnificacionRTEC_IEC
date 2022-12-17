@@ -112,7 +112,7 @@ namespace CapaVistaGestorInventarios
 			this.txtNombre.Location = new System.Drawing.Point(126, 126);
 			this.txtNombre.Name = "txtNombre";
 			this.txtNombre.Size = new System.Drawing.Size(267, 20);
-			this.txtNombre.TabIndex = 165;
+			this.txtNombre.TabIndex = 3;
 			this.txtNombre.Tag = "Nombre";
 			// 
 			// txtSerie
@@ -120,7 +120,7 @@ namespace CapaVistaGestorInventarios
 			this.txtSerie.Location = new System.Drawing.Point(126, 99);
 			this.txtSerie.Name = "txtSerie";
 			this.txtSerie.Size = new System.Drawing.Size(268, 20);
-			this.txtSerie.TabIndex = 160;
+			this.txtSerie.TabIndex = 2;
 			this.txtSerie.Tag = "Serie";
 			// 
 			// txtIdInventario
@@ -139,7 +139,7 @@ namespace CapaVistaGestorInventarios
 			this.txtID.Location = new System.Drawing.Point(127, 74);
 			this.txtID.Name = "txtID";
 			this.txtID.Size = new System.Drawing.Size(268, 20);
-			this.txtID.TabIndex = 157;
+			this.txtID.TabIndex = 1;
 			this.txtID.Tag = "Pk_Detalle";
 			// 
 			// panel1
@@ -160,7 +160,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnInactivo.Location = new System.Drawing.Point(104, 1);
 			this.rbnInactivo.Name = "rbnInactivo";
 			this.rbnInactivo.Size = new System.Drawing.Size(74, 21);
-			this.rbnInactivo.TabIndex = 3;
+			this.rbnInactivo.TabIndex = 20;
 			this.rbnInactivo.TabStop = true;
 			this.rbnInactivo.Text = "Inactivo";
 			this.rbnInactivo.UseVisualStyleBackColor = true;
@@ -174,7 +174,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnActivo.Location = new System.Drawing.Point(31, 1);
 			this.rbnActivo.Name = "rbnActivo";
 			this.rbnActivo.Size = new System.Drawing.Size(64, 21);
-			this.rbnActivo.TabIndex = 2;
+			this.rbnActivo.TabIndex = 19;
 			this.rbnActivo.TabStop = true;
 			this.rbnActivo.Text = "Activo";
 			this.rbnActivo.UseVisualStyleBackColor = true;
@@ -189,6 +189,7 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
 			this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvVistaPrevia.Location = new System.Drawing.Point(10, 433);
@@ -206,7 +207,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxInventario.Location = new System.Drawing.Point(581, 70);
 			this.cbxInventario.Name = "cbxInventario";
 			this.cbxInventario.Size = new System.Drawing.Size(268, 21);
-			this.cbxInventario.TabIndex = 158;
+			this.cbxInventario.TabIndex = 13;
 			this.cbxInventario.SelectedIndexChanged += new System.EventHandler(this.cbxInventario_SelectedIndexChanged);
 			// 
 			// label8
@@ -292,7 +293,7 @@ namespace CapaVistaGestorInventarios
 			this.txtDescripcion.Multiline = true;
 			this.txtDescripcion.Name = "txtDescripcion";
 			this.txtDescripcion.Size = new System.Drawing.Size(267, 39);
-			this.txtDescripcion.TabIndex = 187;
+			this.txtDescripcion.TabIndex = 4;
 			this.txtDescripcion.Tag = "Descripcion";
 			// 
 			// txtCantidad
@@ -300,7 +301,7 @@ namespace CapaVistaGestorInventarios
 			this.txtCantidad.Location = new System.Drawing.Point(125, 205);
 			this.txtCantidad.Name = "txtCantidad";
 			this.txtCantidad.Size = new System.Drawing.Size(267, 20);
-			this.txtCantidad.TabIndex = 188;
+			this.txtCantidad.TabIndex = 5;
 			this.txtCantidad.Tag = "Cantidad";
 			// 
 			// cbxMarca
@@ -309,7 +310,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxMarca.Location = new System.Drawing.Point(126, 284);
 			this.cbxMarca.Name = "cbxMarca";
 			this.cbxMarca.Size = new System.Drawing.Size(268, 21);
-			this.cbxMarca.TabIndex = 189;
+			this.cbxMarca.TabIndex = 8;
 			this.cbxMarca.SelectedIndexChanged += new System.EventHandler(this.cbxMarca_SelectedIndexChanged);
 			// 
 			// label6
@@ -329,7 +330,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxAlmacenamiento.Location = new System.Drawing.Point(126, 311);
 			this.cbxAlmacenamiento.Name = "cbxAlmacenamiento";
 			this.cbxAlmacenamiento.Size = new System.Drawing.Size(268, 21);
-			this.cbxAlmacenamiento.TabIndex = 191;
+			this.cbxAlmacenamiento.TabIndex = 9;
 			this.cbxAlmacenamiento.SelectedIndexChanged += new System.EventHandler(this.cbxAlmacenamiento_SelectedIndexChanged);
 			// 
 			// label10
@@ -349,7 +350,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxCat1.Location = new System.Drawing.Point(128, 338);
 			this.cbxCat1.Name = "cbxCat1";
 			this.cbxCat1.Size = new System.Drawing.Size(268, 21);
-			this.cbxCat1.TabIndex = 193;
+			this.cbxCat1.TabIndex = 10;
 			this.cbxCat1.SelectedIndexChanged += new System.EventHandler(this.cbxCat1_SelectedIndexChanged);
 			// 
 			// label11
@@ -369,7 +370,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxCat2.Location = new System.Drawing.Point(128, 365);
 			this.cbxCat2.Name = "cbxCat2";
 			this.cbxCat2.Size = new System.Drawing.Size(268, 21);
-			this.cbxCat2.TabIndex = 195;
+			this.cbxCat2.TabIndex = 11;
 			this.cbxCat2.SelectedIndexChanged += new System.EventHandler(this.cbxCat2_SelectedIndexChanged);
 			// 
 			// label12
@@ -389,7 +390,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxCat3.Location = new System.Drawing.Point(128, 392);
 			this.cbxCat3.Name = "cbxCat3";
 			this.cbxCat3.Size = new System.Drawing.Size(268, 21);
-			this.cbxCat3.TabIndex = 197;
+			this.cbxCat3.TabIndex = 12;
 			this.cbxCat3.SelectedIndexChanged += new System.EventHandler(this.cbxCat3_SelectedIndexChanged);
 			// 
 			// label13
@@ -469,7 +470,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxSucursal.Location = new System.Drawing.Point(581, 97);
 			this.cbxSucursal.Name = "cbxSucursal";
 			this.cbxSucursal.Size = new System.Drawing.Size(268, 21);
-			this.cbxSucursal.TabIndex = 204;
+			this.cbxSucursal.TabIndex = 14;
 			this.cbxSucursal.SelectedIndexChanged += new System.EventHandler(this.cbxSucursal_SelectedIndexChanged);
 			// 
 			// label14
@@ -499,7 +500,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxUbicacion.Location = new System.Drawing.Point(581, 152);
 			this.cbxUbicacion.Name = "cbxUbicacion";
 			this.cbxUbicacion.Size = new System.Drawing.Size(268, 21);
-			this.cbxUbicacion.TabIndex = 207;
+			this.cbxUbicacion.TabIndex = 16;
 			this.cbxUbicacion.SelectedIndexChanged += new System.EventHandler(this.cbxUbicacion_SelectedIndexChanged);
 			// 
 			// label15
@@ -529,7 +530,7 @@ namespace CapaVistaGestorInventarios
 			this.txtMin.Location = new System.Drawing.Point(581, 297);
 			this.txtMin.Name = "txtMin";
 			this.txtMin.Size = new System.Drawing.Size(238, 20);
-			this.txtMin.TabIndex = 215;
+			this.txtMin.TabIndex = 17;
 			this.txtMin.Tag = "minimo";
 			// 
 			// label16
@@ -548,7 +549,7 @@ namespace CapaVistaGestorInventarios
 			this.txtMax.Location = new System.Drawing.Point(581, 323);
 			this.txtMax.Name = "txtMax";
 			this.txtMax.Size = new System.Drawing.Size(238, 20);
-			this.txtMax.TabIndex = 217;
+			this.txtMax.TabIndex = 18;
 			this.txtMax.Tag = "maximo";
 			// 
 			// label17
@@ -588,7 +589,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxBodega.Location = new System.Drawing.Point(581, 124);
 			this.cbxBodega.Name = "cbxBodega";
 			this.cbxBodega.Size = new System.Drawing.Size(268, 21);
-			this.cbxBodega.TabIndex = 220;
+			this.cbxBodega.TabIndex = 15;
 			this.cbxBodega.SelectedIndexChanged += new System.EventHandler(this.cbxBodega_SelectedIndexChanged);
 			// 
 			// label18
@@ -730,6 +731,7 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgvProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.dgvProveedores.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvProveedores.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
 			this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvProveedores.Enabled = false;
@@ -738,6 +740,7 @@ namespace CapaVistaGestorInventarios
 			this.dgvProveedores.RowHeadersWidth = 51;
 			this.dgvProveedores.Size = new System.Drawing.Size(268, 108);
 			this.dgvProveedores.TabIndex = 232;
+			this.dgvProveedores.TabStop = false;
 			this.dgvProveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedores_CellContentClick);
 			// 
 			// txtPrecio
@@ -745,7 +748,7 @@ namespace CapaVistaGestorInventarios
 			this.txtPrecio.Location = new System.Drawing.Point(125, 231);
 			this.txtPrecio.Name = "txtPrecio";
 			this.txtPrecio.Size = new System.Drawing.Size(267, 20);
-			this.txtPrecio.TabIndex = 234;
+			this.txtPrecio.TabIndex = 6;
 			this.txtPrecio.Tag = "Precio_Compra";
 			// 
 			// label19
@@ -764,7 +767,7 @@ namespace CapaVistaGestorInventarios
 			this.txtPVenta.Location = new System.Drawing.Point(125, 257);
 			this.txtPVenta.Name = "txtPVenta";
 			this.txtPVenta.Size = new System.Drawing.Size(267, 20);
-			this.txtPVenta.TabIndex = 236;
+			this.txtPVenta.TabIndex = 7;
 			this.txtPVenta.Tag = "Precio_Venta";
 			// 
 			// label20

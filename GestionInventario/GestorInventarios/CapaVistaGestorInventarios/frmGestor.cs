@@ -59,6 +59,7 @@ namespace CapaVistaGestorInventarios
 			lblCantidad.Text = "";
 			lblPrecioc.Text = "";
 			lblPreciov.Text = "";
+			lbTitulo.Visible = false;
 		}
 		public void actualizar()
 		{
@@ -105,6 +106,7 @@ namespace CapaVistaGestorInventarios
 				lblCantidad.Text = "Disponibilidad: " + controlador.BuscaDato("inventariod", "Cantidad", "ID_Detalle", txtProducto.Text);
 				lblPrecioc.Text = "Ultimo Precio de Compra: " + controlador.BuscaDato("inventariod", "Precio_Compra", "ID_Detalle", txtProducto.Text);
 				lblPreciov.Text = "Ultimo Precio de Venta: " + controlador.BuscaDato("inventariod", "Precio_Venta", "ID_Detalle", txtProducto.Text);
+				lbTitulo.Visible = true;
 			}
 			else
 			{
@@ -112,6 +114,7 @@ namespace CapaVistaGestorInventarios
 				lblCantidad.Text = "";
 				lblPrecioc.Text = "";
 				lblPreciov.Text = "";
+				lbTitulo.Visible = false;
 			}
 		}
 

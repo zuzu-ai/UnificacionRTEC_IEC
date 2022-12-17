@@ -51,7 +51,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			// txtEstado
 			// 
-			this.txtEstado.Location = new System.Drawing.Point(318, 162);
+			this.txtEstado.Location = new System.Drawing.Point(630, 104);
 			this.txtEstado.Name = "txtEstado";
 			this.txtEstado.Size = new System.Drawing.Size(39, 20);
 			this.txtEstado.TabIndex = 187;
@@ -61,7 +61,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			// txtIdBodega
 			// 
-			this.txtIdBodega.Location = new System.Drawing.Point(318, 129);
+			this.txtIdBodega.Location = new System.Drawing.Point(630, 71);
 			this.txtIdBodega.Name = "txtIdBodega";
 			this.txtIdBodega.Size = new System.Drawing.Size(39, 20);
 			this.txtIdBodega.TabIndex = 193;
@@ -75,7 +75,7 @@ namespace CapaVistaGestorInventarios
 			this.txtNombre.Location = new System.Drawing.Point(112, 101);
 			this.txtNombre.Name = "txtNombre";
 			this.txtNombre.Size = new System.Drawing.Size(200, 20);
-			this.txtNombre.TabIndex = 185;
+			this.txtNombre.TabIndex = 2;
 			this.txtNombre.Tag = "Nombre";
 			// 
 			// txtID
@@ -83,7 +83,7 @@ namespace CapaVistaGestorInventarios
 			this.txtID.Location = new System.Drawing.Point(112, 71);
 			this.txtID.Name = "txtID";
 			this.txtID.Size = new System.Drawing.Size(200, 20);
-			this.txtID.TabIndex = 184;
+			this.txtID.TabIndex = 1;
 			this.txtID.Tag = "ID_Encabezado";
 			// 
 			// label4
@@ -91,7 +91,7 @@ namespace CapaVistaGestorInventarios
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
 			this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.label4.Location = new System.Drawing.Point(16, 128);
+			this.label4.Location = new System.Drawing.Point(328, 70);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(90, 17);
 			this.label4.TabIndex = 192;
@@ -100,17 +100,17 @@ namespace CapaVistaGestorInventarios
 			// cbxBodega
 			// 
 			this.cbxBodega.FormattingEnabled = true;
-			this.cbxBodega.Location = new System.Drawing.Point(112, 128);
+			this.cbxBodega.Location = new System.Drawing.Point(424, 70);
 			this.cbxBodega.Name = "cbxBodega";
 			this.cbxBodega.Size = new System.Drawing.Size(200, 21);
-			this.cbxBodega.TabIndex = 191;
+			this.cbxBodega.TabIndex = 3;
 			this.cbxBodega.SelectedIndexChanged += new System.EventHandler(this.cbxBodega_SelectedIndexChanged);
 			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.rbnActivo);
 			this.panel1.Controls.Add(this.rbnInactivo);
-			this.panel1.Location = new System.Drawing.Point(112, 155);
+			this.panel1.Location = new System.Drawing.Point(424, 97);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(200, 30);
 			this.panel1.TabIndex = 188;
@@ -122,7 +122,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnActivo.Location = new System.Drawing.Point(16, 7);
 			this.rbnActivo.Name = "rbnActivo";
 			this.rbnActivo.Size = new System.Drawing.Size(64, 21);
-			this.rbnActivo.TabIndex = 3;
+			this.rbnActivo.TabIndex = 4;
 			this.rbnActivo.TabStop = true;
 			this.rbnActivo.Text = "Activo";
 			this.rbnActivo.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnInactivo.Location = new System.Drawing.Point(123, 7);
 			this.rbnInactivo.Name = "rbnInactivo";
 			this.rbnInactivo.Size = new System.Drawing.Size(74, 21);
-			this.rbnInactivo.TabIndex = 4;
+			this.rbnInactivo.TabIndex = 5;
 			this.rbnInactivo.TabStop = true;
 			this.rbnInactivo.Text = "Inactivo";
 			this.rbnInactivo.UseVisualStyleBackColor = true;
@@ -145,7 +145,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			this.lblEstatus.AutoSize = true;
 			this.lblEstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.lblEstatus.Location = new System.Drawing.Point(16, 163);
+			this.lblEstatus.Location = new System.Drawing.Point(328, 105);
 			this.lblEstatus.Name = "lblEstatus";
 			this.lblEstatus.Size = new System.Drawing.Size(56, 17);
 			this.lblEstatus.TabIndex = 186;
@@ -202,10 +202,11 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 204);
+			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 133);
 			this.dgvVistaPrevia.Name = "dgvVistaPrevia";
-			this.dgvVistaPrevia.Size = new System.Drawing.Size(637, 153);
+			this.dgvVistaPrevia.Size = new System.Drawing.Size(637, 224);
 			this.dgvVistaPrevia.TabIndex = 189;
 			this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
 			// 

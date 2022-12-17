@@ -108,7 +108,7 @@ namespace CapaVistaGestorInventarios
 			this.txtProyecto.Location = new System.Drawing.Point(117, 102);
 			this.txtProyecto.Name = "txtProyecto";
 			this.txtProyecto.Size = new System.Drawing.Size(268, 20);
-			this.txtProyecto.TabIndex = 186;
+			this.txtProyecto.TabIndex = 2;
 			this.txtProyecto.Tag = "serie";
 			// 
 			// txtIDE
@@ -117,7 +117,7 @@ namespace CapaVistaGestorInventarios
 			this.txtIDE.Location = new System.Drawing.Point(118, 77);
 			this.txtIDE.Name = "txtIDE";
 			this.txtIDE.Size = new System.Drawing.Size(268, 20);
-			this.txtIDE.TabIndex = 184;
+			this.txtIDE.TabIndex = 1;
 			this.txtIDE.Tag = "pkid";
 			// 
 			// panel1
@@ -138,7 +138,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnInactivoE.Location = new System.Drawing.Point(104, 1);
 			this.rbnInactivoE.Name = "rbnInactivoE";
 			this.rbnInactivoE.Size = new System.Drawing.Size(74, 21);
-			this.rbnInactivoE.TabIndex = 3;
+			this.rbnInactivoE.TabIndex = 6;
 			this.rbnInactivoE.TabStop = true;
 			this.rbnInactivoE.Text = "Inactivo";
 			this.rbnInactivoE.UseVisualStyleBackColor = true;
@@ -152,7 +152,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnActivoE.Location = new System.Drawing.Point(31, 1);
 			this.rbnActivoE.Name = "rbnActivoE";
 			this.rbnActivoE.Size = new System.Drawing.Size(64, 21);
-			this.rbnActivoE.TabIndex = 2;
+			this.rbnActivoE.TabIndex = 5;
 			this.rbnActivoE.TabStop = true;
 			this.rbnActivoE.Text = "Activo";
 			this.rbnActivoE.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@ namespace CapaVistaGestorInventarios
 			this.txtTotal.Location = new System.Drawing.Point(117, 155);
 			this.txtTotal.Name = "txtTotal";
 			this.txtTotal.Size = new System.Drawing.Size(267, 20);
-			this.txtTotal.TabIndex = 193;
+			this.txtTotal.TabIndex = 4;
 			this.txtTotal.Tag = "nombre";
 			// 
 			// lbl
@@ -227,7 +227,7 @@ namespace CapaVistaGestorInventarios
 			this.dtpFecha.Location = new System.Drawing.Point(118, 128);
 			this.dtpFecha.Name = "dtpFecha";
 			this.dtpFecha.Size = new System.Drawing.Size(268, 20);
-			this.dtpFecha.TabIndex = 267;
+			this.dtpFecha.TabIndex = 3;
 			this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
 			// 
 			// label5
@@ -253,6 +253,7 @@ namespace CapaVistaGestorInventarios
 			this.btnAyuda.Name = "btnAyuda";
 			this.btnAyuda.Size = new System.Drawing.Size(50, 50);
 			this.btnAyuda.TabIndex = 271;
+			this.btnAyuda.TabStop = false;
 			this.btnAyuda.UseVisualStyleBackColor = false;
 			// 
 			// btnActualizar
@@ -267,6 +268,7 @@ namespace CapaVistaGestorInventarios
 			this.btnActualizar.Name = "btnActualizar";
 			this.btnActualizar.Size = new System.Drawing.Size(50, 50);
 			this.btnActualizar.TabIndex = 272;
+			this.btnActualizar.TabStop = false;
 			this.btnActualizar.UseVisualStyleBackColor = false;
 			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
 			// 
@@ -282,6 +284,7 @@ namespace CapaVistaGestorInventarios
 			this.btnEliminar.Name = "btnEliminar";
 			this.btnEliminar.Size = new System.Drawing.Size(50, 50);
 			this.btnEliminar.TabIndex = 273;
+			this.btnEliminar.TabStop = false;
 			this.btnEliminar.UseVisualStyleBackColor = false;
 			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
@@ -297,6 +300,7 @@ namespace CapaVistaGestorInventarios
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.Size = new System.Drawing.Size(50, 50);
 			this.btnCancelar.TabIndex = 274;
+			this.btnCancelar.TabStop = false;
 			this.btnCancelar.UseVisualStyleBackColor = false;
 			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
 			// 
@@ -312,6 +316,7 @@ namespace CapaVistaGestorInventarios
 			this.btnGuardar.Name = "btnGuardar";
 			this.btnGuardar.Size = new System.Drawing.Size(50, 50);
 			this.btnGuardar.TabIndex = 275;
+			this.btnGuardar.TabStop = false;
 			this.btnGuardar.UseVisualStyleBackColor = false;
 			this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
 			// 
@@ -327,6 +332,7 @@ namespace CapaVistaGestorInventarios
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.Size = new System.Drawing.Size(50, 50);
 			this.btnEditar.TabIndex = 276;
+			this.btnEditar.TabStop = false;
 			this.btnEditar.UseVisualStyleBackColor = false;
 			this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
 			// 
@@ -342,6 +348,7 @@ namespace CapaVistaGestorInventarios
 			this.btnIngresar.Name = "btnIngresar";
 			this.btnIngresar.Size = new System.Drawing.Size(50, 50);
 			this.btnIngresar.TabIndex = 277;
+			this.btnIngresar.TabStop = false;
 			this.btnIngresar.UseVisualStyleBackColor = false;
 			this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
 			// 
@@ -365,6 +372,7 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.dgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvDetalles.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
 			this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvDetalles.Location = new System.Drawing.Point(463, 223);
@@ -413,7 +421,7 @@ namespace CapaVistaGestorInventarios
 			this.txtIDD.Location = new System.Drawing.Point(118, 296);
 			this.txtIDD.Name = "txtIDD";
 			this.txtIDD.Size = new System.Drawing.Size(268, 20);
-			this.txtIDD.TabIndex = 284;
+			this.txtIDD.TabIndex = 7;
 			this.txtIDD.Tag = "pkid";
 			// 
 			// label9
@@ -444,7 +452,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxInventario.Location = new System.Drawing.Point(118, 322);
 			this.cbxInventario.Name = "cbxInventario";
 			this.cbxInventario.Size = new System.Drawing.Size(268, 21);
-			this.cbxInventario.TabIndex = 286;
+			this.cbxInventario.TabIndex = 8;
 			this.cbxInventario.SelectedIndexChanged += new System.EventHandler(this.cbxInventario_SelectedIndexChanged);
 			// 
 			// label10
@@ -475,7 +483,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxProducto.Location = new System.Drawing.Point(118, 349);
 			this.cbxProducto.Name = "cbxProducto";
 			this.cbxProducto.Size = new System.Drawing.Size(268, 21);
-			this.cbxProducto.TabIndex = 289;
+			this.cbxProducto.TabIndex = 9;
 			this.cbxProducto.SelectedIndexChanged += new System.EventHandler(this.cbxProducto_SelectedIndexChanged);
 			// 
 			// label11
@@ -495,7 +503,7 @@ namespace CapaVistaGestorInventarios
 			this.txtDisponibilidad.Location = new System.Drawing.Point(118, 376);
 			this.txtDisponibilidad.Name = "txtDisponibilidad";
 			this.txtDisponibilidad.Size = new System.Drawing.Size(268, 20);
-			this.txtDisponibilidad.TabIndex = 292;
+			this.txtDisponibilidad.TabIndex = 10;
 			this.txtDisponibilidad.Tag = "serie";
 			// 
 			// label12
@@ -515,7 +523,7 @@ namespace CapaVistaGestorInventarios
 			this.txtPrecio.Location = new System.Drawing.Point(118, 402);
 			this.txtPrecio.Name = "txtPrecio";
 			this.txtPrecio.Size = new System.Drawing.Size(268, 20);
-			this.txtPrecio.TabIndex = 294;
+			this.txtPrecio.TabIndex = 11;
 			this.txtPrecio.Tag = "serie";
 			// 
 			// label13
@@ -535,7 +543,7 @@ namespace CapaVistaGestorInventarios
 			this.txtSubtotal.Location = new System.Drawing.Point(118, 479);
 			this.txtSubtotal.Name = "txtSubtotal";
 			this.txtSubtotal.Size = new System.Drawing.Size(268, 20);
-			this.txtSubtotal.TabIndex = 296;
+			this.txtSubtotal.TabIndex = 14;
 			this.txtSubtotal.Tag = "serie";
 			// 
 			// label14
@@ -577,7 +585,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnInactivoD.Location = new System.Drawing.Point(104, 1);
 			this.rbnInactivoD.Name = "rbnInactivoD";
 			this.rbnInactivoD.Size = new System.Drawing.Size(74, 21);
-			this.rbnInactivoD.TabIndex = 3;
+			this.rbnInactivoD.TabIndex = 16;
 			this.rbnInactivoD.TabStop = true;
 			this.rbnInactivoD.Text = "Inactivo";
 			this.rbnInactivoD.UseVisualStyleBackColor = true;
@@ -591,7 +599,7 @@ namespace CapaVistaGestorInventarios
 			this.rbnActivoD.Location = new System.Drawing.Point(31, 1);
 			this.rbnActivoD.Name = "rbnActivoD";
 			this.rbnActivoD.Size = new System.Drawing.Size(64, 21);
-			this.rbnActivoD.TabIndex = 2;
+			this.rbnActivoD.TabIndex = 15;
 			this.rbnActivoD.TabStop = true;
 			this.rbnActivoD.Text = "Activo";
 			this.rbnActivoD.UseVisualStyleBackColor = true;
@@ -620,6 +628,7 @@ namespace CapaVistaGestorInventarios
 			this.btnEliminarD.Name = "btnEliminarD";
 			this.btnEliminarD.Size = new System.Drawing.Size(50, 50);
 			this.btnEliminarD.TabIndex = 305;
+			this.btnEliminarD.TabStop = false;
 			this.btnEliminarD.UseVisualStyleBackColor = false;
 			this.btnEliminarD.Click += new System.EventHandler(this.btnEliminarD_Click);
 			// 
@@ -635,6 +644,7 @@ namespace CapaVistaGestorInventarios
 			this.btnCancelarD.Name = "btnCancelarD";
 			this.btnCancelarD.Size = new System.Drawing.Size(50, 50);
 			this.btnCancelarD.TabIndex = 306;
+			this.btnCancelarD.TabStop = false;
 			this.btnCancelarD.UseVisualStyleBackColor = false;
 			this.btnCancelarD.Click += new System.EventHandler(this.btnCancelarD_Click);
 			// 
@@ -650,6 +660,7 @@ namespace CapaVistaGestorInventarios
 			this.btnGuardarD.Name = "btnGuardarD";
 			this.btnGuardarD.Size = new System.Drawing.Size(50, 50);
 			this.btnGuardarD.TabIndex = 307;
+			this.btnGuardarD.TabStop = false;
 			this.btnGuardarD.UseVisualStyleBackColor = false;
 			this.btnGuardarD.Click += new System.EventHandler(this.btnGuardarD_Click);
 			// 
@@ -665,6 +676,7 @@ namespace CapaVistaGestorInventarios
 			this.btnEditarD.Name = "btnEditarD";
 			this.btnEditarD.Size = new System.Drawing.Size(50, 50);
 			this.btnEditarD.TabIndex = 308;
+			this.btnEditarD.TabStop = false;
 			this.btnEditarD.UseVisualStyleBackColor = false;
 			this.btnEditarD.Click += new System.EventHandler(this.btnEditarD_Click);
 			// 
@@ -680,6 +692,7 @@ namespace CapaVistaGestorInventarios
 			this.btnIngresarD.Name = "btnIngresarD";
 			this.btnIngresarD.Size = new System.Drawing.Size(50, 50);
 			this.btnIngresarD.TabIndex = 309;
+			this.btnIngresarD.TabStop = false;
 			this.btnIngresarD.UseVisualStyleBackColor = false;
 			this.btnIngresarD.Click += new System.EventHandler(this.btnIngresarD_Click);
 			// 
@@ -706,6 +719,7 @@ namespace CapaVistaGestorInventarios
 			this.btnImprimir.Name = "btnImprimir";
 			this.btnImprimir.Size = new System.Drawing.Size(50, 50);
 			this.btnImprimir.TabIndex = 312;
+			this.btnImprimir.TabStop = false;
 			this.btnImprimir.UseVisualStyleBackColor = false;
 			this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
 			// 
@@ -718,6 +732,7 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgvCotizaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.dgvCotizaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvCotizaciones.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
 			this.dgvCotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvCotizaciones.Location = new System.Drawing.Point(463, 66);
@@ -738,7 +753,7 @@ namespace CapaVistaGestorInventarios
             0});
 			this.txtCantidad.Name = "txtCantidad";
 			this.txtCantidad.Size = new System.Drawing.Size(269, 20);
-			this.txtCantidad.TabIndex = 314;
+			this.txtCantidad.TabIndex = 12;
 			this.txtCantidad.ValueChanged += new System.EventHandler(this.txtCantidad_ValueChanged);
 			this.txtCantidad.Scroll += new System.Windows.Forms.ScrollEventHandler(this.txtCantidad_Scroll);
 			this.txtCantidad.Click += new System.EventHandler(this.txtCantidad_Click);
@@ -752,7 +767,7 @@ namespace CapaVistaGestorInventarios
 			this.txtDescuento.Location = new System.Drawing.Point(118, 455);
 			this.txtDescuento.Name = "txtDescuento";
 			this.txtDescuento.Size = new System.Drawing.Size(268, 20);
-			this.txtDescuento.TabIndex = 315;
+			this.txtDescuento.TabIndex = 13;
 			this.txtDescuento.Tag = "serie";
 			this.txtDescuento.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 

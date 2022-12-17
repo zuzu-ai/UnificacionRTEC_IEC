@@ -70,6 +70,7 @@ namespace CapaVistaGestorInventarios
 			// dgvIM3
 			// 
 			this.dgvIM3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvIM3.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvIM3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvIM3.Location = new System.Drawing.Point(580, 47);
 			this.dgvIM3.Name = "dgvIM3";
@@ -88,6 +89,7 @@ namespace CapaVistaGestorInventarios
 			// dgvIM2
 			// 
 			this.dgvIM2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvIM2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvIM2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvIM2.Location = new System.Drawing.Point(292, 47);
 			this.dgvIM2.Name = "dgvIM2";
@@ -106,6 +108,7 @@ namespace CapaVistaGestorInventarios
 			// dgvIM1
 			// 
 			this.dgvIM1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvIM1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvIM1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvIM1.Location = new System.Drawing.Point(3, 47);
 			this.dgvIM1.Name = "dgvIM1";
