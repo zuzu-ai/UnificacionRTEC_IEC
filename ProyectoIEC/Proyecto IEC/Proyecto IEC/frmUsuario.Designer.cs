@@ -69,7 +69,7 @@ namespace Proyecto_IEC
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(433, 199);
+            this.txtEstado.Location = new System.Drawing.Point(433, 184);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 126;
@@ -98,7 +98,7 @@ namespace Proyecto_IEC
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(152, 201);
+            this.panel1.Location = new System.Drawing.Point(190, 185);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 125;
@@ -136,7 +136,7 @@ namespace Proyecto_IEC
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(23, 200);
+            this.label8.Location = new System.Drawing.Point(12, 185);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 124;
@@ -147,7 +147,7 @@ namespace Proyecto_IEC
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(23, 160);
+            this.label2.Location = new System.Drawing.Point(12, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 123;
@@ -158,7 +158,7 @@ namespace Proyecto_IEC
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(23, 76);
+            this.label1.Location = new System.Drawing.Point(12, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 121;
@@ -172,13 +172,14 @@ namespace Proyecto_IEC
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 235);
+            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 219);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.RowHeadersWidth = 51;
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(880, 282);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(880, 298);
             this.dgvVistaPrevia.TabIndex = 120;
             this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 
@@ -218,7 +219,7 @@ namespace Proyecto_IEC
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(23, 137);
+            this.label3.Location = new System.Drawing.Point(12, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 16);
             this.label3.TabIndex = 128;
@@ -290,7 +291,7 @@ namespace Proyecto_IEC
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(23, 108);
+            this.label9.Location = new System.Drawing.Point(12, 105);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(86, 16);
             this.label9.TabIndex = 128;

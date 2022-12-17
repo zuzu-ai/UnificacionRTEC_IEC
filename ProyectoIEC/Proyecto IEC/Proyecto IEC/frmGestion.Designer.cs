@@ -48,7 +48,7 @@ namespace Proyecto_IEC
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(456, 116);
+            this.txtEstado.Location = new System.Drawing.Point(404, 127);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 124;
@@ -58,7 +58,7 @@ namespace Proyecto_IEC
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(175, 92);
+            this.txtNombres.Location = new System.Drawing.Point(175, 100);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(268, 20);
             this.txtNombres.TabIndex = 118;
@@ -66,7 +66,7 @@ namespace Proyecto_IEC
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(175, 66);
+            this.txtID.Location = new System.Drawing.Point(175, 74);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 117;
@@ -77,7 +77,7 @@ namespace Proyecto_IEC
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(175, 118);
+            this.panel1.Location = new System.Drawing.Point(209, 126);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 123;
@@ -115,7 +115,7 @@ namespace Proyecto_IEC
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(23, 117);
+            this.label8.Location = new System.Drawing.Point(23, 125);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 122;
@@ -126,7 +126,7 @@ namespace Proyecto_IEC
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(23, 93);
+            this.label2.Location = new System.Drawing.Point(23, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 16);
             this.label2.TabIndex = 121;
@@ -137,7 +137,7 @@ namespace Proyecto_IEC
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(23, 65);
+            this.label1.Location = new System.Drawing.Point(23, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 16);
             this.label1.TabIndex = 120;
@@ -151,6 +151,7 @@ namespace Proyecto_IEC
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 167);

@@ -48,7 +48,7 @@ namespace Proyecto_IEC
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(456, 116);
+            this.txtEstado.Location = new System.Drawing.Point(404, 124);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 116;
@@ -77,7 +77,7 @@ namespace Proyecto_IEC
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(175, 118);
+            this.panel1.Location = new System.Drawing.Point(201, 116);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 115;
@@ -151,13 +151,14 @@ namespace Proyecto_IEC
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 167);
+            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 150);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.RowHeadersWidth = 51;
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(643, 271);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(643, 288);
             this.dgvVistaPrevia.TabIndex = 111;
             this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 

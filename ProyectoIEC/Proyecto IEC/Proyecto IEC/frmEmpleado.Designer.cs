@@ -69,9 +69,9 @@ namespace Proyecto_IEC
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(357, 79);
+            this.txtID.Location = new System.Drawing.Point(339, 101);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(268, 20);
+            this.txtID.Size = new System.Drawing.Size(207, 20);
             this.txtID.TabIndex = 0;
             this.txtID.Tag = "ID_Empleado";
             // 
@@ -80,7 +80,7 @@ namespace Proyecto_IEC
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(243, 79);
+            this.label1.Location = new System.Drawing.Point(225, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 16);
             this.label1.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace Proyecto_IEC
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(243, 133);
+            this.label2.Location = new System.Drawing.Point(225, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 4;
@@ -99,9 +99,10 @@ namespace Proyecto_IEC
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(357, 131);
+            this.txtNombres.Location = new System.Drawing.Point(339, 153);
+            this.txtNombres.Multiline = true;
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(268, 20);
+            this.txtNombres.Size = new System.Drawing.Size(207, 51);
             this.txtNombres.TabIndex = 3;
             this.txtNombres.Tag = "Nombre";
             this.txtNombres.EnabledChanged += new System.EventHandler(this.txtNombres_EnabledChanged);
@@ -111,7 +112,7 @@ namespace Proyecto_IEC
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(242, 106);
+            this.label4.Location = new System.Drawing.Point(224, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 16);
             this.label4.TabIndex = 8;
@@ -122,7 +123,7 @@ namespace Proyecto_IEC
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(242, 161);
+            this.label5.Location = new System.Drawing.Point(224, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 16);
             this.label5.TabIndex = 10;
@@ -130,9 +131,9 @@ namespace Proyecto_IEC
             // 
             // txtDPI
             // 
-            this.txtDPI.Location = new System.Drawing.Point(357, 157);
+            this.txtDPI.Location = new System.Drawing.Point(339, 210);
             this.txtDPI.Name = "txtDPI";
-            this.txtDPI.Size = new System.Drawing.Size(267, 20);
+            this.txtDPI.Size = new System.Drawing.Size(207, 20);
             this.txtDPI.TabIndex = 9;
             this.txtDPI.Tag = "DPI";
             // 
@@ -141,7 +142,7 @@ namespace Proyecto_IEC
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(242, 209);
+            this.label6.Location = new System.Drawing.Point(579, 132);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 16);
             this.label6.TabIndex = 12;
@@ -152,7 +153,7 @@ namespace Proyecto_IEC
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(242, 236);
+            this.label7.Location = new System.Drawing.Point(579, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 16);
             this.label7.TabIndex = 14;
@@ -163,7 +164,7 @@ namespace Proyecto_IEC
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(242, 262);
+            this.label8.Location = new System.Drawing.Point(579, 187);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 16;
@@ -172,32 +173,32 @@ namespace Proyecto_IEC
             // cbxPuesto
             // 
             this.cbxPuesto.FormattingEnabled = true;
-            this.cbxPuesto.Location = new System.Drawing.Point(357, 105);
+            this.cbxPuesto.Location = new System.Drawing.Point(339, 127);
             this.cbxPuesto.Name = "cbxPuesto";
-            this.cbxPuesto.Size = new System.Drawing.Size(268, 21);
+            this.cbxPuesto.Size = new System.Drawing.Size(207, 21);
             this.cbxPuesto.TabIndex = 1;
             this.cbxPuesto.SelectedIndexChanged += new System.EventHandler(this.cbxPuesto_SelectedIndexChanged);
             // 
             // dtpContratacion
             // 
-            this.dtpContratacion.Location = new System.Drawing.Point(357, 209);
+            this.dtpContratacion.Location = new System.Drawing.Point(662, 128);
             this.dtpContratacion.Name = "dtpContratacion";
-            this.dtpContratacion.Size = new System.Drawing.Size(268, 20);
+            this.dtpContratacion.Size = new System.Drawing.Size(207, 20);
             this.dtpContratacion.TabIndex = 18;
             this.dtpContratacion.ValueChanged += new System.EventHandler(this.dtpContratacion_ValueChanged);
             this.dtpContratacion.EnabledChanged += new System.EventHandler(this.dtpContratacion_EnabledChanged);
             // 
             // dtpDespido
             // 
-            this.dtpDespido.Location = new System.Drawing.Point(357, 235);
+            this.dtpDespido.Location = new System.Drawing.Point(662, 155);
             this.dtpDespido.Name = "dtpDespido";
-            this.dtpDespido.Size = new System.Drawing.Size(268, 20);
+            this.dtpDespido.Size = new System.Drawing.Size(207, 20);
             this.dtpDespido.TabIndex = 19;
             this.dtpDespido.ValueChanged += new System.EventHandler(this.dtpDespido_ValueChanged);
             // 
             // txtIdPuesto
             // 
-            this.txtIdPuesto.Location = new System.Drawing.Point(638, 106);
+            this.txtIdPuesto.Location = new System.Drawing.Point(339, 128);
             this.txtIdPuesto.Name = "txtIdPuesto";
             this.txtIdPuesto.Size = new System.Drawing.Size(39, 20);
             this.txtIdPuesto.TabIndex = 21;
@@ -208,7 +209,7 @@ namespace Proyecto_IEC
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(638, 259);
+            this.txtEstado.Location = new System.Drawing.Point(885, 184);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 22;
@@ -218,7 +219,7 @@ namespace Proyecto_IEC
             // 
             // txtContratacion
             // 
-            this.txtContratacion.Location = new System.Drawing.Point(638, 209);
+            this.txtContratacion.Location = new System.Drawing.Point(885, 125);
             this.txtContratacion.Name = "txtContratacion";
             this.txtContratacion.Size = new System.Drawing.Size(39, 20);
             this.txtContratacion.TabIndex = 23;
@@ -228,7 +229,7 @@ namespace Proyecto_IEC
             // 
             // txtDespido
             // 
-            this.txtDespido.Location = new System.Drawing.Point(638, 235);
+            this.txtDespido.Location = new System.Drawing.Point(885, 151);
             this.txtDespido.Name = "txtDespido";
             this.txtDespido.Size = new System.Drawing.Size(39, 20);
             this.txtDespido.TabIndex = 24;
@@ -241,7 +242,7 @@ namespace Proyecto_IEC
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(81, 64);
+            this.label9.Location = new System.Drawing.Point(64, 60);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 16);
             this.label9.TabIndex = 97;
@@ -249,7 +250,7 @@ namespace Proyecto_IEC
             // 
             // txtIdFoto
             // 
-            this.txtIdFoto.Location = new System.Drawing.Point(199, 267);
+            this.txtIdFoto.Location = new System.Drawing.Point(182, 257);
             this.txtIdFoto.Name = "txtIdFoto";
             this.txtIdFoto.Size = new System.Drawing.Size(32, 20);
             this.txtIdFoto.TabIndex = 95;
@@ -265,9 +266,9 @@ namespace Proyecto_IEC
             this.pbFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbFoto.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbFoto.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pbFoto.Location = new System.Drawing.Point(29, 83);
+            this.pbFoto.Location = new System.Drawing.Point(12, 77);
             this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(164, 210);
+            this.pbFoto.Size = new System.Drawing.Size(164, 200);
             this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFoto.TabIndex = 96;
             this.pbFoto.TabStop = false;
@@ -297,13 +298,14 @@ namespace Proyecto_IEC
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 299);
+            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 296);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.RowHeadersWidth = 51;
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(888, 311);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(995, 314);
             this.dgvVistaPrevia.TabIndex = 99;
             this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 
@@ -318,7 +320,7 @@ namespace Proyecto_IEC
             // 
             // txtJornada
             // 
-            this.txtJornada.Location = new System.Drawing.Point(638, 183);
+            this.txtJornada.Location = new System.Drawing.Point(662, 101);
             this.txtJornada.Name = "txtJornada";
             this.txtJornada.Size = new System.Drawing.Size(39, 20);
             this.txtJornada.TabIndex = 5;
@@ -331,7 +333,7 @@ namespace Proyecto_IEC
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(242, 188);
+            this.label3.Location = new System.Drawing.Point(579, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 6;
@@ -340,9 +342,9 @@ namespace Proyecto_IEC
             // cbxJornada
             // 
             this.cbxJornada.FormattingEnabled = true;
-            this.cbxJornada.Location = new System.Drawing.Point(356, 182);
+            this.cbxJornada.Location = new System.Drawing.Point(662, 100);
             this.cbxJornada.Name = "cbxJornada";
-            this.cbxJornada.Size = new System.Drawing.Size(268, 21);
+            this.cbxJornada.Size = new System.Drawing.Size(207, 21);
             this.cbxJornada.TabIndex = 17;
             this.cbxJornada.SelectedIndexChanged += new System.EventHandler(this.cbxJornada_SelectedIndexChanged);
             // 
@@ -351,7 +353,7 @@ namespace Proyecto_IEC
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(388, 259);
+            this.panel1.Location = new System.Drawing.Point(667, 182);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 124;
@@ -387,7 +389,7 @@ namespace Proyecto_IEC
             // chbxNoContratacion
             // 
             this.chbxNoContratacion.AutoSize = true;
-            this.chbxNoContratacion.Location = new System.Drawing.Point(633, 215);
+            this.chbxNoContratacion.Location = new System.Drawing.Point(880, 131);
             this.chbxNoContratacion.Name = "chbxNoContratacion";
             this.chbxNoContratacion.Size = new System.Drawing.Size(70, 17);
             this.chbxNoContratacion.TabIndex = 125;
@@ -398,7 +400,7 @@ namespace Proyecto_IEC
             // chbxNoDespido
             // 
             this.chbxNoDespido.AutoSize = true;
-            this.chbxNoDespido.Location = new System.Drawing.Point(633, 240);
+            this.chbxNoDespido.Location = new System.Drawing.Point(880, 156);
             this.chbxNoDespido.Name = "chbxNoDespido";
             this.chbxNoDespido.Size = new System.Drawing.Size(70, 17);
             this.chbxNoDespido.TabIndex = 126;
@@ -428,7 +430,7 @@ namespace Proyecto_IEC
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(917, 622);
+            this.ClientSize = new System.Drawing.Size(1024, 622);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtIdFoto);
             this.Controls.Add(this.txtDespido);

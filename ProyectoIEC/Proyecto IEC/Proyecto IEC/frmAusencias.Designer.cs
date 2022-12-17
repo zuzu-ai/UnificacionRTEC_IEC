@@ -57,7 +57,7 @@ namespace Proyecto_IEC
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(404, 152);
+            this.txtEstado.Location = new System.Drawing.Point(372, 152);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 124;
@@ -68,7 +68,7 @@ namespace Proyecto_IEC
             // txtIdEmpleado
             // 
             this.txtIdEmpleado.Enabled = false;
-            this.txtIdEmpleado.Location = new System.Drawing.Point(175, 92);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(143, 92);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(268, 20);
             this.txtIdEmpleado.TabIndex = 118;
@@ -79,7 +79,8 @@ namespace Proyecto_IEC
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(175, 66);
+            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID.Location = new System.Drawing.Point(143, 66);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 0;
@@ -90,7 +91,7 @@ namespace Proyecto_IEC
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(198, 144);
+            this.panel1.Location = new System.Drawing.Point(166, 144);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 123;
@@ -98,6 +99,7 @@ namespace Proyecto_IEC
             // rbnEstatusimodulo
             // 
             this.rbnEstatusimodulo.AutoSize = true;
+            this.rbnEstatusimodulo.Cursor = System.Windows.Forms.Cursors.Default;
             this.rbnEstatusimodulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnEstatusimodulo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rbnEstatusimodulo.Location = new System.Drawing.Point(97, 5);
@@ -112,6 +114,7 @@ namespace Proyecto_IEC
             // rbnEstatusamodulo
             // 
             this.rbnEstatusamodulo.AutoSize = true;
+            this.rbnEstatusamodulo.Cursor = System.Windows.Forms.Cursors.Default;
             this.rbnEstatusamodulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnEstatusamodulo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rbnEstatusamodulo.Location = new System.Drawing.Point(24, 5);
@@ -128,7 +131,7 @@ namespace Proyecto_IEC
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(23, 144);
+            this.label8.Location = new System.Drawing.Point(12, 151);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 122;
@@ -139,7 +142,7 @@ namespace Proyecto_IEC
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(23, 93);
+            this.label2.Location = new System.Drawing.Point(12, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 16);
             this.label2.TabIndex = 121;
@@ -150,7 +153,7 @@ namespace Proyecto_IEC
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(23, 65);
+            this.label1.Location = new System.Drawing.Point(12, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 16);
             this.label1.TabIndex = 120;
@@ -164,13 +167,14 @@ namespace Proyecto_IEC
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 198);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.RowHeadersWidth = 51;
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(917, 318);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(768, 318);
             this.dgvVistaPrevia.TabIndex = 119;
             this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 
@@ -179,7 +183,7 @@ namespace Proyecto_IEC
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(23, 119);
+            this.label3.Location = new System.Drawing.Point(12, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 16);
             this.label3.TabIndex = 121;
@@ -188,7 +192,7 @@ namespace Proyecto_IEC
             // txtIdTipoAusencia
             // 
             this.txtIdTipoAusencia.Enabled = false;
-            this.txtIdTipoAusencia.Location = new System.Drawing.Point(175, 118);
+            this.txtIdTipoAusencia.Location = new System.Drawing.Point(143, 118);
             this.txtIdTipoAusencia.Name = "txtIdTipoAusencia";
             this.txtIdTipoAusencia.Size = new System.Drawing.Size(268, 20);
             this.txtIdTipoAusencia.TabIndex = 118;
@@ -202,7 +206,7 @@ namespace Proyecto_IEC
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(493, 66);
+            this.label4.Location = new System.Drawing.Point(445, 63);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 121;
@@ -211,7 +215,7 @@ namespace Proyecto_IEC
             // txtFecha
             // 
             this.txtFecha.Enabled = false;
-            this.txtFecha.Location = new System.Drawing.Point(594, 64);
+            this.txtFecha.Location = new System.Drawing.Point(512, 61);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(268, 20);
             this.txtFecha.TabIndex = 118;
@@ -225,7 +229,7 @@ namespace Proyecto_IEC
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(493, 92);
+            this.label5.Location = new System.Drawing.Point(445, 89);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 16);
             this.label5.TabIndex = 121;
@@ -233,7 +237,7 @@ namespace Proyecto_IEC
             // 
             // txtDetalle
             // 
-            this.txtDetalle.Location = new System.Drawing.Point(594, 91);
+            this.txtDetalle.Location = new System.Drawing.Point(512, 88);
             this.txtDetalle.Multiline = true;
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Size = new System.Drawing.Size(268, 81);
@@ -252,7 +256,7 @@ namespace Proyecto_IEC
             // cbxIdEmpleado
             // 
             this.cbxIdEmpleado.FormattingEnabled = true;
-            this.cbxIdEmpleado.Location = new System.Drawing.Point(175, 92);
+            this.cbxIdEmpleado.Location = new System.Drawing.Point(143, 92);
             this.cbxIdEmpleado.Name = "cbxIdEmpleado";
             this.cbxIdEmpleado.Size = new System.Drawing.Size(268, 21);
             this.cbxIdEmpleado.TabIndex = 1;
@@ -261,7 +265,7 @@ namespace Proyecto_IEC
             // cbxIdTipoAusencia
             // 
             this.cbxIdTipoAusencia.FormattingEnabled = true;
-            this.cbxIdTipoAusencia.Location = new System.Drawing.Point(175, 117);
+            this.cbxIdTipoAusencia.Location = new System.Drawing.Point(143, 117);
             this.cbxIdTipoAusencia.Name = "cbxIdTipoAusencia";
             this.cbxIdTipoAusencia.Size = new System.Drawing.Size(268, 21);
             this.cbxIdTipoAusencia.TabIndex = 2;
@@ -269,7 +273,7 @@ namespace Proyecto_IEC
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(594, 64);
+            this.dtpFecha.Location = new System.Drawing.Point(512, 61);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(268, 20);
             this.dtpFecha.TabIndex = 3;
@@ -296,7 +300,7 @@ namespace Proyecto_IEC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(941, 528);
+            this.ClientSize = new System.Drawing.Size(794, 528);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtDetalle);
@@ -317,7 +321,7 @@ namespace Proyecto_IEC
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVistaPrevia);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(957, 567);
+            this.MinimumSize = new System.Drawing.Size(810, 567);
             this.Name = "frmAusencias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ausencias";
