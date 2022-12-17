@@ -22,13 +22,13 @@ namespace Proyecto_IEC
 			navegadorMantenimientos1.bloquearBtn(g.obtienenombretusuario);
 
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "pagoempleado", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "pagoempleado", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			navegadorMantenimientos1.LlenarCombobox(cbxEmpleado, "empleado", "pkid", "nombre", "estado");
-			navegadorMantenimientos1.LlenarCombobox(cbxTipoPago, "tipopago", "pkid", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxEmpleado, "empleado", "ID_Empleado", "Nombre", "Estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxTipoPago, "tipopago", "ID_Tipo_Pago", "Nombre", "Estado");
 
 			//inicio de elementos para dar de baja
-			navegadorMantenimientos1.campoEstado = "estado";
+			navegadorMantenimientos1.campoEstado = "Estado";
 			//fin de elementos para dar de baja
 
 			/* Inicio ID Aplicacion usada para reportes y ayudas */

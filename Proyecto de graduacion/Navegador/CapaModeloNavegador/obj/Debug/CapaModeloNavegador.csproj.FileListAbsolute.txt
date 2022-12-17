@@ -1,0 +1,18 @@
+C:\Users\Kevin\source\repos\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\source\repos\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\Kevin\source\repos\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.AssemblyReference.cache
+C:\Users\Kevin\source\repos\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\source\repos\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.pdb
+F:\ProyectoIEC\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.dll
+F:\ProyectoIEC\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.pdb
+F:\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.AssemblyReference.cache
+F:\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.CoreCompileInputs.cache
+F:\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.dll
+F:\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.pdb
+F:\Proyecto de graduacion\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.dll
+F:\Proyecto de graduacion\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.pdb
+F:\Proyecto de graduacion\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.AssemblyReference.cache
+F:\Proyecto de graduacion\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.CoreCompileInputs.cache
+F:\Proyecto de graduacion\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.dll
+F:\Proyecto de graduacion\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.pdb

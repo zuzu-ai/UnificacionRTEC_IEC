@@ -21,7 +21,7 @@ namespace Proyecto_IEC
 			navegadorMantenimientos1.bloquearBtn(g.obtienenombretusuario);
 
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "jornada", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "jornada", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
 			//navegador1.LlenarCombobox(cbxIDPuesto, "puesto", "pkIdPuesto", "nombre", "estado");
 			//navegador1.LlenarCombobox(cbxIDEmpresa, "empresa", "idEmpresa", "nombre", "estatus");

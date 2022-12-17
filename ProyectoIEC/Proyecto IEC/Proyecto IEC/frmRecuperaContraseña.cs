@@ -16,7 +16,7 @@ namespace Proyecto_IEC
         public frmRecuperaContraseña()
         {
             InitializeComponent();
-            navegadorMantenimientos1.LlenarCombobox(cbxPregunta, "pregunta", "pkid", "pregunta", "estado");
+            navegadorMantenimientos1.LlenarCombobox(cbxPregunta, "pregunta", "ID_Pregunta", "Pregunta", "Estado");
 			this.tltNombre.SetToolTip(this.btnAceptar, "Aceptar");
 			this.tltNombre.SetToolTip(this.btnCancelar, "Cancelar");
 		}
@@ -80,7 +80,7 @@ namespace Proyecto_IEC
 			if (respuesta == DialogResult.Yes)
 			{
 				CapaContoladorProyectoIEC.Controlador controlador = new CapaContoladorProyectoIEC.Controlador();
-				string id = controlador.BuscaDato("usuario", "pkid", "usuario.usuario", txtUsuario.Text);
+				string id = controlador.BuscaDato("usuario", "ID_Usuario", "usuario.Usuario", txtUsuario.Text);
 				controlador.CambioContrasena("usuario", txtContraseña.Text, id, txtUsuario.Text);
 				this.Close();
 			}

@@ -20,19 +20,20 @@ namespace Proyecto_IEC
 		CapaContoladorProyectoIEC.Controlador controlador = new CapaContoladorProyectoIEC.Controlador();
 		public frmEmpleado()
 		{
+			
 			InitializeComponent();
 			controlador.bloqueareporte(g.obtienenombretusuario, btnImprimir);
 			controlador.bloquearimagen(g.obtienenombretusuario, btnAyuda);
 			navegadorMantenimientos1.bloquearBtn(g.obtienenombretusuario);
 
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "empleado", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "empleado", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			navegadorMantenimientos1.LlenarCombobox(cbxPuesto, "puesto", "pkid", "nombre", "estado");
-			navegadorMantenimientos1.LlenarCombobox(cbxJornada, "jornada", "pkid", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxPuesto, "puesto", "ID_Puesto", "Nombre", "Estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxJornada, "jornada", "ID_Jornada", "Nombre", "Estado");
 
 			//inicio de elementos para dar de baja
-			navegadorMantenimientos1.campoEstado = "estado";
+			navegadorMantenimientos1.campoEstado = "Estado";
 			//fin de elementos para dar de baja
 
 			/* Inicio ID Aplicacion usada para reportes y ayudas */
@@ -195,6 +196,7 @@ namespace Proyecto_IEC
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
 			return imagen;
 		}
+		
 		public void obtienByte(string id)
 		{
 			byte[] imagen = null;
@@ -210,9 +212,8 @@ namespace Proyecto_IEC
 				}
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
-		}
-
-        private void txtIdFoto_TextChanged(object sender, EventArgs e)
+		}		
+		private void txtIdFoto_TextChanged(object sender, EventArgs e)
         {
 			if (txtIdFoto.Text != "")
 			{
@@ -228,14 +229,14 @@ namespace Proyecto_IEC
 		{
 			try
 			{
-				if (txtIdFoto.Text == "")
+				if (txtIdFoto.Text == "" || txtIdFoto.Text == "1")
 				{
-					int id = controlador.idSiguienteDeNuevoIngreso("foto", "pkId");
+					int id = controlador.idSiguienteDeNuevoIngreso("foto", "ID_Fotografia");
 					byte[] imagen = imagenAbyte();
 					controlador.insertaNuevaFoto(id.ToString(), imagen);
 					txtIdFoto.Text = id.ToString();
 				}
-				else if (txtIdFoto.Text != "")
+				else if (txtIdFoto.Text != "" || txtIdFoto.Text == "1")
 				{
 					string id = txtIdFoto.Text;
 					byte[] imagen = imagenAbyte();
@@ -244,12 +245,10 @@ namespace Proyecto_IEC
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
 		}
-
         private void pbFoto_LoadCompleted(object sender, AsyncCompletedEventArgs e)
         {
 			guardarfoto();
         }
-
 		private void chbxNoContratacion_CheckedChanged(object sender, EventArgs e)
 		{
 			if (chbxNoContratacion.Checked == true && txtNombres.Enabled == true)
@@ -268,7 +267,6 @@ namespace Proyecto_IEC
 				catch (Exception ex) { MessageBox.Show("Error: " + ex); }
 			}
 		}
-
 		private void chbxNoDespido_CheckedChanged(object sender, EventArgs e)
 		{
 			if (chbxNoDespido.Checked == true && txtNombres.Enabled == true)
@@ -287,35 +285,30 @@ namespace Proyecto_IEC
 				catch (Exception ex) { MessageBox.Show("Error: " + ex); }
 			}
 		}
-
 		private void cbxPuesto_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxPuesto, txtIdPuesto);
-			txtIdFoto.Text = "1";
+			empleadosinfoto();
 		}
-
 		private void cbxJornada_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxJornada, txtJornada);
-			txtIdFoto.Text = "1";
+			empleadosinfoto();
 		}
-
 		private void btnImprimir_Click(object sender, EventArgs e)
 		{
 			Reporte3 reporte = new Reporte3();
 			reporte.Show();
 		}
-
 		private void txtNombres_EnabledChanged(object sender, EventArgs e)
 		{
 			if (txtNombres.Text == "" && txtNombres.Enabled == true)
 			{
 				chbxNoContratacion.Checked = false;
 				chbxNoDespido.Checked = false;
-				txtIdFoto.Text = "1";
+				empleadosinfoto();
 			}
 		}
-
 		private void dtpContratacion_EnabledChanged(object sender, EventArgs e)
 		{
 			if (dtpContratacion.Enabled == true && dtpDespido.Enabled == true)
@@ -324,7 +317,6 @@ namespace Proyecto_IEC
 				chbxNoDespido.Checked = false;
 			}
 		}
-
 		private void txtIdFoto_EnabledChanged(object sender, EventArgs e)
 		{
 			if (txtIdFoto.Enabled == true && txtIdFoto.Text == "")
@@ -332,5 +324,17 @@ namespace Proyecto_IEC
 				txtIdFoto.Text = "1";
 			}
 		}
-	}
+		private void empleadosinfoto()
+        {
+			if (txtIdFoto.Text=="")
+            {
+				txtIdFoto.Text = "1";
+			}
+        }
+        private void frmEmpleado_Load(object sender, EventArgs e)
+        {
+			
+		}
+		
+    }
 }

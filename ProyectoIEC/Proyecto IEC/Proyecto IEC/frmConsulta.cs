@@ -111,7 +111,7 @@ namespace Proyecto_IEC
 			}
 			else
 			{
-				txtEmpleado.Text = controlador.BuscaDato("empleado", "pkid", "nombre", cbxEmpleado.Text.Trim());
+				txtEmpleado.Text = controlador.BuscaDato("empleado", "ID_Empleado", "nombre", cbxEmpleado.Text.Trim());
 			}
 		}
 

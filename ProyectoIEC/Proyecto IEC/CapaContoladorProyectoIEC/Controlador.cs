@@ -92,7 +92,10 @@ namespace CapaContoladorProyectoIEC
         {
             sn.insertaFoto(id, foto);
         }
-
+        public void insertaNuevaFotoPrimer(string id, byte[] foto)
+        {
+            sn.insertaNuevaFotoPrimer(id, foto);
+        }
         //FORMA CONSULTAS
         public void LlenarCombo(ComboBox cbx, string tabla, string campobuscado)
         {

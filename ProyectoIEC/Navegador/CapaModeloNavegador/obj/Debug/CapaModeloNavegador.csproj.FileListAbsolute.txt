@@ -34,3 +34,9 @@ C:\Users\Kevin\Desktop\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaM
 C:\Users\Kevin\Desktop\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.CoreCompileInputs.cache
 C:\Users\Kevin\Desktop\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.dll
 C:\Users\Kevin\Desktop\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.pdb
+C:\Users\Kevin\Desktop\Unificacion\ProyectoIEC\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\Desktop\Unificacion\ProyectoIEC\Navegador\CapaModeloNavegador\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\Kevin\Desktop\Unificacion\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\Unificacion\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\Unificacion\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\Desktop\Unificacion\ProyectoIEC\Navegador\CapaModeloNavegador\obj\Debug\CapaModeloNavegador.pdb

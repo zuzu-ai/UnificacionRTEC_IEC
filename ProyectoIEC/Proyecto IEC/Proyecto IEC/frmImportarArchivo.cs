@@ -76,7 +76,7 @@ namespace Proyecto_IEC
                         tiempo = table.Rows[i]["Tiempo"].ToString();
                         tipoRegistro = table.Rows[i]["Tipo de Registro"].ToString();
                         nombregestion = table.Rows[i]["Estado"].ToString();
-                        cn.comprobarIdEncabezado("datosE", "pkid", table.Rows[i]["Nombre"].ToString(), table.Rows[i]["Dispositivos"].ToString(), tiempo, tipoRegistro, nombregestion);
+                        cn.comprobarIdEncabezado("datosE", "ID_Encabezado", table.Rows[i]["Nombre"].ToString(), table.Rows[i]["Dispositivos"].ToString(), tiempo, tipoRegistro, nombregestion);
                     }
                     catch (Exception exep) { }
                 }

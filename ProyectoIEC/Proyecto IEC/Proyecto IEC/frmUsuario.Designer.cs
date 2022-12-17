@@ -73,7 +73,7 @@ namespace Proyecto_IEC
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 126;
-            this.txtEstado.Tag = "estado";
+            this.txtEstado.Tag = "Estado";
             this.txtEstado.Visible = false;
             this.txtEstado.TextChanged += new System.EventHandler(this.txtEstado_TextChanged);
             // 
@@ -83,7 +83,7 @@ namespace Proyecto_IEC
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(268, 20);
             this.txtUsuario.TabIndex = 3;
-            this.txtUsuario.Tag = "usuario";
+            this.txtUsuario.Tag = "Usuario";
             // 
             // txtID
             // 
@@ -91,7 +91,7 @@ namespace Proyecto_IEC
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 118;
-            this.txtID.Tag = "pkid";
+            this.txtID.Tag = "ID_Usuario";
             // 
             // panel1
             // 
@@ -189,7 +189,7 @@ namespace Proyecto_IEC
             this.txtIDPregunta.Size = new System.Drawing.Size(268, 20);
             this.txtIDPregunta.TabIndex = 129;
             this.txtIDPregunta.TabStop = false;
-            this.txtIDPregunta.Tag = "fkpregunta";
+            this.txtIDPregunta.Tag = "Fk_Pregunta";
             this.txtIDPregunta.Visible = false;
             this.txtIDPregunta.TextChanged += new System.EventHandler(this.txtIDPregunta_TextChanged);
             // 
@@ -240,7 +240,7 @@ namespace Proyecto_IEC
             this.txtIDEmpleado.Size = new System.Drawing.Size(39, 20);
             this.txtIDEmpleado.TabIndex = 129;
             this.txtIDEmpleado.TabStop = false;
-            this.txtIDEmpleado.Tag = "fkempleado";
+            this.txtIDEmpleado.Tag = "Fk_Empleado";
             this.txtIDEmpleado.Visible = false;
             this.txtIDEmpleado.TextChanged += new System.EventHandler(this.txtIDEmpleado_TextChanged);
             // 
@@ -283,7 +283,7 @@ namespace Proyecto_IEC
             this.txtRespuesta.Name = "txtRespuesta";
             this.txtRespuesta.Size = new System.Drawing.Size(268, 20);
             this.txtRespuesta.TabIndex = 7;
-            this.txtRespuesta.Tag = "repuesta";
+            this.txtRespuesta.Tag = "Repuesta";
             // 
             // label9
             // 
@@ -312,7 +312,7 @@ namespace Proyecto_IEC
             this.txtIDTipoUsuario.Size = new System.Drawing.Size(39, 20);
             this.txtIDTipoUsuario.TabIndex = 129;
             this.txtIDTipoUsuario.TabStop = false;
-            this.txtIDTipoUsuario.Tag = "fktipousuario";
+            this.txtIDTipoUsuario.Tag = "Fk_Tipo_Usuario";
             this.txtIDTipoUsuario.Visible = false;
             this.txtIDTipoUsuario.TextChanged += new System.EventHandler(this.txtIDTipoUsuario_TextChanged);
             // 
@@ -356,7 +356,7 @@ namespace Proyecto_IEC
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(268, 26);
             this.txtContraseña.TabIndex = 130;
-            this.txtContraseña.Tag = "contrasena";
+            this.txtContraseña.Tag = "Contrasena";
             this.txtContraseña.Text = "Nombre usuario";
             this.txtContraseña.UseSystemPasswordChar = true;
             this.txtContraseña.Visible = false;

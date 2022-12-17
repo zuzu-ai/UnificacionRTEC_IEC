@@ -21,7 +21,7 @@ namespace Proyecto_IEC
 			InitializeComponent();
 			txtfechainicio.Text = dtpInicio.Value.ToString("yyyy-MM-dd");
 			txtfechafin.Text = dtpFin.Value.ToString("yyyy-MM-dd");
-			int id = cn.idSiguienteDeNuevoIngreso("mensualesE", "pkid");
+			int id = cn.idSiguienteDeNuevoIngreso("mensualesE", "ID_Encabezado");
 			txtID.Text = id.ToString();
 		}
 
@@ -68,8 +68,8 @@ namespace Proyecto_IEC
 				{
 					for (int i = 0; i < contador; i++)
 					{
-						int idD = cn.idSiguienteDeNuevoIngreso("mensualesD", "pkid");
-						string empleado = cn.BuscaDato("empleado", "pkid", "nombre", table.Rows[i]["Nombre"].ToString());
+						int idD = cn.idSiguienteDeNuevoIngreso("mensualesD", "ID_Detalle");
+						string empleado = cn.BuscaDato("empleado", "Id_Empleado", "Nombre", table.Rows[i]["Nombre"].ToString());
 						string htrabajadas = table.Rows[i]["Horas Trabajadas"].ToString();
 						string hdescontadas = table.Rows[i]["Horas Descontadas"].ToString();
 						string ausencias = table.Rows[i]["Ausencias"].ToString();
@@ -88,7 +88,7 @@ namespace Proyecto_IEC
 			}
 			catch (Exception ex) { MessageBox.Show("No se puieron añadir los diarios."); }
 			dgvVistaPrevia.DataSource = limpiadata;
-			int idrefresh = cn.idSiguienteDeNuevoIngreso("mensualesE", "pkid");
+			int idrefresh = cn.idSiguienteDeNuevoIngreso("mensualesE", "ID_Encabezado");
 			txtID.Text = idrefresh.ToString();
 			dtpInicio.Value = DateTime.Now;
 			dtpFin.Value = DateTime.Now;

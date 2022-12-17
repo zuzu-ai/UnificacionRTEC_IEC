@@ -33,23 +33,23 @@ namespace CapaModeloProyectoIEC
         }
         public void comprobarIdEncabezado(string tabla, string campoB, string nombre, string nombredisp, string tiempo, string tipoReg, string nombregestion)
         {
-            string idEmpleado = BuscaDato("empleado", "pkid", "nombre", nombre);
+            string idEmpleado = BuscaDato("empleado", "Id_Empleado", "nombre", nombre);
             int IdE = idEncabezadoActual(tabla, campoB);
             if (IdE == 0)
             {
-                int idNuevoEnca = idSiguienteDeNuevoIngreso("datosE", "pkid");
-                string dispositivo = BuscaDato("dispositivo", "pkid", "nombre", nombredisp);
+                int idNuevoEnca = idSiguienteDeNuevoIngreso("datosE", "ID_Encabezado");
+                string dispositivo = BuscaDato("dispositivo", "ID_Dispositivo", "Nombre", nombredisp);
                 string estado = "1";
                 guardarTablaBdEncabezadoSentencias(idNuevoEnca.ToString(), idEmpleado, dispositivo, estado, tiempo, tipoReg, nombregestion);
             }
             else if (IdE != 0)
             {
-                string IDEmpleadoEncabe = BuscaDato("datosE", "pkid", "fkempleado", idEmpleado);
+                string IDEmpleadoEncabe = BuscaDato("datosE", "ID_Encabezado", "Fk_Empleado", idEmpleado);
 
                 if (IDEmpleadoEncabe == "" || IDEmpleadoEncabe == null)
                 {
-                    int idNuevoEnca = idSiguienteDeNuevoIngreso("datosE", "pkid");
-                    string dispositivo = BuscaDato("dispositivo", "pkid", "nombre", nombredisp);
+                    int idNuevoEnca = idSiguienteDeNuevoIngreso("datosE", "ID_Encabezado");
+                    string dispositivo = BuscaDato("dispositivo", "ID_Dispositivo", "Nombre", nombredisp);
                     string estado = "1";
                     try
                     {
@@ -81,7 +81,7 @@ namespace CapaModeloProyectoIEC
         }
         public void guardarTablaBdDetalleSentencias(string tiempo, string tipoReg, string nombregestion, string idempleadoencabe)
         {
-            int IdSiguienteDet = idSiguienteDeNuevoIngreso("datosD", "pkid");
+            int IdSiguienteDet = idSiguienteDeNuevoIngreso("datosD", "ID_Detalle");
             //REMOVER .m
             string newtime = tiempo.Remove(tiempo.Length - 2, 2);
             //GUARDAMOS a. o p.
@@ -114,7 +114,7 @@ namespace CapaModeloProyectoIEC
                 fechaenv = solofecha + " " + HORAS.ToString() + ":" + minutos + ":" + segundos;
             }
 
-            string IdGestion = BuscaDato("gestion", "pkid", "nombre", nombregestion);
+            string IdGestion = BuscaDato("gestion", "ID_Gestion", "Nombre", nombregestion);
             string estado = "1";
             try
             {
@@ -160,7 +160,7 @@ namespace CapaModeloProyectoIEC
             string dato = "";
             try
             {
-                string insertQuery = "SELECT " + campo + " AS campo FROM " + tabla1 + " INNER JOIN " + tabla2 + " WHERE " + campobuscado + " = '" + datoreferencia + "' AND " + campobuscado2 + " = '" + datoreferencia2 + "' AND diariosd.fkdiariosE = diariose.pkid AND " + campobuscado3 + " = '" + datoreferencia3 + "';";
+                string insertQuery = "SELECT " + campo + " AS campo FROM " + tabla1 + " INNER JOIN " + tabla2 + " WHERE " + campobuscado + " = '" + datoreferencia + "' AND " + campobuscado2 + " = '" + datoreferencia2 + "' AND diariosd.Fk_Encabezado = diariose.ID_Encabezado AND " + campobuscado3 + " = '" + datoreferencia3 + "';";
                 //MessageBox.Show(insertQuery);
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
@@ -227,7 +227,7 @@ namespace CapaModeloProyectoIEC
                 }
                 if (busquedac.Read())
                 {
-                    dato = busquedac["(SUM(monto))"].ToString();
+                    dato = busquedac["(SUM(Monto))"].ToString();
                 }
                 cn.desconexion(conect);
                 return dato;
@@ -372,7 +372,7 @@ namespace CapaModeloProyectoIEC
         public DataTable obtenerDatos(string fechatrabajada)
         {
             DataTable tablainicial = new DataTable();
-            int cantidadEmpleados = idEncabezadoActual("empleado", "pkid");
+            int cantidadEmpleados = idEncabezadoActual("empleado", "ID_Empleado");
             
             tablainicial.Columns.Add("ID");
             tablainicial.Columns.Add("Nombre");
@@ -393,22 +393,22 @@ namespace CapaModeloProyectoIEC
             {
                 DataRow row = tablainicial.NewRow();
                 row["ID"] = i.ToString();
-                row["Nombre"] = BuscaDato("empleado", "nombre", "pkid", i.ToString());
+                row["Nombre"] = BuscaDato("empleado", "Nombre", "ID_Empleado", i.ToString());
 
                 //BUSCAR LAS HORAS DE EMPLEADOS POR DÍA
-                string encabezado = BuscaDato("datosE", "pkid", "fkempleado", i.ToString());
-                int cantidadDetalles = idEncabezadosxEmpleado("datosD", "pkid", "fkdatosE", encabezado);
+                string encabezado = BuscaDato("datosE", "ID_Encabezado", "Fk_Empleado", i.ToString());
+                int cantidadDetalles = idEncabezadosxEmpleado("datosD", "ID_Detalle", "Fk_Encabezado", encabezado);
 
-                string IDentrada = BuscaDato("gestion", "pkid", "nombre", "Entrada");
-                string IDsalida = BuscaDato("gestion", "pkid", "nombre", "Salida");
+                string IDentrada = BuscaDato("gestion", "ID_Gestion", "Nombre", "Entrada");
+                string IDsalida = BuscaDato("gestion", "ID_Gestion", "Nombre", "Salida");
 
                 string horaEntrada = "", horaSalida = "", hentrada = "", hsalida = ""; DateTime dtEntrada = new DateTime(), dtSalida = new DateTime();
                 //BUSCAR HORAS POR EMPLEADO
                 for (int j = 1; j <= (cantidadDetalles / 2); j++)
                 {
-                    horaEntrada = BuscarFechaGestion("datosD", "tiempo", "fkgestion", IDentrada, "fkdatosE", encabezado, "tiempo", fechatrabajada);
+                    horaEntrada = BuscarFechaGestion("datosD", "Tiempo_Trabajado", "Fk_Gestion", IDentrada, "Fk_Encabezado", encabezado, "Tiempo_Trabajado", fechatrabajada);
                     dtEntrada = Convert.ToDateTime(horaEntrada);
-                    horaSalida = BuscarFechaGestion("datosD", "tiempo", "fkgestion", IDsalida, "fkdatosE", encabezado, "tiempo", fechatrabajada);
+                    horaSalida = BuscarFechaGestion("datosD", "Tiempo_Trabajado", "Fk_Gestion", IDsalida, "Fk_Encabezado", encabezado, "Tiempo_Trabajado", fechatrabajada);
                     dtSalida = Convert.ToDateTime(horaSalida);
                     hentrada = dtEntrada.ToString("HH:mm:ss");
                     hsalida = dtSalida.ToString("HH:mm:ss");
@@ -428,9 +428,9 @@ namespace CapaModeloProyectoIEC
                 
                 //CALCULO DIFERENCIA DE HORAS
                 //BUSCAMOS JORNADA DEL EMPLEADO Y PROCESAMOS LOS HORARIOS
-                string idjornada = BuscaDato("empleado", "fkjornada", "pkid", i.ToString());
-                string horainicioj = BuscaDato("jornada", "horainicio", "pkid", idjornada);
-                string horafinj = BuscaDato("jornada", "horafin", "pkid", idjornada);
+                string idjornada = BuscaDato("empleado", "Fk_Jornada", "ID_Empleado", i.ToString());
+                string horainicioj = BuscaDato("jornada", "Hora_Inicio", "ID_Jornada", idjornada);
+                string horafinj = BuscaDato("jornada", "Hora_Finalizacion", "ID_Jornada", idjornada);
 
                 DateTime hinicio = Convert.ToDateTime(horainicioj);
                 DateTime hfin = Convert.ToDateTime(horafinj);
@@ -486,30 +486,30 @@ namespace CapaModeloProyectoIEC
                 row["Horas Extras"] = horasExtra;
 
                 //BUSQUEDA DE AUSENCIAS Y SUSPENCIONES
-                int ausencias = cantidadTB("ausencia", "fkempleado", i.ToString(), "estado", "1");
+                int ausencias = cantidadTB("ausencia", "Fk_Empleado", i.ToString(), "estado", "1");
                 row["Ausencias"] = ausencias.ToString();
 
                 //BUSQUEDA DE PAGO DE COMIDA
-                string idcomida = BuscaDato("tipopago", "pkid", "nombre", "Comida");
-                string montoco = BuscarPagos("pagoempleado", "monto", "fkempleado", i.ToString(), "fecha", fechatrabajada, "tipopago", idcomida);
+                string idcomida = BuscaDato("tipopago", "ID_Tipo_Pago", "Nombre", "Comida");
+                string montoco = BuscarPagos("pagoempleado", "Monto", "Fk_Empleado", i.ToString(), "Fecha_Gasto", fechatrabajada, "Fk_Tipo_Pago", idcomida);
                 double montocomida = 0;
                 if (montoco == "") { montocomida = 0; } else { montocomida = Double.Parse(montoco); }
                 row["Pago de Comidas"] = montocomida.ToString();
                 //BUSQUEDA DE PAGO DE COMBUSTIBLE
-                string idcombustible = BuscaDato("tipopago", "pkid", "nombre", "Combustible");
-                string montoc = BuscarPagos("pagoempleado", "monto", "fkempleado", i.ToString(), "fecha", fechatrabajada, "tipopago", idcombustible);
+                string idcombustible = BuscaDato("tipopago", "ID_Tipo_Pago", "Nombre", "Combustible");
+                string montoc = BuscarPagos("pagoempleado", "Monto", "Fk_Empleado", i.ToString(), "Fecha_Gasto", fechatrabajada, "Fk_Tipo_Pago", idcombustible);
                 double montocombustible = 0;
                 if (montoc == "") { montocombustible = 0; } else { montocombustible = Double.Parse(montoc); }
                 row["Pago de Combustible"] = montocombustible.ToString();
                 //BUSQUEDA DE PAGO DE VIATICOS
-                string idviaticos = BuscaDato("tipopago", "pkid", "nombre", "Viáticos");
-                string montov = BuscarPagos("pagoempleado", "monto", "fkempleado", i.ToString(), "fecha", fechatrabajada, "tipopago", idviaticos);
+                string idviaticos = BuscaDato("tipopago", "ID_Tipo_Pago", "Nombre", "Viáticos");
+                string montov = BuscarPagos("pagoempleado", "Monto", "Fk_Empleado", i.ToString(), "Fecha_Gasto", fechatrabajada, "Fk_Tipo_Pago", idviaticos);
                 double montoviaticos = 0;
                 if (montov == "") { montoviaticos = 0; } else { montoviaticos = Double.Parse(montov); }
                 row["Pago de Viáticos"] = montoviaticos.ToString();
                 //BUSQUEDA DE OTROS PAGOS
-                string idotros = BuscaDato("tipopago", "pkid", "nombre", "Otros");
-                string montoo = BuscarPagos("pagoempleado", "monto", "fkempleado", i.ToString(), "fecha", fechatrabajada, "tipopago", idotros);
+                string idotros = BuscaDato("tipopago", "ID_Tipo_Pago", "Nombre", "Otros");
+                string montoo = BuscarPagos("pagoempleado", "Monto", "Fk_Empleado", i.ToString(), "Fecha_Gasto", fechatrabajada, "Fk_Tipo_Pago", idotros);
                 double montootros = 0;
                 if (montoo == "") { montootros = 0; } else { montootros = Double.Parse(montoo); };
                 row["Otros Pagos"] = montootros.ToString();
@@ -566,28 +566,28 @@ namespace CapaModeloProyectoIEC
             string horastrab = "", horasdesc = "", ausencias = "", horasext = "", comidas = "", combustible = "", viaticos = "", otros = "";
 
                 //BUSCAMOS LAS HORAS TRABAJADAS ESE DÍA
-                horastrab = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.htrabajadas", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                horastrab = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Horas_Trabajadas", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("horastrab" + horastrab);
                 //BUSCAMOS LAS HORAS DESCONTADAS ESE DIA
-                horasdesc = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.hdescontadas", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                horasdesc = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Horas_Descontadas", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("horasdesc" + horasdesc);
                 //BUSCAR AUSENCIAS DEL DIA
-                ausencias = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.ausencias", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                ausencias = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Total_Ausencias", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("ausencias" + ausencias);
                 //BUSCAMOS HORAS EXTRAS DEL DIA
-                horasext = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.hextras", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                horasext = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Horas_Extras", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("horasext" + horasext);
                 //PAGOS DE COMIDA DEL DIA
-                comidas = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.pcomidas", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                comidas = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Pago_Comidas", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("comidas" + comidas);
                 //PAGOS DE COMBUSTIBLE DEL DIA -- COMBUSTILE
-                combustible = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.pcombustible", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                combustible = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Pago_Combustible", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("combustible" + combustible);
                 //PAGO DE VIATICOS DEL DIA
-                viaticos = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.pviaticos", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                viaticos = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Pago_Viaticos", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("viaticos" + viaticos);
                 //OTROS PAGOS DEL DIA
-                otros = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.potros", "diariosd.fkdiariose", diariose.ToString(), "diariosd.fkempleado", empleado, "diariose.fechatrabajada", fechatrabajada);
+                otros = BuscaDatoEmpleado("diariosd", "diariose", "diariosd.Otros_Pagos", "diariosd.Fk_Encabezado", diariose.ToString(), "diariosd.Fk_Empleado", empleado, "diariose.Fecha_Trabajada", fechatrabajada);
                 //MessageBox.Show("otros" + otros);
                 
             //MessageBox.Show("dato1= " + horastrab + " dato2= " + horasdesc + " dato3= " + ausencias + " dato4= " + horasext + " dato5= " + comidas + " dato6=" + combustible + " dato7= " + viaticos + " dato8= " + otros);
@@ -598,8 +598,8 @@ namespace CapaModeloProyectoIEC
         public DataTable CalculosMes(string primerafecha,string ultimafecha)
         {
             DataTable tablainicial = new DataTable();
-            int cantidadEmpleados = idEncabezadoActual("empleado", "pkid");
-            int cantidadDiarios = idEncabezadoActual("diariose", "pkid");
+            int cantidadEmpleados = idEncabezadoActual("empleado", "ID_Empleado");
+            int cantidadDiarios = idEncabezadoActual("diariose", "ID_Encabezado");
 
             tablainicial.Columns.Add("ID");
             tablainicial.Columns.Add("Nombre");
@@ -720,7 +720,7 @@ namespace CapaModeloProyectoIEC
 
                 }
                 row["ID"] = i.ToString();
-                row["Nombre"] = BuscaDato("empleado", "nombre", "pkid", i.ToString());
+                row["Nombre"] = BuscaDato("empleado", "Nombre", "Id_Empleado", i.ToString());
                 row["Horas Trabajadas"] = horastotales; //horastrabajadas.ToString();
                 row["Horas Descontadas"] = horastotalesdescontadas.ToString();//horasdescontadas.ToString();
                 row["Ausencias"] = ausencias.ToString();
@@ -776,7 +776,7 @@ namespace CapaModeloProyectoIEC
             byte[] binary = null;
             try
             {
-                string insertQuery = "SELECT * FROM foto WHERE pkId ='" + id + "';";
+                string insertQuery = "SELECT * FROM foto WHERE ID_Fotografia ='" + id + "';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -787,7 +787,7 @@ namespace CapaModeloProyectoIEC
                 }
                 if (busquedac.Read())
                 {
-                    binary = (byte[])busquedac["fotografia"];
+                    binary = (byte[])busquedac["Fotografia"];
                 }
                 cn.desconexion(conect);
                 return binary;
@@ -825,7 +825,7 @@ namespace CapaModeloProyectoIEC
         {
             try
             {
-                string insertQuery = "UPDATE foto SET fotografia=? where pkId='" + id + "';";
+                string insertQuery = "UPDATE foto SET Fotografia=? where ID_Fotografia='" + id + "';";
                 OdbcConnection conect = cn.conexion(); //conect.Open();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 OdbcParameter prm = new OdbcParameter("@img", OdbcType.Binary, foto.Length, ParameterDirection.Input, false, 0, 0, null, DataRowVersion.Current, foto);
@@ -840,6 +840,27 @@ namespace CapaModeloProyectoIEC
             catch (Exception ex)
             {
                 MessageBox.Show("Error al guardar imagen" + ex);
+            }
+        }
+        public void insertaNuevaFotoPrimer(string id, byte[] foto)
+        {
+            try
+            {
+                string insertQuery = "INSERT INTO foto VALUES ('" + id + "',?);";
+                OdbcConnection conect = cn.conexion(); //conect.Open();
+                OdbcCommand command = new OdbcCommand(insertQuery, conect);
+                OdbcParameter prm = new OdbcParameter("@img", OdbcType.Binary, foto.Length, ParameterDirection.Input, false, 0, 0, null, DataRowVersion.Current, foto);
+                command.Parameters.Add(prm);
+
+                if (command.ExecuteNonQuery() == 1)
+                {
+                  // MessageBox.Show("Foto cargada", "Aviso");
+                }
+                cn.desconexion(conect);
+            }
+            catch (Exception ex)
+            {
+               // MessageBox.Show("Error al guardar imagen" + ex);
             }
         }
 
@@ -879,10 +900,10 @@ namespace CapaModeloProyectoIEC
 
             try
             {
-                string consultatodostodos= "select distinct diariosd.pkid as 'ID',diariosd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',diariose.fechatrabajada as 'Fecha', diariosd.entrada as 'Hora Entrada', diariosd.salida as 'Hora Salida', diariosd.htrabajadas as 'Horas Trabajadas', diariosd.hdescontadas as 'Horas Descontadas', diariosd.ausencias as 'Ausensias', diariosd.hextras as 'Horas Extras', diariosd.pcomidas as 'Pago de Comidas', diariosd.pcombustible as 'Pago de Combustible', diariosd.pviaticos as 'Pago de Viáticos', diariosd.potros as 'Otros Pagos', diariosd.observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.fkempleado = empleado.pkid and diariosd.fkdiariosE = diariose.pkid order by diariosd.fkempleado;";
-                string consultatodosfecha = "select distinct diariosd.pkid as 'ID',diariosd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',diariose.fechatrabajada as 'Fecha', diariosd.entrada as 'Hora Entrada', diariosd.salida as 'Hora Salida', diariosd.htrabajadas as 'Horas Trabajadas', diariosd.hdescontadas as 'Horas Descontadas', diariosd.ausencias as 'Ausensias', diariosd.hextras as 'Horas Extras', diariosd.pcomidas as 'Pago de Comidas', diariosd.pcombustible as 'Pago de Combustible', diariosd.pviaticos as 'Pago de Viáticos', diariosd.potros as 'Otros Pagos', diariosd.observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.fkempleado = empleado.pkid and diariosd.fkdiariosE = diariose.pkid and diariose.fechatrabajada = '" + fechatrabajada + "' order by diariosd.fkempleado;";
-                string consultaempleadotodos= "select distinct diariosd.pkid as 'ID',diariosd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',diariose.fechatrabajada as 'Fecha', diariosd.entrada as 'Hora Entrada', diariosd.salida as 'Hora Salida', diariosd.htrabajadas as 'Horas Trabajadas', diariosd.hdescontadas as 'Horas Descontadas', diariosd.ausencias as 'Ausensias', diariosd.hextras as 'Horas Extras', diariosd.pcomidas as 'Pago de Comidas', diariosd.pcombustible as 'Pago de Combustible', diariosd.pviaticos as 'Pago de Viáticos', diariosd.potros as 'Otros Pagos', diariosd.observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.fkempleado = empleado.pkid and diariosd.fkdiariosE = diariose.pkid and diariosd.fkempleado = '" + empleado + "' order by diariose.fechatrabajada;";
-                string consultaempleadofecha= "select distinct diariosd.pkid as 'ID',diariosd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',diariose.fechatrabajada as 'Fecha', diariosd.entrada as 'Hora Entrada', diariosd.salida as 'Hora Salida', diariosd.htrabajadas as 'Horas Trabajadas', diariosd.hdescontadas as 'Horas Descontadas', diariosd.ausencias as 'Ausensias', diariosd.hextras as 'Horas Extras', diariosd.pcomidas as 'Pago de Comidas', diariosd.pcombustible as 'Pago de Combustible', diariosd.pviaticos as 'Pago de Viáticos', diariosd.potros as 'Otros Pagos', diariosd.observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.fkempleado = empleado.pkid and diariosd.fkdiariosE = diariose.pkid and diariosd.fkempleado = '" + empleado + "' and diariose.fechatrabajada = '" + fechatrabajada + "' order by diariose.fechatrabajada;";
+                string consultatodostodos= "select distinct diariosd.ID_Detalle as 'ID',diariosd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',diariose.Fecha_Trabajada as 'Fecha', diariosd.Hora_Entrada as 'Hora Entrada', diariosd.Hora_Salida as 'Hora Salida', diariosd.Horas_Trabajadas as 'Horas Trabajadas', diariosd.Horas_Descontadas as 'Horas Descontadas', diariosd.Total_Ausencias as 'Ausensias', diariosd.Horas_Extras as 'Horas Extras', diariosd.Pago_Comidas as 'Pago de Comidas', diariosd.Pago_Combustible as 'Pago de Combustible', diariosd.Pago_Viaticos as 'Pago de Viáticos', diariosd.Otros_Pagos as 'Otros Pagos', diariosd.Observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.Fk_Empleado = empleado.ID_Empleado and diariosd.Fk_Encabezado = diariose.ID_Encabezado order by diariosd.Fk_Empleado;";
+                string consultatodosfecha = "select distinct diariosd.ID_Detalle as 'ID',diariosd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',diariose.Fecha_Trabajada as 'Fecha', diariosd.Hora_Entrada as 'Hora Entrada', diariosd.Hora_Salida as 'Hora Salida', diariosd.Horas_Trabajadas as 'Horas Trabajadas', diariosd.Horas_Descontadas as 'Horas Descontadas', diariosd.Total_Ausencias as 'Ausensias', diariosd.Horas_Extras as 'Horas Extras', diariosd.Pago_Comidas as 'Pago de Comidas', diariosd.Pago_Combustible as 'Pago de Combustible', diariosd.Pago_Viaticos as 'Pago de Viáticos', diariosd.Otros_Pagos as 'Otros Pagos', diariosd.Observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.Fk_Empleado = empleado.ID_Empleado and diariosd.Fk_Encabezado = diariose.ID_Encabezado and diariose.Fecha_Trabajada = '" + fechatrabajada + "' order by diariosd.Fk_Empleado;";
+                string consultaempleadotodos= "select distinct diariosd.ID_Detalle as 'ID',diariosd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',diariose.Fecha_Trabajada as 'Fecha', diariosd.Hora_Entrada as 'Hora Entrada', diariosd.Hora_Salida as 'Hora Salida', diariosd.Horas_Trabajadas as 'Horas Trabajadas', diariosd.Horas_Descontadas as 'Horas Descontadas', diariosd.Total_Ausencias as 'Ausensias', diariosd.Horas_Extras as 'Horas Extras', diariosd.Pago_Comidas as 'Pago de Comidas', diariosd.Pago_Combustible as 'Pago de Combustible', diariosd.Pago_Viaticos as 'Pago de Viáticos', diariosd.Otros_Pagos as 'Otros Pagos', diariosd.Observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.Fk_Empleado = empleado.ID_Empleado and diariosd.Fk_Encabezado = diariose.ID_Encabezado and diariosd.Fk_Empleado = '" + empleado + "' order by diariose.Fecha_Trabajada;";
+                string consultaempleadofecha= "select distinct diariosd.ID_Detalle as 'ID',diariosd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',diariose.Fecha_Trabajada as 'Fecha', diariosd.Hora_Entrada as 'Hora Entrada', diariosd.Hora_Salida as 'Hora Salida', diariosd.Horas_Trabajadas as 'Horas Trabajadas', diariosd.Horas_Descontadas as 'Horas Descontadas', diariosd.aTotal_Ausencias as 'Ausensias', diariosd.Horas_Extras as 'Horas Extras', diariosd.Pago_Comidas as 'Pago de Comidas', diariosd.Pago_Combustible as 'Pago de Combustible', diariosd.Pago_Viaticos as 'Pago de Viáticos', diariosd.Otros_Pagos as 'Otros Pagos', diariosd.Observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.Fk_Empleado = empleado.ID_Empleado and diariosd.Fk_Encabezado = diariose.ID_Encabezado and diariosd.Fk_Empleado = '" + empleado + "' and diariose.Fecha_Trabajada = '" + fechatrabajada + "' order by diariose.Fecha_Trabajada;";
                 string insertQuery = "";
 
 
@@ -920,10 +941,10 @@ namespace CapaModeloProyectoIEC
 
             try
             {
-                string consultatodostodos = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid order by mensualesd.fkempleado;";
-                string consultatodosfecha = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and mensualese.fechainicio like '" + fechainicio + "-%' and mensualese.fechafin like '" + fechafin + "-%' order by mensualesd.fkempleado;";
-                string consultaempleadotodos = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and mensualesd.fkempleado = '" + empleado + "' order by mensualesd.fkempleado;";
-                string consultaempleadofecha = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and mensualese.fechainicio like '" + fechainicio + "-%' and mensualese.fechafin like '" + fechafin + "-%' and mensualesd.fkempleado = '"+ empleado + "' order by mensualesd.fkempleado;";
+                string consultatodostodos = "select distinct mensualesd.ID_Detalle as 'ID',mensualesd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',mensualese.Fecha_Inicio as 'Fecha Inical', mensualese.Fecha_Finalizacion as 'Fecha Final', mensualesd.Horas_Trabajadas as 'Horas Trabajadas', mensualesd.Horas_Descontadas as 'Horas Descontadas', mensualesd.Total_Ausencias as 'Ausensias', mensualesd.Horas_Extras as 'Horas Extras', mensualesd.Pago_Comidas as 'Pago de Comidas', mensualesd.Pago_Combustible as 'Pago de Combustible', mensualesd.Pago_Viaticos as 'Pago de Viáticos', mensualesd.Otros_Pagos as 'Otros Pagos', mensualesd.Observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.Fk_Empleado  = empleado.ID_Empleado and mensualesd.Fk_Encabezado = mensualese.ID_Encabezado order by mensualesd.Fk_Empleado;";
+                string consultatodosfecha = "select distinct mensualesd.ID_Detalle as 'ID',mensualesd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',mensualese.Fecha_Inicio as 'Fecha Inical', mensualese.Fecha_Finalizacion as 'Fecha Final', mensualesd.Horas_Trabajadas as 'Horas Trabajadas', mensualesd.Horas_Descontadas as 'Horas Descontadas', mensualesd.Total_Ausencias as 'Ausensias', mensualesd.Horas_Extras as 'Horas Extras', mensualesd.Pago_Comidas as 'Pago de Comidas', mensualesd.Pago_Combustible as 'Pago de Combustible', mensualesd.Pago_Viaticos as 'Pago de Viáticos', mensualesd.Otros_Pagos as 'Otros Pagos', mensualesd.Observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.Fk_Empleado  = empleado.ID_Empleado and mensualesd.Fk_Encabezado = mensualese.ID_Encabezado and mensualese.Fecha_Inicio like '" + fechainicio + "-%' and mensualese.Fecha_Finalizacion like '" + fechafin + "-%' order by mensualesd.Fk_Empleado;";
+                string consultaempleadotodos = "select distinct mensualesd.ID_Detalle as 'ID',mensualesd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',mensualese.Fecha_Inicio as 'Fecha Inical', mensualese.Fecha_Finalizacion as 'Fecha Final', mensualesd.Horas_Trabajadas as 'Horas Trabajadas', mensualesd.Horas_Descontadas as 'Horas Descontadas', mensualesd.Total_Ausencias as 'Ausensias', mensualesd.Horas_Extras as 'Horas Extras', mensualesd.Pago_Comidas as 'Pago de Comidas', mensualesd.Pago_Combustible as 'Pago de Combustible', mensualesd.Pago_Viaticos as 'Pago de Viáticos', mensualesd.Otros_Pagos as 'Otros Pagos', mensualesd.Observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.Fk_Empleado  = empleado.ID_Empleado and mensualesd.Fk_Encabezado = mensualese.ID_Encabezado and mensualesd.Fk_Empleado = '" + empleado + "' order by mensualesd.Fk_Empleado;";
+                string consultaempleadofecha = "select distinct mensualesd.ID_Detalle as 'ID',mensualesd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',mensualese.Fecha_Inicio as 'Fecha Inical', mensualese.Fecha_Finalizacion as 'Fecha Final', mensualesd.Horas_Trabajadas as 'Horas Trabajadas', mensualesd.Horas_Descontadas as 'Horas Descontadas', mensualesd.Total_Ausencias as 'Ausensias', mensualesd.Horas_Extras as 'Horas Extras', mensualesd.Pago_Comidas as 'Pago de Comidas', mensualesd.Pago_Combustible as 'Pago de Combustible', mensualesd.Pago_Viaticos as 'Pago de Viáticos', mensualesd.Otros_Pagos as 'Otros Pagos', mensualesd.Observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.Fk_Empleado  = empleado.ID_Empleado and mensualesd.Fk_Encabezado = mensualese.ID_Encabezado and mensualese.Fecha_Inicio like '" + fechainicio + "-%' and mensualese.Fecha_Finalizacion like '" + fechafin + "-%' and mensualesd.Fk_Empleado = '" + empleado + "' order by mensualesd.Fk_Empleado;";
                 string insertQuery = "";
 
 
@@ -962,9 +983,9 @@ namespace CapaModeloProyectoIEC
             try
             {
                 //string consultatodostodos = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid order by mensualesd.fkempleado;";
-                string consultatodosfecha = "select distinct diariosd.pkid as 'ID',diariosd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',diariose.fechatrabajada as 'Fecha', diariosd.entrada as 'Hora Entrada', diariosd.salida as 'Hora Salida', diariosd.htrabajadas as 'Horas Trabajadas', diariosd.hdescontadas as 'Horas Descontadas', diariosd.ausencias as 'Ausensias', diariosd.hextras as 'Horas Extras', diariosd.pcomidas as 'Pago de Comidas', diariosd.pcombustible as 'Pago de Combustible', diariosd.pviaticos as 'Pago de Viáticos', diariosd.potros as 'Otros Pagos', diariosd.observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.fkempleado = empleado.pkid and diariosd.fkdiariosE = diariose.pkid and diariose.fechatrabajada between '" + fechainicio + "' and '" + fechafin + "' order by diariosd.fkempleado;";
+                string consultatodosfecha = "select distinct diariosd.ID_Detalle as 'ID',diariosd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',diariose.Fecha_Trabajada as 'Fecha', diariosd.Hora_Entrada as 'Hora Entrada', diariosd.Hora_Salida as 'Hora Salida', diariosd.Horas_Trabajadas as 'Horas Trabajadas', diariosd.Horas_Descontadas as 'Horas Descontadas', diariosd.Total_Ausencias as 'Ausensias', diariosd.Horas_Extras as 'Horas Extras', diariosd.Pago_Comidas as 'Pago de Comidas', diariosd.Pago_Combustible as 'Pago de Combustible', diariosd.Pago_Viaticos as 'Pago de Viáticos', diariosd.Otros_Pagos as 'Otros Pagos', diariosd.Observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.Fk_Empleado = empleado.ID_Empleado and diariosd.Fk_Encabezado = diariose.ID_Encabezado and diariose.Fecha_Trabajada between '" + fechainicio + "' and '" + fechafin + "' order by diariosd.Fk_Empleado;";
                 //string consultaempleadotodos = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and mensualesd.fkempleado = '" + empleado + "' order by mensualesd.fkempleado;";
-                string consultaempleadofecha = "select distinct diariosd.pkid as 'ID',diariosd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',diariose.fechatrabajada as 'Fecha', diariosd.entrada as 'Hora Entrada', diariosd.salida as 'Hora Salida', diariosd.htrabajadas as 'Horas Trabajadas', diariosd.hdescontadas as 'Horas Descontadas', diariosd.ausencias as 'Ausensias', diariosd.hextras as 'Horas Extras', diariosd.pcomidas as 'Pago de Comidas', diariosd.pcombustible as 'Pago de Combustible', diariosd.pviaticos as 'Pago de Viáticos', diariosd.potros as 'Otros Pagos', diariosd.observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.fkempleado = empleado.pkid and diariosd.fkdiariosE = diariose.pkid and diariose.fechatrabajada between '" + fechainicio + "' and '" + fechafin + "' and diariosd.fkempleado = '" + empleado + "' order by diariosd.fkempleado;";
+                string consultaempleadofecha = "select distinct diariosd.ID_Detalle as 'ID',diariosd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',diariose.Fecha_Trabajada as 'Fecha', diariosd.Hora_Entrada as 'Hora Entrada', diariosd.Hora_Salida as 'Hora Salida', diariosd.Horas_Trabajadas as 'Horas Trabajadas', diariosd.Horas_Descontadas as 'Horas Descontadas', diariosd.Total_Ausencias as 'Ausensias', diariosd.Horas_Extras as 'Horas Extras', diariosd.Pago_Comidas as 'Pago de Comidas', diariosd.Pago_Combustible as 'Pago de Combustible', diariosd.Pago_Viaticos as 'Pago de Viáticos', diariosd.Otros_Pagos as 'Otros Pagos', diariosd.Observaciones as 'Observaciones' from diariose, diariosd, empleado where diariosd.Fk_Empleado = empleado.ID_Empleado and diariosd.Fk_Encabezado = diariose.ID_Encabezado and diariose.Fecha_Trabajada between '" + fechainicio + "' and '" + fechafin + "' and diariosd.Fk_Empleado = '" + empleado + "' order by diariosd.Fk_Empleado;";
                 string insertQuery = "";
 
 
@@ -995,9 +1016,9 @@ namespace CapaModeloProyectoIEC
             try
             {
                 //string consultatodostodos = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid order by mensualesd.fkempleado;";
-                string consultatodosfecha = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and (mensualese.fechainicio like '" + fechainicio + "-%' and mensualese.fechafin like '" + fechainicio + "-%' or mensualese.fechainicio like '" + fechafin + "-%' and mensualese.fechafin like '" + fechafin + "-%') and mensualese.mes between '" + mesinicio + "' and '" + mesfin + "' order by mensualesd.fkempleado;";
+                string consultatodosfecha = "select distinct mensualesd.ID_Detalle as 'ID',mensualesd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',mensualese.Fecha_Inicio as 'Fecha Inical', mensualese.Fecha_Finalizacion as 'Fecha Final', mensualesd.Horas_Trabajadas as 'Horas Trabajadas', mensualesd.Horas_Descontadas as 'Horas Descontadas', mensualesd.Total_Ausencia as 'Ausensias', mensualesd.Horas_Extras as 'Horas Extras', mensualesd.Pago_Comidas as 'Pago de Comidas', mensualesd.Pago_Combustible as 'Pago de Combustible', mensualesd.Pago_Viaticos as 'Pago de Viáticos', mensualesd.Otros_Pagos as 'Otros Pagos', mensualesd.Observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.Fk_Empleado = empleado.ID_Empleado and mensualesd.Fk_Encabezado = mensualese.ID_Encabezado and (mensualese.Fecha_Inicio like '" + fechainicio + "-%' and mensualese.Fecha_Finalizacion like '" + fechainicio + "-%' or mensualese.Fecha_Inicio like '" + fechafin + "-%' and mensualese.Fecha_Finalizacion like '" + fechafin + "-%') and mensualese.Mes_Trabajado between '" + mesinicio + "' and '" + mesfin + "' order by mensualesd.Fk_Empleado;";
                 //string consultaempleadotodos = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and mensualesd.fkempleado = '" + empleado + "' order by mensualesd.fkempleado;";
-                string consultaempleadofecha = "select distinct mensualesd.pkid as 'ID',mensualesd.fkempleado as 'ID Empleado', empleado.nombre as 'Empleado',mensualese.fechainicio as 'Fecha Inical', mensualese.fechafin as 'Fecha Final', mensualesd.htrabajadas as 'Horas Trabajadas', mensualesd.hdescontadas as 'Horas Descontadas', mensualesd.ausencias as 'Ausensias', mensualesd.hextras as 'Horas Extras', mensualesd.pcomidas as 'Pago de Comidas', mensualesd.pcombustible as 'Pago de Combustible', mensualesd.pviaticos as 'Pago de Viáticos', mensualesd.potros as 'Otros Pagos', mensualesd.observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.fkempleado = empleado.pkid and mensualesd.fkmensualesE = mensualese.pkid and (mensualese.fechainicio like '" + fechainicio + "-%' and mensualese.fechafin like '" + fechainicio + "-%' or mensualese.fechainicio like '" + fechafin + "-%' and mensualese.fechafin like '" + fechafin + "-%') and mensualese.mes between '" + mesinicio + "' and '" + mesfin + "' and mensualesd.fkempleado = '" + empleado + "' order by mensualesd.fkempleado;";
+                string consultaempleadofecha = "select distinct mensualesd.ID_Detalle as 'ID',mensualesd.Fk_Empleado as 'ID Empleado', empleado.Nombre as 'Empleado',mensualese.Fecha_Inicio as 'Fecha Inical', mensualese.Fecha_Finalizacion as 'Fecha Final', mensualesd.Horas_Trabajadas as 'Horas Trabajadas', mensualesd.Horas_Descontadas as 'Horas Descontadas', mensualesd.Total_Ausencia as 'Ausensias', mensualesd.Horas_Extras as 'Horas Extras', mensualesd.Pago_Comidas as 'Pago de Comidas', mensualesd.Pago_Combustible as 'Pago de Combustible', mensualesd.Pago_Viaticos as 'Pago de Viáticos', mensualesd.Otros_Pagos as 'Otros Pagos', mensualesd.Observaciones as 'Observaciones' from mensualese, mensualesd, empleado where mensualesd.Fk_Empleado = empleado.ID_Empleado and mensualesd.Fk_Encabezado = mensualese.ID_Encabezado and (mensualese.Fecha_Inicio like '" + fechainicio + "-%' and mensualese.Fecha_Finalizacion like '" + fechainicio + "-%' or mensualese.Fecha_Inicio like '" + fechafin + "-%' and mensualese.Fecha_Finalizacion like '" + fechafin + "-%') and mensualese.Mes_Trabajado between '" + mesinicio + "' and '" + mesfin + "' and mensualesd.Fk_Empleado = '" + empleado + "' order by mensualesd.Fk_Empleado;";
                 string insertQuery = "";
 
 
@@ -1082,7 +1103,7 @@ namespace CapaModeloProyectoIEC
         {
             try
             {
-                string cadena = "UPDATE "+ tabla +" SET contrasena = '"+ contrasena +"' " + "WHERE pkid='" + id + "' AND usuario.usuario='" + usuario + "';";
+                string cadena = "UPDATE "+ tabla +" SET contrasena = '"+ contrasena +"' " + "WHERE ID_Usuario='" + id + "' AND usuario.Usuario='" + usuario + "';";
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
                 MessageBox.Show("La contraseña se ha actualizado");

@@ -291,7 +291,7 @@ namespace CapaVistaNavegador
         {
             try
             {
-                //Metodos de ingresar y eliminar adaptados por Melissa Aldana, al boton guardar
+                //Metodos de ingresar y eliminar, al boton guardar
                 switch (estado)
                 {
                     case 1://Ingresar
@@ -366,6 +366,7 @@ namespace CapaVistaNavegador
                     if (ctr is RadioButton)
                     {
                         ctr.Enabled = true;
+                        ((RadioButton)ctr).Checked = false;
                     }
                 }
                 estado = 1;
@@ -383,7 +384,7 @@ namespace CapaVistaNavegador
             {
                 if (dvgConsulta != null)
                 {
-                    if (dvgConsulta.RowCount - 1 > 0)
+                    if (dvgConsulta.RowCount > 0)
                     {
                         ManipularEstadodeElementosVista(3);
 
@@ -482,7 +483,7 @@ namespace CapaVistaNavegador
                 int actual = dvgConsulta.CurrentCell.RowIndex;
                 int numColumnas = dvgConsulta.ColumnCount;//cuenta cuantos columnas 
                 int numFilas = dvgConsulta.RowCount;            
-                if (actual == numFilas - 2)
+                if (actual == numFilas - 1)
                 {
                     dvgConsulta.CurrentCell = dvgConsulta.Rows[0].Cells[0];
                 }
@@ -521,7 +522,7 @@ namespace CapaVistaNavegador
                 if (actual == 0)
                 {
                     // MessageBox.Show("Lo siento no puede retroceder mas esta en el primer campo");
-                    dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 2].Cells[0];
+                    dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 1].Cells[0];
                 }
                 else
                 {
@@ -578,7 +579,7 @@ namespace CapaVistaNavegador
                     MessageBox.Show("No tiene registros actualmente, no se puede navegar");
                     return;
                 }
-                dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 2].Cells[0];
+                dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 1].Cells[0];
                 var arList = new ArrayList();//todos los campos a obtener de la tabla
                 int numColumnas = dvgConsulta.ColumnCount;//cuenta cuantos columnas 
                 for (int i = 0; i < numColumnas; i++)
@@ -689,6 +690,7 @@ namespace CapaVistaNavegador
                         if (ctr is RadioButton)
                         {
                             ctr.Enabled = false;
+                            ((RadioButton)ctr).Checked = false;
                         }
                         if (ctr is DataGridView)
                         {

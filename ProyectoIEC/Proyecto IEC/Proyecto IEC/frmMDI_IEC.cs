@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,12 +22,14 @@ namespace Proyecto_IEC
 			InitializeComponent();
             controlador.bloqueareporte(g.obtienenombretusuario, btnImprimir);
             navegadorMantenimientos1.bloquearBtn(g.obtienenombretusuario);
+            compruebafoto();
         }
         
         private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
+                compruebafoto();
                 frmEmpleado form = new frmEmpleado();
                 form.MdiParent = this;
                 form.Show();
@@ -235,5 +239,39 @@ namespace Proyecto_IEC
             }
             catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
-	}
+        public byte[] imagenAbyteNuevo()
+        {
+            byte[] imagen = null; MemoryStream ms = new MemoryStream();
+            try
+            {
+                pbFoto2.Image.Save(ms, ImageFormat.Png);
+                ms.Seek(0, SeekOrigin.Begin);
+                imagen = ms.ToArray();
+            }
+            catch (Exception ex) { MessageBox.Show("Error: " + ex); }
+            return imagen;
+        }
+        private void compruebafoto()
+        {
+            pbFoto2.ImageLocation = "C:/SistemaIEC_RTEC/Default.png";                      
+        }
+        private void pbFoto2_LoadCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            int id = controlador.idSiguienteDeNuevoIngreso("foto", "ID_Fotografia");
+            if (id == 1)
+            {
+                try
+                {
+                    byte[] imagen = imagenAbyteNuevo();
+                    controlador.insertaNuevaFotoPrimer(id.ToString(), imagen);
+
+                }
+                catch (Exception ex) { MessageBox.Show("Error: " + ex); }
+            }
+            else
+            {
+                //MessageBox.Show("Error: id incorrecto " + id.ToString());
+            }
+        }
+    }
 }

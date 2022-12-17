@@ -21,10 +21,10 @@ namespace Proyecto_IEC
 			navegadorMantenimientos1.bloquearBtn(g.obtienenombretusuario);
 
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "ausencia", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "ausencia", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpleado, "empleado", "pkid", "nombre", "estado");
-			navegadorMantenimientos1.LlenarCombobox(cbxIdTipoAusencia, "tipoausencia", "pkid", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpleado, "empleado", "ID_Empleado", "Nombre", "Estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdTipoAusencia, "tipoausencia", "ID_Tipo_Ausencia", "Nombre", "Estado");
 
 			//inicio de elementos para dar de baja
 			navegadorMantenimientos1.campoEstado = "estado";

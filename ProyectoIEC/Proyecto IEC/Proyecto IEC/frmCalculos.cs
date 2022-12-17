@@ -24,7 +24,7 @@ namespace Proyecto_IEC
 			InitializeComponent();
 			tabla = datos.obtenertabla;
 			txtFechatrabajada.Text = datos.fechatrabajada;
-			int id = cn.idSiguienteDeNuevoIngreso("diariosE","pkid");
+			int id = cn.idSiguienteDeNuevoIngreso("diariosE", "ID_Encabezado");
 			txtID.Text = id.ToString();
 			//llamada a funcion;
 			CalcularHoras();
@@ -42,7 +42,7 @@ namespace Proyecto_IEC
 				{
 					for (int i = 0; i < contador; i++)
 					{
-						int idD = cn.idSiguienteDeNuevoIngreso("diariosD", "pkid");
+						int idD = cn.idSiguienteDeNuevoIngreso("diariosD", "ID_Detalle");
 						string idE = table.Rows[i]["ID"].ToString();
 						string entrada = table.Rows[i]["Entrada"].ToString();
 						string salida = table.Rows[i]["Salida"].ToString();

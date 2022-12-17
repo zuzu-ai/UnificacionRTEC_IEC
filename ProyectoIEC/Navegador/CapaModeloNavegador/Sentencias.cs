@@ -171,7 +171,7 @@ namespace CapaModeloNavegador
             else if (estatus.Text == "0")
             {
                 inactivo.Checked = true;
-            }
+            }            
         }
         /* metodoEnviarDatoCbxaTextbox: Obtiene el dato seleccionado dentro del combobox y 
          * lo envía a un textbox.*/
