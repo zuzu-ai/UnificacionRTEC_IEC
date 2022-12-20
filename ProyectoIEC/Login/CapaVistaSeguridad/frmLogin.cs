@@ -63,8 +63,8 @@ namespace CapaVistaSeguridad
                     idusuario = ctr.BuscaDato("usuario", "pkid", "usuario.usuario", pd.usuario);
                     pd.id = idusuario;
                     // MessageBox.Show(pd.id);
-                    pd.obtieneidtusuario = ctr.BuscaDato("usuario", "pkid", "usuario.usuario", pd.usuario);
-                    pd.obtienenombretusuario = ctr.BuscaDato("tipousuario", "nombre", "pkid", pd.obtieneidtusuario);
+                    pd.obtieneidtusuario = ctr.BuscaDato("usuario", "id_suario", "usuario.usuario", pd.usuario);
+                    pd.obtienenombretusuario = ctr.BuscaDato("tipousuario", "nombre", "id_tipo_usuario", pd.obtieneidtusuario);
                     navegadorMantenimientos1.bloquearBtn(pd.obtienenombretusuario);
                 }
                 else

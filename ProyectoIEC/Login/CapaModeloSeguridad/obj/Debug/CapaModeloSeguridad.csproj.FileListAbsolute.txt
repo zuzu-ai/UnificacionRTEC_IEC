@@ -16,3 +16,9 @@ C:\Users\kievk\Desktop\ProyectoIEC\ProyectoIEC\Login\CapaModeloSeguridad\obj\Deb
 C:\Users\kievk\Desktop\ProyectoIEC\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
 C:\Users\kievk\Desktop\ProyectoIEC\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
 C:\Users\kievk\Desktop\ProyectoIEC\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\ProyectoIEC\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\ProyectoIEC\Login\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\ProyectoIEC\Login\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb
