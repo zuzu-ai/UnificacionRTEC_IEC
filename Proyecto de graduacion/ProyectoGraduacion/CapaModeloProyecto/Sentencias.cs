@@ -141,7 +141,7 @@ namespace CapaModeloProyecto
             try
             {
                 //Obtiene todos los empleados
-                string sql = "SELECT pkid, nombre FROM empleado  WHERE empleado.pkid NOT IN(SELECT fkidempleado FROM equipodetalle where equipodetalle.fkequipoencabezado = '" + dato + "');";
+                string sql = "SELECT ID_Empleado, nombre FROM empleado  WHERE empleado.ID_Empleado NOT IN(SELECT Fk_Empleado FROM equipodetalle where equipodetalle.Fk_Encabezado = '" + dato + "');";
                 OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conect);
                 dataTable.Fill(table);
                 //MessageBox.Show(sql);
@@ -166,7 +166,7 @@ namespace CapaModeloProyecto
             try
             {
                 //Obtiene todos los conceptos asignados a un emepleado especifico
-                string sql = "SELECT empleado.pkid, empleado.nombre FROM " + tabla + " LEFT JOIN equipodetalle ON empleado.pkid= equipodetalle.fkidempleado LEFT JOIN equipoencabezado ON equipodetalle.fkequipoencabezado = equipoencabezado.pkid WHERE equipoencabezado.pkid = '" + dato + "' ORDER BY empleado.pkid;";
+                string sql = "SELECT empleado.ID_Empleado, empleado.nombre FROM " + tabla + " LEFT JOIN equipodetalle ON empleado.ID_Empleado= equipodetalle.Fk_Empleado LEFT JOIN equipoencabezado ON equipodetalle.Fk_Encabezado = equipoencabezado.ID_Encabezado WHERE equipoencabezado.ID_Encabezado = '" + dato + "' ORDER BY empleado.ID_Empleado;";
                 OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conect);
                 dataTable.Fill(table);
                // MessageBox.Show(sql);
@@ -189,7 +189,7 @@ namespace CapaModeloProyecto
             OdbcConnection conect = cn.conexion();
             try
             {
-                string sql = "INSERT INTO " + tabla + " (fkequipoencabezado, fkidempleado) Values( '" + valor1 + "', '" + valor2 + "');";
+                string sql = "INSERT INTO " + tabla + " (Fk_Encabezado, Fk_Empleado) Values( '" + valor1 + "', '" + valor2 + "');";
                 OdbcCommand consulta = new OdbcCommand(sql, conect);
                 consulta.ExecuteNonQuery();
 
@@ -208,7 +208,7 @@ namespace CapaModeloProyecto
             OdbcConnection conect = cn.conexion();
             try
             {
-                string sql = "DELETE FROM " + tabla + " WHERE fkequipoencabezado = '" + valor + "';";
+                string sql = "DELETE FROM " + tabla + " WHERE Fk_Encabezado= '" + valor + "';";
                 OdbcCommand consulta = new OdbcCommand(sql, conect);
                 consulta.ExecuteNonQuery();
             }
@@ -227,7 +227,7 @@ namespace CapaModeloProyecto
             OdbcConnection conect = cn.conexion();
             try
             {
-                string sql = "DELETE FROM " + tabla + " WHERE fkequipoencabezado = '" + valor1 + "' AND fkidempleado='" + valor2 + "';";
+                string sql = "DELETE FROM " + tabla + " WHERE Fk_Encabezado = '" + valor1 + "' AND Fk_Empleado='" + valor2 + "';";
                 OdbcCommand consulta = new OdbcCommand(sql, conect);
                 consulta.ExecuteNonQuery();
             }
@@ -247,7 +247,7 @@ namespace CapaModeloProyecto
             OdbcConnection conect = cn.conexion();
             try
             {
-                string sql = "DELETE FROM " + tabla + " WHERE fkequipoencabezado = '" + valor + "';";
+                string sql = "DELETE FROM " + tabla + " WHERE Fk_Encabezado = '" + valor + "';";
                 OdbcCommand consulta = new OdbcCommand(sql, conect);
                 consulta.ExecuteNonQuery();
             }
@@ -334,7 +334,7 @@ namespace CapaModeloProyecto
         public DataTable ActualizaDetalles(string tabla, string cotizacion)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " where fkcotizacione = '" + cotizacion + "' ORDER BY pkid;";
+            string sql = "select * from " + tabla + " where Fk_Encabezado = '" + cotizacion + "' ORDER BY pkid;";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
@@ -348,7 +348,7 @@ namespace CapaModeloProyecto
         public DataTable ActualizarDGV(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " " + "ORDER BY pkid;";
+            string sql = "select * from " + tabla + " " + "ORDER BY ID_Encabezado;";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
@@ -409,7 +409,7 @@ namespace CapaModeloProyecto
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fkinventarioe = '" + inventario + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND Fk_Encabezado = '" + inventario + "';";
                 //MessageBox.Show(insertQuery);
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
@@ -437,7 +437,7 @@ namespace CapaModeloProyecto
             try
             {
                 //textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND pkid = '" + pkid + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND ID_Encabezado = '" + pkid + "';";
                 //MessageBox.Show(insertQuery);
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
@@ -465,7 +465,7 @@ namespace CapaModeloProyecto
             try
             {
                 textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fkinventarioe = '" + inventario + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND Fk_Encabezado = '" + inventario + "';";
                 //MessageBox.Show(insertQuery);
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
@@ -521,7 +521,7 @@ namespace CapaModeloProyecto
             try
             {
                 //textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND pkid = '" + pkid + "' AND fkinventarioe = '" + inventario + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND ID_Detalle = '" + pkid + "' AND Fk_Encabezado = '" + inventario + "';";
                 //MessageBox.Show(insertQuery);
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);

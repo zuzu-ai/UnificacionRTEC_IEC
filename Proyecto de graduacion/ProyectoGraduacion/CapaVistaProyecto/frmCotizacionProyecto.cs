@@ -23,7 +23,6 @@ namespace CapaVistaGestorInventarios
 		public frmCotizacionProyecto()
 		{
 			InitializeComponent();
-
 			deshabilitar();
 			controlador.bloqueabotones(g.obtienenombretusuario, btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnAyuda, btnSalir);
 			rbnActivoE.Checked = true;
@@ -37,7 +36,6 @@ namespace CapaVistaGestorInventarios
 		{
 			txtProyecto.Enabled = false;
 			dtpFecha.Enabled = false;
-
 			cbxInventario.Enabled = false;
 			cbxProducto.Enabled = false;
 			txtCantidad.Enabled = false;
@@ -234,13 +232,11 @@ namespace CapaVistaGestorInventarios
 				}
 			}
 		}
-
 		private void txtInventario_TextChanged(object sender, EventArgs e)
 		{
 			controlador.NombreID(cbxInventario, "inventarioe", "Nombre", txtInventario.Text);
 			controlador.LlenarCBXProducto(cbxProducto, "inventariod", "Nombre", txtInventario.Text);
 		}
-
 		private void cbxProducto_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			if (cbxProducto.Text != "")
@@ -248,7 +244,6 @@ namespace CapaVistaGestorInventarios
 				controlador.IDProducto(txtProducto, "inventariod", "ID_Detalle", cbxProducto.Text, txtInventario.Text);
 				txtDisponibilidad.Text = controlador.BuscaDato("inventariod", "Cantidad", "ID_Detalle", txtProducto.Text);
 				txtPrecio.Text = controlador.BuscaDato("inventariod", "Precio_Venta", "ID_Detalle", txtProducto.Text);
-								
 				string preciounitario = txtPrecio.Text;				
 				string cantidad = txtCantidad.Text;
 				txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad)).ToString();
@@ -362,7 +357,6 @@ namespace CapaVistaGestorInventarios
 			if (txtProyecto.Text != "")
 			{
 				habilitarE();
-				//txtID.Text = (controlador.idSiguienteDeNuevoIngreso("inventariod", "pkid")).ToString();
 				accionE = "2";
 			}
 			else { MessageBox.Show("No hay ningún registro seleccionado para modificar."); }
@@ -399,20 +393,17 @@ namespace CapaVistaGestorInventarios
 					try
 					{
 						query = "UPDATE CotizacionProyectoE SET Proyecto ='" + txtProyecto.Text + "', Fecha_Emision='" + txtFecha.Text + "', Total ='" + txtTotal.Text + "', Estado='" + txtEstadoE.Text + "' WHERE ID_Encabezado = '" + txtIDE.Text + "';";
-						
 						string estadoinicial = controlador.BuscaDato("CotizacionProyectoE", "estado", "ID_Encabezado", txtIDE.Text);
 						string nuevoestado = txtEstadoD.Text;
 						if (estadoinicial != nuevoestado)
 						{
 							if (nuevoestado == "1")
 							{
-
 								string querymodifica = "UPDATE CotizacionProyectoD SET estado ='" + nuevoestado + "' where ID_Detalle = '" + txtIDE.Text + "';";
 								controlador.metodoModificar(querymodifica);
 							}
 						}
-
-							controlador.metodoModificar(query);
+						controlador.metodoModificar(query);
 						deshabilitarE();
 						actualizar();
 					}
@@ -448,20 +439,19 @@ namespace CapaVistaGestorInventarios
 				MessageBox.Show("No se ha seleccionado un registro para eliminar");
 			}
 		}
-
 		private void btnEliminarD_Click(object sender, EventArgs e)
 		{
 			if (txtInventario.Text != "")
 			{
 				try
 				{
-					string query = query = "UPDATE cotizaciond SET estado = 0 where ID_Detalle = '" + txtIDD.Text + "';";
+					string query = query = "UPDATE CotizacionProyectoD SET estado = 0 where ID_Detalle = '" + txtIDD.Text + "';";
 
-					string totalcotizacion = controlador.BuscaDato("cotizacione", "total", "ID_Encabezado", txtIDE.Text);
+					string totalcotizacion = controlador.BuscaDato("CotizacionProyectoE", "total", "ID_Encabezado", txtIDE.Text);
 					string modificar = txtSubtotal.Text;
 					string querymodifica = "";
 					string nueva = (Convert.ToInt32(totalcotizacion) - Convert.ToInt32(modificar)).ToString();
-					querymodifica = "UPDATE cotizacione SET total ='" + nueva + "' where ID_Encabezado = '" + txtIDE.Text + "';";
+					querymodifica = "UPDATE CotizacionProyectoE SET total ='" + nueva + "' where ID_Encabezado = '" + txtIDE.Text + "';";
 					controlador.metodoModificar(querymodifica);
 					controlador.metodoDarBaja(query);
 					actualizar();
@@ -479,7 +469,6 @@ namespace CapaVistaGestorInventarios
 				MessageBox.Show("No se ha seleccionado un registro para eliminar");
 			}
 		}
-
 		private void btnGuardarD_Click(object sender, EventArgs e)
 		{
 			string query = "";
@@ -488,15 +477,15 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO cotizacionD VALUES( '" + txtIDD.Text + "', '" + txtIDE.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtManodeobra.Text + "', '" + txtCombustible.Text + "', '" + txtHospedaje.Text + "', '" + txtPeaje.Text + "', '" + txtOtros.Text + "', '" + txtSubtotal.Text + "', '" +/* txtDescuento.Text + "', '" + txtGanancia.Text + "', '" +*/ txtEstadoD.Text + "');";
+						query = "INSERT INTO CotizacionProyectoD VALUES( '" + txtIDD.Text + "', '" + txtIDE.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtManodeobra.Text + "', '" + txtCombustible.Text + "', '" + txtHospedaje.Text + "', '" + txtPeaje.Text + "', '" + txtOtros.Text + "', '" + txtSubtotal.Text + "', '" +/* txtDescuento.Text + "', '" + txtGanancia.Text + "', '" +*/ txtEstadoD.Text + "');";
 
 						string totalcotizacion = controlador.BuscaDato("cotizacione", "total", "ID_Encabezado", txtIDE.Text);
 						string modificar = txtSubtotal.Text;
 						string querymodifica = "";
 						controlador.metodoInsertar(query);
-						string pretotal = controlador.BuscaDato("cotizacione", "total", "ID_Encabezado", txtIDE.Text);
+						string pretotal = controlador.BuscaDato("CotizacionProyectoE", "total", "ID_Encabezado", txtIDE.Text);
 						string nuevototal = (Convert.ToDouble(pretotal) + Convert.ToDouble(txtSubtotal.Text)).ToString();
-						string query2 = "UPDATE cotizacione SET total ='" + nuevototal + "' WHERE ID_Encabezado = '" + txtIDE.Text + "';";
+						string query2 = "UPDATE CotizacionProyectoE SET total ='" + nuevototal + "' WHERE ID_Encabezado = '" + txtIDE.Text + "';";
 						controlador.metodoModificar(query2);
 					}
 					catch (Exception excep)
@@ -511,26 +500,26 @@ namespace CapaVistaGestorInventarios
 				case "2":
 					try
 					{
-						query = "UPDATE cotizaciond SET fkinventarioe ='" + txtInventario.Text + "', fkinventariod ='" + txtProducto.Text + "', cantidad ='" + txtCantidad.Text + "', precio ='" + txtPrecio.Text + "', manodeobra ='" + txtManodeobra.Text + "', combustible='" + txtCombustible.Text + "', hospedaje ='" + txtHospedaje.Text + "', peaje ='" + txtPeaje.Text + "', otros='" + txtOtros.Text + "', subtotal ='" + txtSubtotal.Text + "', estado='" + txtEstadoD.Text + "' WHERE pkid = '" + txtIDD.Text + "';";
+						query = "UPDATE CotizacionProyectoD SET Fk_Inventario ='" + txtInventario.Text + "', Fk_Producto ='" + txtProducto.Text + "', cantidad ='" + txtCantidad.Text + "', precio ='" + txtPrecio.Text + "', Mano_Obra ='" + txtManodeobra.Text + "', combustible='" + txtCombustible.Text + "', hospedaje ='" + txtHospedaje.Text + "', peaje ='" + txtPeaje.Text + "', otros='" + txtOtros.Text + "', subtotal ='" + txtSubtotal.Text + "', estado='" + txtEstadoD.Text + "' WHERE ID_Detalle = '" + txtIDD.Text + "';";
 
-						string totalcotizacion = controlador.BuscaDato("cotizacione", "total", "pkid", txtIDE.Text);
-						string inicial = controlador.BuscaDato("cotizacionD", "subtotal", "pkid", txtIDD.Text);
+						string totalcotizacion = controlador.BuscaDato("CotizacionProyectoE", "total", "ID_Encabezado", txtIDE.Text);
+						string inicial = controlador.BuscaDato("CotizacionProyectoD", "subtotal", "ID_Detalle", txtIDD.Text);
 						string modificar = txtSubtotal.Text;
 						string querymodifica = "";
-						string estadoinicial = controlador.BuscaDato("cotizacionD", "estado", "pkid", txtIDD.Text);
+						string estadoinicial = controlador.BuscaDato("CotizacionProyectoD", "estado", "ID_Detalle", txtIDD.Text);
 						string nuevoestado = txtEstadoD.Text;
 						if (inicial != modificar)
 						{
 							if (Convert.ToInt32(inicial) > Convert.ToInt32(modificar))
 							{
 								string nueva = ((Convert.ToInt32(totalcotizacion)) - (Convert.ToInt32(inicial) - Convert.ToInt32(modificar))).ToString();
-								querymodifica = "UPDATE cotizacione SET total ='" + nueva + "' where pkid = '" + txtIDE.Text + "';";
+								querymodifica = "UPDATE CotizacionProyectoE SET total ='" + nueva + "' where ID_Encabezado = '" + txtIDE.Text + "';";
 								controlador.metodoModificar(querymodifica);
 							}
 							else if (Convert.ToInt32(inicial) < Convert.ToInt32(modificar))
 							{
 								string nueva = ((Convert.ToInt32(totalcotizacion)) + (Convert.ToInt32(modificar) - Convert.ToInt32(inicial))).ToString();
-								querymodifica = "UPDATE cotizacione SET total ='" + nueva + "' where pkid = '" + txtIDE.Text + "';";
+								querymodifica = "UPDATE CotizacionProyectoE SET total ='" + nueva + "' where ID_Encabezado = '" + txtIDE.Text + "';";
 								controlador.metodoModificar(querymodifica);
 							}
 						}
@@ -540,7 +529,7 @@ namespace CapaVistaGestorInventarios
 							if (nuevoestado == "1")
 							{
 								string nueva = (Convert.ToInt32(totalcotizacion) + Convert.ToInt32(modificar)).ToString();
-								querymodifica = "UPDATE ccotizacione SET total ='" + nueva + "' where pkid = '" + txtIDE.Text + "';";
+								querymodifica = "UPDATE CotizacionProyectoE SET total ='" + nueva + "' where ID_Encabezado = '" + txtIDE.Text + "';";
 								controlador.metodoModificar(querymodifica);
 							}
 							else { }
@@ -560,7 +549,6 @@ namespace CapaVistaGestorInventarios
 					break;
 			}
 		}
-
 		private void txtCantidad_ValueChanged(object sender, EventArgs e)
 		{
 			try
@@ -586,7 +574,6 @@ namespace CapaVistaGestorInventarios
 			}
 			catch (Exception exception) { }
 		}
-
 		private void txtCantidad_Click(object sender, EventArgs e)
 		{
 			try
@@ -637,7 +624,6 @@ namespace CapaVistaGestorInventarios
 			}
 			catch (Exception exception) { }
 		}
-
 		private void txtCantidad_KeyPress_1(object sender, KeyPressEventArgs e)
 		{
 			try
@@ -663,7 +649,6 @@ namespace CapaVistaGestorInventarios
 			}
 			catch (Exception exception) { }
 		}
-
 		private void txtCantidad_MouseClick(object sender, MouseEventArgs e)
 		{
 			try
@@ -689,12 +674,11 @@ namespace CapaVistaGestorInventarios
 			}
 			catch (Exception exception) { }
 		}
-
 		private void txtCantidad_KeyDown(object sender, KeyEventArgs e)
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
 					string cantidad = txtCantidad.Text;
@@ -715,12 +699,11 @@ namespace CapaVistaGestorInventarios
 			}
 			catch (Exception exception) { }
 		}
-
 		private void txtCantidad_KeyUp(object sender, KeyEventArgs e)
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
 					string cantidad = txtCantidad.Text;
@@ -730,7 +713,6 @@ namespace CapaVistaGestorInventarios
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
 				}
 				else
 				{
@@ -746,25 +728,16 @@ namespace CapaVistaGestorInventarios
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -772,38 +745,24 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
 		}
-
 		private void txtPorcentaje_TextChanged(object sender, EventArgs e)
 		{
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -811,15 +770,10 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
 		}
-
 		private void dgvDetalles_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
 		{
 			seleccionD = dgvDetalles.CurrentRow.Index.ToString();
@@ -853,30 +807,20 @@ namespace CapaVistaGestorInventarios
 			}
 			catch (Exception ex) { MessageBox.Show("Error: " + ex); }
 		}
-
         private void txtManodeobra_TextChanged(object sender, EventArgs e)
         {
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -884,38 +828,24 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
 		}
-
         private void txtCombustible_TextChanged(object sender, EventArgs e)
         {
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
 					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
@@ -923,127 +853,81 @@ namespace CapaVistaGestorInventarios
 					{
 						txtSubtotal.Text = "";
 					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
 				}
 			}
 			catch (Exception exception) { }
 		}
-
         private void txtHospedaje_TextChanged(object sender, EventArgs e)
         {
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
-					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
+					string preciounitario = txtPrecio.Text;					
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
-				}
+                }
 				else
 				{
 					if (txtCantidad.Text == "")
 					{
 						txtSubtotal.Text = "";
-					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
+					}					
 				}
 			}
 			catch (Exception exception) { }
 		}
-
         private void txtPeaje_TextChanged(object sender, EventArgs e)
         {
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
-					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
+					string preciounitario = txtPrecio.Text;					
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
-				}
+                }
 				else
 				{
 					if (txtCantidad.Text == "")
 					{
 						txtSubtotal.Text = "";
-					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
+					}					
 				}
 			}
 			catch (Exception exception) { }
 		}
-
         private void txtOtros_TextChanged(object sender, EventArgs e)
         {
 			try
 			{
-				if (txtCantidad.Text != "" /*&& txtPorcentaje.Text != ""*/)
+				if (txtCantidad.Text != "")
 				{
-					string preciounitario = txtPrecio.Text;
-					//string valor = txtPorcentaje.Text;
+					string preciounitario = txtPrecio.Text;					
 					string cantidad = txtCantidad.Text;
 					string manodeobra = txtManodeobra.Text;
 					string combustible = txtCombustible.Text;
 					string hospedaje = txtHospedaje.Text;
 					string peaje = txtPeaje.Text;
 					string otros = txtOtros.Text;
-					//string porcentaje = ((Convert.ToDouble(valor) * 1) / 100).ToString();
-
-					//string sumar = (Convert.ToDouble(preciounitario) * Convert.ToDouble(porcentaje)).ToString();
-					//string nuevopreciou = (Convert.ToDouble(preciounitario) + Convert.ToDouble(sumar)).ToString();
-					//string nuevosubtotal = (Convert.ToDouble(nuevopreciou) * Convert.ToDouble(cantidad)).ToString();
 					txtSubtotal.Text = (Convert.ToDouble(preciounitario) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
-
-					//txtSubtotal.Text = nuevosubtotal;
-					//txtPrecio.Text = nuevopreciou;
 				}
 				else
 				{
 					if (txtCantidad.Text == "")
 					{
 						txtSubtotal.Text = "";
-					}
-					//else if (txtDescuento.Text == "")
-					//{
-					//txtPrecio.Text = controlador.BuscaDato("inventariod", "preciov", "pkid", txtProducto.Text);
-					//}
+					}					
 				}
 			}
 			catch (Exception exception) { }

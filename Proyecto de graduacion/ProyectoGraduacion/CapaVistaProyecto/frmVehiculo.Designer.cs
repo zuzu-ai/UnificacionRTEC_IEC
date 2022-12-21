@@ -70,7 +70,7 @@ namespace CapaVistaProyecto
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(439, 248);
+            this.txtEstado.Location = new System.Drawing.Point(834, 143);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 125;
@@ -80,7 +80,7 @@ namespace CapaVistaProyecto
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(158, 89);
+            this.txtPlaca.Location = new System.Drawing.Point(124, 89);
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(268, 20);
             this.txtPlaca.TabIndex = 119;
@@ -88,18 +88,18 @@ namespace CapaVistaProyecto
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(158, 63);
+            this.txtID.Location = new System.Drawing.Point(124, 63);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 118;
-            this.txtID.Tag = "pkid";
+            this.txtID.Tag = "ID_Vehiculo";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(158, 250);
+            this.panel1.Location = new System.Drawing.Point(553, 145);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 124;
@@ -137,7 +137,7 @@ namespace CapaVistaProyecto
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(23, 249);
+            this.label8.Location = new System.Drawing.Point(418, 144);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 123;
@@ -173,31 +173,32 @@ namespace CapaVistaProyecto
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 284);
+            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 179);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.RowHeadersWidth = 51;
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(649, 251);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(947, 356);
             this.dgvVistaPrevia.TabIndex = 120;
             this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 
             // txtIdTamañoMotor
             // 
-            this.txtIdTamañoMotor.Location = new System.Drawing.Point(439, 196);
+            this.txtIdTamañoMotor.Location = new System.Drawing.Point(834, 91);
             this.txtIdTamañoMotor.Name = "txtIdTamañoMotor";
             this.txtIdTamañoMotor.Size = new System.Drawing.Size(39, 20);
             this.txtIdTamañoMotor.TabIndex = 128;
             this.txtIdTamañoMotor.TabStop = false;
-            this.txtIdTamañoMotor.Tag = "fkTamañoMotor";
+            this.txtIdTamañoMotor.Tag = "Fk_Tamano_Motor";
             this.txtIdTamañoMotor.Visible = false;
             this.txtIdTamañoMotor.TextChanged += new System.EventHandler(this.txtIdTamañoMotor_TextChanged);
             // 
             // cbxTamañoMotor
             // 
             this.cbxTamañoMotor.FormattingEnabled = true;
-            this.cbxTamañoMotor.Location = new System.Drawing.Point(158, 195);
+            this.cbxTamañoMotor.Location = new System.Drawing.Point(553, 90);
             this.cbxTamañoMotor.Name = "cbxTamañoMotor";
             this.cbxTamañoMotor.Size = new System.Drawing.Size(268, 21);
             this.cbxTamañoMotor.TabIndex = 126;
@@ -208,7 +209,7 @@ namespace CapaVistaProyecto
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(23, 197);
+            this.label5.Location = new System.Drawing.Point(418, 92);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 16);
             this.label5.TabIndex = 127;
@@ -216,19 +217,19 @@ namespace CapaVistaProyecto
             // 
             // txtIdTipoCombustible
             // 
-            this.txtIdTipoCombustible.Location = new System.Drawing.Point(439, 223);
+            this.txtIdTipoCombustible.Location = new System.Drawing.Point(834, 118);
             this.txtIdTipoCombustible.Name = "txtIdTipoCombustible";
             this.txtIdTipoCombustible.Size = new System.Drawing.Size(39, 20);
             this.txtIdTipoCombustible.TabIndex = 131;
             this.txtIdTipoCombustible.TabStop = false;
-            this.txtIdTipoCombustible.Tag = "fkTipoCombustible";
+            this.txtIdTipoCombustible.Tag = "Fk_Tipo_Combustible";
             this.txtIdTipoCombustible.Visible = false;
             this.txtIdTipoCombustible.TextChanged += new System.EventHandler(this.txtIdTipoCombustible_TextChanged);
             // 
             // cbxTipoCombustible
             // 
             this.cbxTipoCombustible.FormattingEnabled = true;
-            this.cbxTipoCombustible.Location = new System.Drawing.Point(158, 222);
+            this.cbxTipoCombustible.Location = new System.Drawing.Point(553, 117);
             this.cbxTipoCombustible.Name = "cbxTipoCombustible";
             this.cbxTipoCombustible.Size = new System.Drawing.Size(268, 21);
             this.cbxTipoCombustible.TabIndex = 129;
@@ -239,7 +240,7 @@ namespace CapaVistaProyecto
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(23, 224);
+            this.label6.Location = new System.Drawing.Point(418, 119);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(134, 16);
             this.label6.TabIndex = 130;
@@ -250,7 +251,7 @@ namespace CapaVistaProyecto
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(23, 168);
+            this.label7.Location = new System.Drawing.Point(418, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 16);
             this.label7.TabIndex = 122;
@@ -258,7 +259,7 @@ namespace CapaVistaProyecto
             // 
             // txtModelo
             // 
-            this.txtModelo.Location = new System.Drawing.Point(439, 167);
+            this.txtModelo.Location = new System.Drawing.Point(834, 62);
             this.txtModelo.Name = "txtModelo";
             this.txtModelo.Size = new System.Drawing.Size(39, 20);
             this.txtModelo.TabIndex = 119;
@@ -271,7 +272,7 @@ namespace CapaVistaProyecto
             // 
             this.dtpModelo.CustomFormat = "yyyy";
             this.dtpModelo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpModelo.Location = new System.Drawing.Point(158, 169);
+            this.dtpModelo.Location = new System.Drawing.Point(553, 64);
             this.dtpModelo.Name = "dtpModelo";
             this.dtpModelo.ShowUpDown = true;
             this.dtpModelo.Size = new System.Drawing.Size(268, 20);
@@ -292,7 +293,7 @@ namespace CapaVistaProyecto
             // cbxMarca
             // 
             this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Location = new System.Drawing.Point(158, 115);
+            this.cbxMarca.Location = new System.Drawing.Point(124, 115);
             this.cbxMarca.Name = "cbxMarca";
             this.cbxMarca.Size = new System.Drawing.Size(268, 21);
             this.cbxMarca.TabIndex = 126;
@@ -300,12 +301,12 @@ namespace CapaVistaProyecto
             // 
             // txtIdMarca
             // 
-            this.txtIdMarca.Location = new System.Drawing.Point(439, 116);
+            this.txtIdMarca.Location = new System.Drawing.Point(124, 115);
             this.txtIdMarca.Name = "txtIdMarca";
             this.txtIdMarca.Size = new System.Drawing.Size(39, 20);
             this.txtIdMarca.TabIndex = 128;
             this.txtIdMarca.TabStop = false;
-            this.txtIdMarca.Tag = "fkMarca";
+            this.txtIdMarca.Tag = "fk_Marca";
             this.txtIdMarca.Visible = false;
             this.txtIdMarca.TextChanged += new System.EventHandler(this.txtIdMarca_TextChanged);
             // 
@@ -323,7 +324,7 @@ namespace CapaVistaProyecto
             // cbxLinea
             // 
             this.cbxLinea.FormattingEnabled = true;
-            this.cbxLinea.Location = new System.Drawing.Point(158, 142);
+            this.cbxLinea.Location = new System.Drawing.Point(124, 142);
             this.cbxLinea.Name = "cbxLinea";
             this.cbxLinea.Size = new System.Drawing.Size(268, 21);
             this.cbxLinea.TabIndex = 129;
@@ -331,12 +332,12 @@ namespace CapaVistaProyecto
             // 
             // txtIdLinea
             // 
-            this.txtIdLinea.Location = new System.Drawing.Point(439, 143);
+            this.txtIdLinea.Location = new System.Drawing.Point(124, 144);
             this.txtIdLinea.Name = "txtIdLinea";
             this.txtIdLinea.Size = new System.Drawing.Size(39, 20);
             this.txtIdLinea.TabIndex = 131;
             this.txtIdLinea.TabStop = false;
-            this.txtIdLinea.Tag = "fkLinea";
+            this.txtIdLinea.Tag = "fk_Linea";
             this.txtIdLinea.Visible = false;
             this.txtIdLinea.TextChanged += new System.EventHandler(this.txtIdLinea_TextChanged);
             // 
@@ -344,7 +345,7 @@ namespace CapaVistaProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 547);
+            this.ClientSize = new System.Drawing.Size(971, 547);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtIdTipoCombustible);
             this.Controls.Add(this.txtIdTamañoMotor);

@@ -16,12 +16,12 @@ namespace CapaVistaProyecto
         {
             InitializeComponent();
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "vehiculo", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "vehiculo", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			navegadorMantenimientos1.LlenarCombobox(cbxTamañoMotor, "tamañomotor", "pkid", "nombre", "estado");
-			navegadorMantenimientos1.LlenarCombobox(cbxTipoCombustible, "tipocombustible", "pkid", "nombre", "estado");
-			navegadorMantenimientos1.LlenarCombobox(cbxLinea, "linea", "pkid", "nombre", "estado");
-			navegadorMantenimientos1.LlenarCombobox(cbxMarca, "marca", "pkid", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxTamañoMotor, "tamanomotor", "ID_Tamano_Motor", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxTipoCombustible, "tipocombustible", "ID_Tipo_Combustible", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxLinea, "linea", "ID_Linea", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxMarca, "MarcaVehiculo", "ID_Marca_Vehiculo", "nombre", "estado");
 
 			//inicio de elementos para dar de baja
 			navegadorMantenimientos1.campoEstado = "estado";

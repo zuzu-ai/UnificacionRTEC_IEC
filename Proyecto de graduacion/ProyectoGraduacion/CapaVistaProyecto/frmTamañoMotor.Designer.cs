@@ -29,6 +29,7 @@ namespace CapaVistaProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTamañoMotor));
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -68,7 +69,7 @@ namespace CapaVistaProyecto
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 127;
-            this.txtID.Tag = "pkid";
+            this.txtID.Tag = "ID_Tamano_Motor";
             // 
             // panel1
             // 
@@ -149,6 +150,7 @@ namespace CapaVistaProyecto
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 154);
@@ -163,7 +165,7 @@ namespace CapaVistaProyecto
             // 
             this.navegadorMantenimientos1.BackColor = System.Drawing.Color.Transparent;
             this.navegadorMantenimientos1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.navegadorMantenimientos1.Location = new System.Drawing.Point(12, 2);
+            this.navegadorMantenimientos1.Location = new System.Drawing.Point(12, 9);
             this.navegadorMantenimientos1.Name = "navegadorMantenimientos1";
             this.navegadorMantenimientos1.Size = new System.Drawing.Size(658, 49);
             this.navegadorMantenimientos1.TabIndex = 126;
@@ -182,9 +184,8 @@ namespace CapaVistaProyecto
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVistaPrevia);
             this.Controls.Add(this.navegadorMantenimientos1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTamañoMotor";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tamaño de motor";
             this.panel1.ResumeLayout(false);

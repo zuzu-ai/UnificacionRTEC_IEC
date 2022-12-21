@@ -29,6 +29,7 @@ namespace CapaVistaProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSucursalCliente));
             this.txtIdEmpresaCliente = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -55,18 +56,18 @@ namespace CapaVistaProyecto
             // 
             // txtIdEmpresaCliente
             // 
-            this.txtIdEmpresaCliente.Location = new System.Drawing.Point(426, 103);
+            this.txtIdEmpresaCliente.Location = new System.Drawing.Point(424, 105);
             this.txtIdEmpresaCliente.Name = "txtIdEmpresaCliente";
             this.txtIdEmpresaCliente.Size = new System.Drawing.Size(39, 20);
             this.txtIdEmpresaCliente.TabIndex = 140;
             this.txtIdEmpresaCliente.TabStop = false;
-            this.txtIdEmpresaCliente.Tag = "fkidempresacliente";
+            this.txtIdEmpresaCliente.Tag = "Fk_Empresa";
             this.txtIdEmpresaCliente.Visible = false;
             this.txtIdEmpresaCliente.TextChanged += new System.EventHandler(this.txtIdTipoCombustible_TextChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(152, 129);
+            this.txtNombre.Location = new System.Drawing.Point(150, 131);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(268, 20);
             this.txtNombre.TabIndex = 131;
@@ -74,16 +75,16 @@ namespace CapaVistaProyecto
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(152, 76);
+            this.txtID.Location = new System.Drawing.Point(150, 78);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 130;
-            this.txtID.Tag = "pkid";
+            this.txtID.Tag = "ID_Sucursal";
             // 
             // cbxIdEmpresa
             // 
             this.cbxIdEmpresa.FormattingEnabled = true;
-            this.cbxIdEmpresa.Location = new System.Drawing.Point(152, 102);
+            this.cbxIdEmpresa.Location = new System.Drawing.Point(150, 104);
             this.cbxIdEmpresa.Name = "cbxIdEmpresa";
             this.cbxIdEmpresa.Size = new System.Drawing.Size(268, 21);
             this.cbxIdEmpresa.TabIndex = 138;
@@ -94,7 +95,7 @@ namespace CapaVistaProyecto
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(23, 104);
+            this.label3.Location = new System.Drawing.Point(21, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 16);
             this.label3.TabIndex = 139;
@@ -154,7 +155,7 @@ namespace CapaVistaProyecto
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(23, 130);
+            this.label2.Location = new System.Drawing.Point(21, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 16);
             this.label2.TabIndex = 134;
@@ -165,7 +166,7 @@ namespace CapaVistaProyecto
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(23, 75);
+            this.label1.Location = new System.Drawing.Point(21, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 133;
@@ -189,6 +190,7 @@ namespace CapaVistaProyecto
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 206);
@@ -203,7 +205,7 @@ namespace CapaVistaProyecto
             // 
             this.navegadorMantenimientos1.BackColor = System.Drawing.Color.Transparent;
             this.navegadorMantenimientos1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.navegadorMantenimientos1.Location = new System.Drawing.Point(84, 12);
+            this.navegadorMantenimientos1.Location = new System.Drawing.Point(12, 12);
             this.navegadorMantenimientos1.Name = "navegadorMantenimientos1";
             this.navegadorMantenimientos1.Size = new System.Drawing.Size(658, 49);
             this.navegadorMantenimientos1.TabIndex = 129;
@@ -213,7 +215,7 @@ namespace CapaVistaProyecto
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(23, 156);
+            this.label4.Location = new System.Drawing.Point(21, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 16);
             this.label4.TabIndex = 134;
@@ -221,7 +223,7 @@ namespace CapaVistaProyecto
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(152, 155);
+            this.txtTelefono.Location = new System.Drawing.Point(150, 157);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(268, 20);
             this.txtTelefono.TabIndex = 131;
@@ -263,7 +265,7 @@ namespace CapaVistaProyecto
             this.txtContacto.Name = "txtContacto";
             this.txtContacto.Size = new System.Drawing.Size(268, 20);
             this.txtContacto.TabIndex = 131;
-            this.txtContacto.Tag = "contactodirecto";
+            this.txtContacto.Tag = "Contacto_Directo";
             // 
             // frmSucursalCliente
             // 
@@ -288,8 +290,8 @@ namespace CapaVistaProyecto
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVistaPrevia);
             this.Controls.Add(this.navegadorMantenimientos1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSucursalCliente";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sucursales de Clientes";
             this.panel1.ResumeLayout(false);

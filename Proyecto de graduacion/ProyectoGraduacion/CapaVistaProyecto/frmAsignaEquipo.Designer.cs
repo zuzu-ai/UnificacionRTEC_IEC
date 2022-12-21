@@ -29,6 +29,7 @@ namespace CapaVistaProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAsignaEquipo));
             this.txtID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@ namespace CapaVistaProyecto
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(179, 20);
             this.txtID.TabIndex = 144;
-            this.txtID.Tag = "pkid";
+            this.txtID.Tag = "ID_Encabezado";
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // label1
@@ -159,6 +160,7 @@ namespace CapaVistaProyecto
             // dvgEmpleadosAsignados
             // 
             this.dvgEmpleadosAsignados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgEmpleadosAsignados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgEmpleadosAsignados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgEmpleadosAsignados.Location = new System.Drawing.Point(461, 354);
             this.dvgEmpleadosAsignados.Name = "dvgEmpleadosAsignados";
@@ -168,6 +170,7 @@ namespace CapaVistaProyecto
             // dvgTodosEmpleados
             // 
             this.dvgTodosEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgTodosEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgTodosEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgTodosEmpleados.Location = new System.Drawing.Point(19, 354);
             this.dvgTodosEmpleados.Name = "dvgTodosEmpleados";
@@ -270,6 +273,7 @@ namespace CapaVistaProyecto
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVistaPrevia.Location = new System.Drawing.Point(19, 171);
@@ -337,9 +341,9 @@ namespace CapaVistaProyecto
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmAsignaEquipo";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asignación de Equipo";
             this.panel1.ResumeLayout(false);

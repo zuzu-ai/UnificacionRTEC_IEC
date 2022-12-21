@@ -16,9 +16,9 @@ namespace CapaVistaProyecto
         {
             InitializeComponent();
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "sucursalcliente", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "sucursalcliente", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "empresacliente", "pkid", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "empresacliente", "ID_Empresa", "nombre", "estado");
 			
 
 			//inicio de elementos para dar de baja

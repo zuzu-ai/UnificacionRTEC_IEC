@@ -35,10 +35,10 @@ namespace CapaVistaGestorInventarios
 		{
 			if (txtIDE.Text != "")
 			{
-				txtProyecto.Text = controlador.BuscaDato("cotizacione", "proyecto", "pkid", txtIDE.Text);
-				txtFecha.Text = controlador.BuscaDato("cotizacione", "fecha", "pkid", txtIDE.Text);
-				txtTotal.Text = controlador.BuscaDato("cotizacione", "total", "pkid", txtIDE.Text);
-				txtEstadoE.Text = controlador.BuscaDato("cotizacione", "estado", "pkid", txtIDE.Text);
+				txtProyecto.Text = controlador.BuscaDato("CotizacionProyectoE", "proyecto", "ID_Encabezado", txtIDE.Text);
+				txtFecha.Text = controlador.BuscaDato("CotizacionProyectoE", "Fecha_Emision", "ID_Encabezado", txtIDE.Text);
+				txtTotal.Text = controlador.BuscaDato("CotizacionProyectoE", "total", "ID_Encabezado", txtIDE.Text);
+				txtEstadoE.Text = controlador.BuscaDato("CotizacionProyectoE", "estado", "ID_Encabezado", txtIDE.Text);
 			}
 			else { }
 		}

@@ -29,6 +29,7 @@ namespace CapaVistaProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTipoCombustible));
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -68,7 +69,7 @@ namespace CapaVistaProyecto
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 136;
-            this.txtID.Tag = "pkid";
+            this.txtID.Tag = "ID_Tipo_Combustible";
             // 
             // panel1
             // 
@@ -182,8 +183,8 @@ namespace CapaVistaProyecto
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvVistaPrevia);
             this.Controls.Add(this.navegadorMantenimientos1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTipoCombustible";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tipo combustible";
             this.panel1.ResumeLayout(false);

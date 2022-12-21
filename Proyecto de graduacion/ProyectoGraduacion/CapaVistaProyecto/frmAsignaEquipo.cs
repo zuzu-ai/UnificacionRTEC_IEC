@@ -18,7 +18,7 @@ namespace CapaVistaProyecto
         {
             InitializeComponent();
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "equipoencabezado", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "equipoencabezado", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
 			//navegadorMantenimientos1.LlenarCombobox(cbxTamañoMotor, "tamañomotor", "pkid", "nombre", "estado");
 			//navegadorMantenimientos1.LlenarCombobox(cbxIpoCombustible, "tipocombustible", "idEmpresa", "nombre", "estatus");
@@ -92,11 +92,18 @@ namespace CapaVistaProyecto
 
         private void btnAsignarUnEmpleado_Click(object sender, EventArgs e)
         {
-			txtCeldas.Text = dvgTodosEmpleados.CurrentRow.Cells[0].Value.ToString();
-			string valor2 = txtCeldas.Text;
-			cn.AsignarEmpleados(tablaDetalle, txtID.Text, valor2);
-			llenaTablaEmpleadosDisponibles();
-			llenarTablaEmpladosAsignados();
+			try
+			{
+				txtCeldas.Text = dvgTodosEmpleados.CurrentRow.Cells[0].Value.ToString();
+				string valor2 = txtCeldas.Text;
+				cn.AsignarEmpleados(tablaDetalle, txtID.Text, valor2);
+				llenaTablaEmpleadosDisponibles();
+				llenarTablaEmpladosAsignados();
+			}
+			catch (Exception ex)
+			{
+				//  MessageBox.Show("Error al asignar empleado");               
+			}
 		}
 
         private void btnAsignarTodosEmp_Click(object sender, EventArgs e)

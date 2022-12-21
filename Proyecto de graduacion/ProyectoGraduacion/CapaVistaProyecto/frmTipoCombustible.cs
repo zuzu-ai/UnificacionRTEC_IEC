@@ -16,7 +16,7 @@ namespace CapaVistaProyecto
         {
             InitializeComponent();
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "tipocombustible", "IEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "tipocombustible", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
 			//navegadorMantenimientos1.LlenarCombobox(cbxTamañoMotor, "tamañomotor", "pkid", "nombre", "estado");
 			//navegadorMantenimientos1.LlenarCombobox(cbxIpoCombustible, "tipocombustible", "idEmpresa", "nombre", "estatus");
