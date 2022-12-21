@@ -13,3 +13,18 @@ C:\Users\Kevin\source\repos\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSegurida
 C:\Users\Kevin\source\repos\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
 C:\Users\Kevin\source\repos\Login\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
 C:\Users\Kevin\source\repos\Login\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.exe.config
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.exe
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.exe
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Login\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb

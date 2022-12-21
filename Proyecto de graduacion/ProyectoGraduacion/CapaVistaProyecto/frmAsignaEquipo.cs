@@ -108,27 +108,31 @@ namespace CapaVistaProyecto
 
         private void btnAsignarTodosEmp_Click(object sender, EventArgs e)
         {
-			string valor1 = txtID.Text;
-			string valor2 = txtCeldas.Text;
-			string str;
-
-			cn.AsignarATodosLosEmpleados(tablaDetalle, valor1);
-			llenarTablaEmpladosAsignados();
-
-			int CantidadFilas = dvgTodosEmpleados.RowCount;
-
-			for (int i = 0; i < CantidadFilas; i++)
+			if (tablaDetalle.Length != 0)
 			{
-				dvgTodosEmpleados.CurrentCell = dvgTodosEmpleados.Rows[i].Cells[0];
-				str = dvgTodosEmpleados.Rows[i].Cells[0].Value.ToString();
+				string valor1 = txtID.Text;
+				string valor2 = txtCeldas.Text;
+				string str;
 
-				txtCeldas.Text = str;
-
-				cn.AsignarEmpleados(tablaDetalle, valor1, str);
+				cn.AsignarATodosLosEmpleados(tablaDetalle, valor1);
 				llenarTablaEmpladosAsignados();
 
+				int CantidadFilas = dvgTodosEmpleados.RowCount;
+
+				for (int i = 0; i < CantidadFilas; i++)
+				{
+					dvgTodosEmpleados.CurrentCell = dvgTodosEmpleados.Rows[i].Cells[0];
+					str = dvgTodosEmpleados.Rows[i].Cells[0].Value.ToString();
+
+					txtCeldas.Text = str;
+
+					cn.AsignarEmpleados(tablaDetalle, valor1, str);
+					llenarTablaEmpladosAsignados();
+
+				}
+				llenaTablaEmpleadosDisponibles();
 			}
-			llenaTablaEmpleadosDisponibles();
+			else { }
 		}
 
         private void quitarunemp_Click(object sender, EventArgs e)
