@@ -95,6 +95,8 @@ namespace CapaVistaGestorInventarios
             this.txtPeaje = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtOtros = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.panel2.SuspendLayout();
@@ -222,7 +224,7 @@ namespace CapaVistaGestorInventarios
             // 
             // txtFecha
             // 
-            this.txtFecha.Location = new System.Drawing.Point(398, 128);
+            this.txtFecha.Location = new System.Drawing.Point(118, 128);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(39, 20);
             this.txtFecha.TabIndex = 268;
@@ -374,7 +376,7 @@ namespace CapaVistaGestorInventarios
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(536, 46);
+            this.label3.Location = new System.Drawing.Point(619, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(168, 17);
             this.label3.TabIndex = 279;
@@ -389,12 +391,13 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDetalles.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalles.Location = new System.Drawing.Point(463, 256);
+            this.dgvDetalles.Location = new System.Drawing.Point(422, 257);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.RowHeadersWidth = 51;
-            this.dgvDetalles.Size = new System.Drawing.Size(325, 409);
+            this.dgvDetalles.Size = new System.Drawing.Size(462, 434);
             this.dgvDetalles.TabIndex = 280;
             this.dgvDetalles.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDetalles_RowHeaderMouseClick);
             // 
@@ -403,7 +406,7 @@ namespace CapaVistaGestorInventarios
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(555, 232);
+            this.label4.Location = new System.Drawing.Point(629, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 17);
             this.label4.TabIndex = 281;
@@ -453,7 +456,7 @@ namespace CapaVistaGestorInventarios
             // 
             // txtInventario
             // 
-            this.txtInventario.Location = new System.Drawing.Point(398, 349);
+            this.txtInventario.Location = new System.Drawing.Point(117, 346);
             this.txtInventario.Name = "txtInventario";
             this.txtInventario.Size = new System.Drawing.Size(39, 20);
             this.txtInventario.TabIndex = 288;
@@ -484,7 +487,7 @@ namespace CapaVistaGestorInventarios
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(398, 376);
+            this.txtProducto.Location = new System.Drawing.Point(118, 372);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(39, 20);
             this.txtProducto.TabIndex = 291;
@@ -556,7 +559,7 @@ namespace CapaVistaGestorInventarios
             // txtSubtotal
             // 
             this.txtSubtotal.Enabled = false;
-            this.txtSubtotal.Location = new System.Drawing.Point(117, 609);
+            this.txtSubtotal.Location = new System.Drawing.Point(117, 637);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(268, 20);
             this.txtSubtotal.TabIndex = 296;
@@ -567,7 +570,7 @@ namespace CapaVistaGestorInventarios
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label14.Location = new System.Drawing.Point(2, 612);
+            this.label14.Location = new System.Drawing.Point(2, 640);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(64, 17);
             this.label14.TabIndex = 297;
@@ -575,7 +578,7 @@ namespace CapaVistaGestorInventarios
             // 
             // txtEstadoD
             // 
-            this.txtEstadoD.Location = new System.Drawing.Point(337, 640);
+            this.txtEstadoD.Location = new System.Drawing.Point(337, 668);
             this.txtEstadoD.Name = "txtEstadoD";
             this.txtEstadoD.Size = new System.Drawing.Size(39, 20);
             this.txtEstadoD.TabIndex = 299;
@@ -588,7 +591,7 @@ namespace CapaVistaGestorInventarios
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.rbnInactivoD);
             this.panel2.Controls.Add(this.rbnActivoD);
-            this.panel2.Location = new System.Drawing.Point(131, 638);
+            this.panel2.Location = new System.Drawing.Point(131, 666);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 28);
             this.panel2.TabIndex = 300;
@@ -626,7 +629,7 @@ namespace CapaVistaGestorInventarios
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(6, 636);
+            this.label15.Location = new System.Drawing.Point(6, 664);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(56, 17);
             this.label15.TabIndex = 298;
@@ -742,13 +745,14 @@ namespace CapaVistaGestorInventarios
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCotizaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvCotizaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCotizaciones.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvCotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCotizaciones.Location = new System.Drawing.Point(463, 66);
+            this.dgvCotizaciones.Location = new System.Drawing.Point(422, 66);
             this.dgvCotizaciones.Name = "dgvCotizaciones";
             this.dgvCotizaciones.ReadOnly = true;
             this.dgvCotizaciones.RowHeadersWidth = 51;
-            this.dgvCotizaciones.Size = new System.Drawing.Size(325, 163);
+            this.dgvCotizaciones.Size = new System.Drawing.Size(462, 188);
             this.dgvCotizaciones.TabIndex = 313;
             this.dgvCotizaciones.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCotizaciones_RowHeaderMouseClick);
             // 
@@ -881,13 +885,36 @@ namespace CapaVistaGestorInventarios
             this.txtOtros.Text = "0";
             this.txtOtros.TextChanged += new System.EventHandler(this.txtOtros_TextChanged);
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label22.Location = new System.Drawing.Point(4, 610);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(80, 17);
+            this.label22.TabIndex = 311;
+            this.label22.Text = "Descuento:";
+            // 
+            // txtDescuento
+            // 
+            this.txtDescuento.Enabled = false;
+            this.txtDescuento.Location = new System.Drawing.Point(118, 611);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(268, 20);
+            this.txtDescuento.TabIndex = 315;
+            this.txtDescuento.Tag = "serie";
+            this.txtDescuento.TextChanged += new System.EventHandler(this.txtDescuento_TextChanged);
+            // 
             // frmCotizacionProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 677);
+            this.ClientSize = new System.Drawing.Size(896, 702);
+            this.Controls.Add(this.txtDescuento);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.dgvCotizaciones);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.btnEliminarD);
@@ -1031,5 +1058,7 @@ namespace CapaVistaGestorInventarios
         private System.Windows.Forms.TextBox txtPeaje;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtOtros;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtDescuento;
     }
 }

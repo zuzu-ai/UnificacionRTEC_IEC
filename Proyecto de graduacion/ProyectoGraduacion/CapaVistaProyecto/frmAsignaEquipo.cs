@@ -46,69 +46,71 @@ namespace CapaVistaProyecto
 			navegadorMantenimientos1.LlenarTabla();
 			navegadorMantenimientos1.ObtenerReferenciaFormActual(this);
 			//String cadena = txtprueba.Text;
-			//navegador1.pruebaMensaje(cadena);
-			
+			//navegador1.pruebaMensaje(cadena);			
 		}
 		string tabla = "empleado";
 		string tablaDetalle = "equipodetalle";
-
 		private void txtEstado_TextChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.ActivaRadiobtn(rbnEstatusamodulo, rbnEstatusimodulo, txtEstado);
 		}
-
 		private void rbnEstatusamodulo_CheckedChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.CambioEstadoTextbox(txtEstado, rbnEstatusamodulo, "1");
 		}
-
 		private void rbnEstatusimodulo_CheckedChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.CambioEstadoTextbox(txtEstado, rbnEstatusimodulo, "0");
 		}
-
 		private void dgvVistaPrevia_SelectionChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.SelecciondeFilaDGV(dgvVistaPrevia);
 		}
-
 		void llenaTablaEmpleadosDisponibles()
         {
 			DataTable dt = cn.llanarTblEmpleadoDisponibles(txtID.Text);
 			dvgTodosEmpleados.DataSource = dt;
 		}
-
 		void llenarTablaEmpladosAsignados()
         {
 			DataTable dt = cn.llanarTblEmpleadosAsignados(tabla,txtID.Text);
 			dvgEmpleadosAsignados.DataSource = dt;
 		}
-
         private void txtID_TextChanged(object sender, EventArgs e)
         {
 			llenaTablaEmpleadosDisponibles();
 			llenarTablaEmpladosAsignados();
 		}
-
         private void btnAsignarUnEmpleado_Click(object sender, EventArgs e)
         {
-			try
+			if (dvgTodosEmpleados.RowCount - 1 != 0)
 			{
-				txtCeldas.Text = dvgTodosEmpleados.CurrentRow.Cells[0].Value.ToString();
-				string valor2 = txtCeldas.Text;
-				cn.AsignarEmpleados(tablaDetalle, txtID.Text, valor2);
-				llenaTablaEmpleadosDisponibles();
-				llenarTablaEmpladosAsignados();
+				try
+				{
+					txtCeldas.Text = dvgTodosEmpleados.CurrentRow.Cells[0].Value.ToString();
+					string valor2 = txtCeldas.Text;
+					cn.AsignarEmpleados(tablaDetalle, txtID.Text, valor2);
+					llenaTablaEmpleadosDisponibles();
+					llenarTablaEmpladosAsignados();
+				}
+				catch (Exception ex)
+				{
+					//  MessageBox.Show("Error al asignar empleado");               
+				}
 			}
-			catch (Exception ex)
+			else if (dvgTodosEmpleados.RowCount - 1 == 0)
 			{
-				//  MessageBox.Show("Error al asignar empleado");               
+				DialogResult respuesta;
+				respuesta = MessageBox.Show("¡Todos los empleados estan asignados!", "Asignacion de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				if (respuesta == DialogResult.OK)
+				{
+
+				}
 			}
 		}
-
         private void btnAsignarTodosEmp_Click(object sender, EventArgs e)
         {
-			if (tablaDetalle.Length != 0)
+			if (dvgTodosEmpleados.RowCount-1 != 0)
 			{
 				string valor1 = txtID.Text;
 				string valor2 = txtCeldas.Text;
@@ -132,26 +134,58 @@ namespace CapaVistaProyecto
 				}
 				llenaTablaEmpleadosDisponibles();
 			}
-			else { }
+			else if (dvgTodosEmpleados.RowCount-1 == 0)
+			{
+				DialogResult respuesta;
+				respuesta = MessageBox.Show("¡Todos los empleados estan asignados!", "Asignacion de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				if (respuesta == DialogResult.OK)
+				{
+
+				}
+			}
 		}
 
-        private void quitarunemp_Click(object sender, EventArgs e)
-        {
-			txtCeldas.Text = dvgEmpleadosAsignados.CurrentRow.Cells[0].Value.ToString();
+		private void quitarunemp_Click(object sender, EventArgs e)
+		{
+			if (dvgEmpleadosAsignados.RowCount-1 != 0)
+			{
+				txtCeldas.Text = dvgEmpleadosAsignados.CurrentRow.Cells[0].Value.ToString();
 
-			string valor1 = txtID.Text;
-			string valor2 = txtCeldas.Text;
-			cn.EliminarUnEmpleadoAsignado(tablaDetalle, valor1, valor2);
-			llenaTablaEmpleadosDisponibles();
-			llenarTablaEmpladosAsignados();
+				string valor1 = txtID.Text;
+				string valor2 = txtCeldas.Text;
+				cn.EliminarUnEmpleadoAsignado(tablaDetalle, valor1, valor2);
+				llenaTablaEmpleadosDisponibles();
+				llenarTablaEmpladosAsignados();
+			}
+			else if (dvgEmpleadosAsignados.RowCount-1 == 0)
+			{
+				DialogResult respuesta;
+				respuesta = MessageBox.Show("¡Todos los empleados estan disponibles!", "Asignacion de empleados",MessageBoxButtons.OK ,MessageBoxIcon.Information);
+				if (respuesta == DialogResult.OK)
+				{
+					
+				}				
+			}
 		}
 
         private void quietatodosemp_Click(object sender, EventArgs e)
         {
-			string valor = txtID.Text;
-			cn.EliminarTodasLasAsignacionesEmpleados(tablaDetalle, valor);
-			llenaTablaEmpleadosDisponibles();
-			llenarTablaEmpladosAsignados();
+			if (dvgEmpleadosAsignados.RowCount - 1 != 0)
+			{
+				string valor = txtID.Text;
+				cn.EliminarTodasLasAsignacionesEmpleados(tablaDetalle, valor);
+				llenaTablaEmpleadosDisponibles();
+				llenarTablaEmpladosAsignados();
+			}
+			else if (dvgEmpleadosAsignados.RowCount - 1 == 0)
+			{
+				DialogResult respuesta;
+				respuesta = MessageBox.Show("¡Todos los empleados estan disponibles!", "Asignacion de empleados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				if (respuesta == DialogResult.OK)
+				{
+
+				}
+			}
 		}
     }
 }

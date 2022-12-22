@@ -62,6 +62,7 @@ namespace CapaVistaGestorInventarios
 			txtManodeobra.Enabled = false;
 			txtHospedaje.Enabled = false;
 			txtPeaje.Enabled = false;
+			txtDescuento.Enabled = false;
 			txtOtros.Enabled = false;
 		}
 		public void habilitarD()
@@ -73,6 +74,7 @@ namespace CapaVistaGestorInventarios
 			txtManodeobra.Enabled = true;
 			txtHospedaje.Enabled = true;
 			txtPeaje.Enabled = true;
+			txtDescuento.Enabled = true;
 			txtOtros.Enabled = true;
 		}
 		public void limpiarE()
@@ -101,6 +103,7 @@ namespace CapaVistaGestorInventarios
 			txtHospedaje.Text = "0";
 			txtPeaje.Text = "0";
 			txtOtros.Text = "0";
+			txtDescuento.Text = "";
 		}
 		public void actualizar()
 		{
@@ -477,7 +480,7 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO CotizacionProyectoD VALUES( '" + txtIDD.Text + "', '" + txtIDE.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtManodeobra.Text + "', '" + txtCombustible.Text + "', '" + txtHospedaje.Text + "', '" + txtPeaje.Text + "', '" + txtOtros.Text + "', '" + txtSubtotal.Text + "', '" +/* txtDescuento.Text + "', '" + txtGanancia.Text + "', '" +*/ txtEstadoD.Text + "');";
+						query = "INSERT INTO CotizacionProyectoD VALUES( '" + txtIDD.Text + "', '" + txtIDE.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtManodeobra.Text + "', '" + txtCombustible.Text + "', '" + txtHospedaje.Text + "', '" + txtPeaje.Text + "', '" + txtOtros.Text + "', '" + txtDescuento.Text + "', '" + txtSubtotal.Text + "', '" + txtEstadoD.Text + "');";
 
 						string totalcotizacion = controlador.BuscaDato("cotizacione", "total", "ID_Encabezado", txtIDE.Text);
 						string modificar = txtSubtotal.Text;
@@ -790,9 +793,9 @@ namespace CapaVistaGestorInventarios
 				txtHospedaje.Text = dgvDetalles.CurrentRow.Cells[8].Value.ToString();
 				txtPeaje.Text = dgvDetalles.CurrentRow.Cells[9].Value.ToString();
 				txtOtros.Text = dgvDetalles.CurrentRow.Cells[10].Value.ToString();
-
-				txtSubtotal.Text= dgvDetalles.CurrentRow.Cells[11].Value.ToString();
-				txtEstadoD.Text = dgvDetalles.CurrentRow.Cells[12].Value.ToString();
+				txtDescuento.Text = dgvDetalles.CurrentRow.Cells[11].Value.ToString();
+				txtSubtotal.Text= dgvDetalles.CurrentRow.Cells[12].Value.ToString();
+				txtEstadoD.Text = dgvDetalles.CurrentRow.Cells[13].Value.ToString();
 			}
 			catch (Exception exc) { }
 		}
@@ -931,6 +934,26 @@ namespace CapaVistaGestorInventarios
 				}
 			}
 			catch (Exception exception) { }
+		}
+
+        private void txtDescuento_TextChanged(object sender, EventArgs e)
+        {
+			if (txtDescuento.Text == "")
+			{
+
+			}
+			else
+			{
+				string preciounitario = txtPrecio.Text;
+				string porcentaje = (Convert.ToDouble(txtPrecio.Text) * Convert.ToDouble(txtDescuento.Text)).ToString();
+				string cantidad = txtCantidad.Text;
+				string manodeobra = txtManodeobra.Text;
+				string combustible = txtCombustible.Text;
+				string hospedaje = txtHospedaje.Text;
+				string peaje = txtPeaje.Text;
+				string otros = txtOtros.Text;
+				txtSubtotal.Text = ((Convert.ToDouble(preciounitario) - Convert.ToDouble(porcentaje)) * Convert.ToDouble(cantidad) + Convert.ToDouble(manodeobra) + Convert.ToDouble(combustible) + Convert.ToDouble(hospedaje) + Convert.ToDouble(peaje) + Convert.ToDouble(otros)).ToString();
+			}
 		}
     }
 }

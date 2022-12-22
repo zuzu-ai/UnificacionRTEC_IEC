@@ -334,7 +334,7 @@ namespace CapaModeloProyecto
         public DataTable ActualizaDetalles(string tabla, string cotizacion)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " where Fk_Encabezado = '" + cotizacion + "' ORDER BY pkid;";
+            string sql = "select * from " + tabla + " where Fk_Encabezado = '" + cotizacion + "' ORDER BY ID_Detalle;";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
