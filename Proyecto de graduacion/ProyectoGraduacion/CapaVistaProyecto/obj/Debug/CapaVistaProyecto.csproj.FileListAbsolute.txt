@@ -293,3 +293,4 @@ C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaVistaPr
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaVistaProyecto\obj\Debug\CapaVistaProyecto.csproj.CopyComplete
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaVistaProyecto\obj\Debug\CapaVistaProyecto.dll
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaVistaProyecto\obj\Debug\CapaVistaProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaVistaProyecto\obj\Debug\CapaVistaProyecto.frmCotizacionDeProyecto.resources

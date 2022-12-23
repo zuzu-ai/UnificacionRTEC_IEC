@@ -10,3 +10,9 @@ C:\Users\Kevin\Desktop\git\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaMode
 C:\Users\Kevin\Desktop\git\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.csproj.CoreCompileInputs.cache
 C:\Users\Kevin\Desktop\git\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.dll
 C:\Users\Kevin\Desktop\git\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.pdb
+C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaModeloIEC_RTEC\bin\Debug\CapaModeloIEC_RTEC.dll
+C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaModeloIEC_RTEC\bin\Debug\CapaModeloIEC_RTEC.pdb
+C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.dll
+C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaModeloIEC_RTEC\obj\Debug\CapaModeloIEC_RTEC.pdb

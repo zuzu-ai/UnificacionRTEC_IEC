@@ -97,6 +97,12 @@
     <Compile Include="frmAsignaProyecto.Designer.cs">
       <DependentUpon>frmAsignaProyecto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCotizacionDeProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCotizacionDeProyecto.Designer.cs">
+      <DependentUpon>frmCotizacionDeProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCotizacionProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAsignaProyecto.resx">
       <DependentUpon>frmAsignaProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCotizacionDeProyecto.resx">
+      <DependentUpon>frmCotizacionDeProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCotizacionProyecto.resx">
       <DependentUpon>frmCotizacionProyecto.cs</DependentUpon>

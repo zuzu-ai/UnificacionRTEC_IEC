@@ -247,9 +247,9 @@ namespace SistemaIEC_RTEC
 		{
             try
             {
-               // CapaVistaProyecto.frmCotizacionProyecto form = new CapaVistaProyecto.frmCotizacionProyecto();
-               // form.MdiParent = this;
-               // form.Show();
+               CapaVistaProyecto.frmCotizacionDeProyecto form = new CapaVistaProyecto.frmCotizacionDeProyecto();
+               form.MdiParent = this;
+               form.Show();
             }
             catch (Exception ex) { MessageBox.Show("Error: " + ex); }
         }
