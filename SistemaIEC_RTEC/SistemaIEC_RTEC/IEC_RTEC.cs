@@ -421,7 +421,35 @@ namespace SistemaIEC_RTEC
 
 		private void preguntaDeSeguridadToolStripMenuItem_Click(object sender, EventArgs e)
 		{
+            try
+            {
+                CapaVistaGestorInventarios.frmPregunta form = new CapaVistaGestorInventarios.frmPregunta();
+                form.MdiParent = this;
+                form.Show();
+            }
+            catch (Exception ex) { MessageBox.Show("Error: " + ex); }
+        }
 
-		}
+		private void tipoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+            try
+            {
+                CapaVistaProyecto.frmTipoUsuario form = new CapaVistaProyecto.frmTipoUsuario();
+                form.MdiParent = this;
+                form.Show();
+            }
+            catch (Exception ex) { MessageBox.Show("Error: " + ex); }
+        }
+
+		private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+            try
+            {
+                CapaVistaProyecto.frmUsuario form = new CapaVistaProyecto.frmUsuario();
+                form.MdiParent = this;
+                form.Show();
+            }
+            catch (Exception ex) { MessageBox.Show("Error: " + ex); }
+        }
 	}
 }

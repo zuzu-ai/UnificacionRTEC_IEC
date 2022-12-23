@@ -22,7 +22,7 @@ namespace CapaVistaGestorInventarios
 			navegadorMantenimientos1.bloquearBtn(g.obtienenombretusuario);
 
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
-			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "pregunta", "RTEC");
+			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "pregunta", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
 
 			navegadorMantenimientos1.campoEstado = "estado";

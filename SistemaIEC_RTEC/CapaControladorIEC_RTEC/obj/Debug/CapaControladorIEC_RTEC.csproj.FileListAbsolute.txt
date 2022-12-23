@@ -25,3 +25,12 @@ C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\Ca
 C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.csproj.CopyComplete
 C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.dll
 C:\Users\Kevin\Desktop\git2\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\bin\Debug\CapaControladorIEC_RTEC.dll
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\bin\Debug\CapaControladorIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\bin\Debug\CapaModeloIEC_RTEC.dll
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\bin\Debug\CapaModeloIEC_RTEC.pdb
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.dll
+C:\Users\ZUZU\Desktop\Unificado\SistemaIEC_RTEC\CapaControladorIEC_RTEC\obj\Debug\CapaControladorIEC_RTEC.pdb

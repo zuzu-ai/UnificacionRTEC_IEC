@@ -285,7 +285,7 @@ namespace SistemaIEC_RTEC
             this.vehículoToolStripMenuItem});
 			this.catálogosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("catálogosToolStripMenuItem1.Image")));
 			this.catálogosToolStripMenuItem1.Name = "catálogosToolStripMenuItem1";
-			this.catálogosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.catálogosToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
 			this.catálogosToolStripMenuItem1.Text = "Catálogos";
 			// 
 			// empresaClienteToolStripMenuItem
@@ -302,7 +302,7 @@ namespace SistemaIEC_RTEC
 			// 
 			this.empresaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("empresaToolStripMenuItem.Image")));
 			this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
-			this.empresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.empresaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
 			this.empresaToolStripMenuItem.Text = "Empresa de cliente";
 			this.empresaToolStripMenuItem.Click += new System.EventHandler(this.empresaToolStripMenuItem_Click);
 			// 
@@ -310,7 +310,7 @@ namespace SistemaIEC_RTEC
 			// 
 			this.sucursalDeClienteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sucursalDeClienteToolStripMenuItem.Image")));
 			this.sucursalDeClienteToolStripMenuItem.Name = "sucursalDeClienteToolStripMenuItem";
-			this.sucursalDeClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.sucursalDeClienteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
 			this.sucursalDeClienteToolStripMenuItem.Text = "Sucursal de cliente";
 			this.sucursalDeClienteToolStripMenuItem.Click += new System.EventHandler(this.sucursalDeClienteToolStripMenuItem_Click);
 			// 
@@ -375,7 +375,7 @@ namespace SistemaIEC_RTEC
             this.gestionDeGruposDeTrabajoToolStripMenuItem});
 			this.procesosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("procesosToolStripMenuItem1.Image")));
 			this.procesosToolStripMenuItem1.Name = "procesosToolStripMenuItem1";
-			this.procesosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.procesosToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
 			this.procesosToolStripMenuItem1.Text = "Procesos";
 			// 
 			// asignacionDeProyectoToolStripMenuItem
@@ -406,7 +406,7 @@ namespace SistemaIEC_RTEC
 			// 
 			this.reportesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reportesToolStripMenuItem.Image")));
 			this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-			this.reportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.reportesToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
 			this.reportesToolStripMenuItem.Text = "Reportes";
 			// 
 			// gestiónDeInventariosToolStripMenuItem
@@ -433,7 +433,7 @@ namespace SistemaIEC_RTEC
             this.tipoTransacciónToolStripMenuItem});
 			this.catálogosToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("catálogosToolStripMenuItem2.Image")));
 			this.catálogosToolStripMenuItem2.Name = "catálogosToolStripMenuItem2";
-			this.catálogosToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+			this.catálogosToolStripMenuItem2.Size = new System.Drawing.Size(127, 22);
 			this.catálogosToolStripMenuItem2.Text = "Catálogos";
 			// 
 			// bodegaToolStripMenuItem
@@ -525,7 +525,7 @@ namespace SistemaIEC_RTEC
             this.cotizaciónToolStripMenuItem});
 			this.procesosToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("procesosToolStripMenuItem2.Image")));
 			this.procesosToolStripMenuItem2.Name = "procesosToolStripMenuItem2";
-			this.procesosToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+			this.procesosToolStripMenuItem2.Size = new System.Drawing.Size(127, 22);
 			this.procesosToolStripMenuItem2.Text = "Procesos";
 			// 
 			// ingresoDeProductosToolStripMenuItem
@@ -584,6 +584,7 @@ namespace SistemaIEC_RTEC
 			this.tipoUsuarioToolStripMenuItem.Name = "tipoUsuarioToolStripMenuItem";
 			this.tipoUsuarioToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
 			this.tipoUsuarioToolStripMenuItem.Text = "Tipo Usuario";
+			this.tipoUsuarioToolStripMenuItem.Click += new System.EventHandler(this.tipoUsuarioToolStripMenuItem_Click);
 			// 
 			// usuarioToolStripMenuItem
 			// 
@@ -591,6 +592,7 @@ namespace SistemaIEC_RTEC
 			this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
 			this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
 			this.usuarioToolStripMenuItem.Text = "Usuario";
+			this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
 			// 
 			// ayudaToolStripMenuItem
 			// 
