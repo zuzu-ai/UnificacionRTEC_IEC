@@ -36,6 +36,15 @@
     <Reference Include="CapaControladorIEC_RTEC">
       <HintPath>..\CapaControladorIEC_RTEC\bin\Debug\CapaControladorIEC_RTEC.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVistaGestorInventarios">
+      <HintPath>..\..\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe</HintPath>
+    </Reference>
+    <Reference Include="CapaVistaProyecto">
+      <HintPath>..\..\Proyecto de graduacion\ProyectoGraduacion\CapaVistaProyecto\bin\Debug\CapaVistaProyecto.dll</HintPath>
+    </Reference>
+    <Reference Include="Proyecto IEC">
+      <HintPath>..\..\ProyectoIEC\Proyecto IEC\Proyecto IEC\bin\Debug\Proyecto IEC.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
