@@ -20,7 +20,7 @@ namespace CapaVistaProyecto
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
 			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "empresacliente", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-			//navegadorMantenimientos1.LlenarCombobox(cbxTamañoMotor, "tamañomotor", "pkid", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 			//navegadorMantenimientos1.LlenarCombobox(cbxIpoCombustible, "tipocombustible", "idEmpresa", "nombre", "estatus");
 
 			//inicio de elementos para dar de baja
@@ -70,6 +70,14 @@ namespace CapaVistaProyecto
 
 		}
 
+        private void cbxEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxIdEmpresa, txtIdEmpresa);
+		}
 
-	}
+        private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxIdEmpresa, txtIdEmpresa);
+		}
+    }
 }

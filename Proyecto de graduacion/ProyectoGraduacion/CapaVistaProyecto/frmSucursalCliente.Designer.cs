@@ -50,6 +50,9 @@ namespace CapaVistaProyecto
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtContacto = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbxEmpresa = new System.Windows.Forms.ComboBox();
+            this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
             this.SuspendLayout();
@@ -106,7 +109,7 @@ namespace CapaVistaProyecto
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(542, 142);
+            this.panel1.Location = new System.Drawing.Point(543, 158);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 136;
@@ -144,7 +147,7 @@ namespace CapaVistaProyecto
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(472, 145);
+            this.label8.Location = new System.Drawing.Point(473, 161);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 135;
@@ -174,7 +177,7 @@ namespace CapaVistaProyecto
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(758, 141);
+            this.txtEstado.Location = new System.Drawing.Point(759, 157);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 137;
@@ -267,19 +270,53 @@ namespace CapaVistaProyecto
             this.txtContacto.TabIndex = 131;
             this.txtContacto.Tag = "Contacto_Directo";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(471, 128);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 16);
+            this.label7.TabIndex = 139;
+            this.label7.Text = "Empresa:";
+            // 
+            // cbxEmpresa
+            // 
+            this.cbxEmpresa.FormattingEnabled = true;
+            this.cbxEmpresa.Location = new System.Drawing.Point(542, 127);
+            this.cbxEmpresa.Name = "cbxEmpresa";
+            this.cbxEmpresa.Size = new System.Drawing.Size(268, 21);
+            this.cbxEmpresa.TabIndex = 138;
+            this.cbxEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxEmpresa_SelectedIndexChanged);
+            // 
+            // txtEmpresa
+            // 
+            this.txtEmpresa.Location = new System.Drawing.Point(542, 127);
+            this.txtEmpresa.Name = "txtEmpresa";
+            this.txtEmpresa.Size = new System.Drawing.Size(39, 20);
+            this.txtEmpresa.TabIndex = 140;
+            this.txtEmpresa.TabStop = false;
+            this.txtEmpresa.Tag = "Fk_Empresa";
+            this.txtEmpresa.Visible = false;
+            this.txtEmpresa.TextChanged += new System.EventHandler(this.txtEmpresa_TextChanged);
+            // 
             // frmSucursalCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 548);
             this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.txtContacto);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtIdEmpresaCliente);
             this.Controls.Add(this.txtID);
+            this.Controls.Add(this.cbxEmpresa);
             this.Controls.Add(this.cbxIdEmpresa);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -324,5 +361,8 @@ namespace CapaVistaProyecto
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtContacto;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbxEmpresa;
+        private System.Windows.Forms.TextBox txtEmpresa;
     }
 }

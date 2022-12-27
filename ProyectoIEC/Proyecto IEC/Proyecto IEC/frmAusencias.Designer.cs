@@ -51,13 +51,16 @@ namespace Proyecto_IEC
             this.cbxIdTipoAusencia = new System.Windows.Forms.ComboBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+            this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(372, 152);
+            this.txtEstado.Location = new System.Drawing.Point(536, 195);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 124;
@@ -91,7 +94,7 @@ namespace Proyecto_IEC
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(166, 144);
+            this.panel1.Location = new System.Drawing.Point(330, 187);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 28);
             this.panel1.TabIndex = 123;
@@ -131,7 +134,7 @@ namespace Proyecto_IEC
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(12, 151);
+            this.label8.Location = new System.Drawing.Point(263, 196);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 122;
@@ -170,11 +173,11 @@ namespace Proyecto_IEC
             this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVistaPrevia.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 198);
+            this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 225);
             this.dgvVistaPrevia.Name = "dgvVistaPrevia";
             this.dgvVistaPrevia.ReadOnly = true;
             this.dgvVistaPrevia.RowHeadersWidth = 51;
-            this.dgvVistaPrevia.Size = new System.Drawing.Size(768, 318);
+            this.dgvVistaPrevia.Size = new System.Drawing.Size(768, 291);
             this.dgvVistaPrevia.TabIndex = 119;
             this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
             // 
@@ -206,7 +209,7 @@ namespace Proyecto_IEC
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(445, 63);
+            this.label4.Location = new System.Drawing.Point(12, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 121;
@@ -215,7 +218,7 @@ namespace Proyecto_IEC
             // txtFecha
             // 
             this.txtFecha.Enabled = false;
-            this.txtFecha.Location = new System.Drawing.Point(512, 61);
+            this.txtFecha.Location = new System.Drawing.Point(143, 144);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(268, 20);
             this.txtFecha.TabIndex = 118;
@@ -229,7 +232,7 @@ namespace Proyecto_IEC
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(445, 89);
+            this.label5.Location = new System.Drawing.Point(440, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 16);
             this.label5.TabIndex = 121;
@@ -237,10 +240,10 @@ namespace Proyecto_IEC
             // 
             // txtDetalle
             // 
-            this.txtDetalle.Location = new System.Drawing.Point(512, 88);
+            this.txtDetalle.Location = new System.Drawing.Point(512, 65);
             this.txtDetalle.Multiline = true;
             this.txtDetalle.Name = "txtDetalle";
-            this.txtDetalle.Size = new System.Drawing.Size(268, 81);
+            this.txtDetalle.Size = new System.Drawing.Size(268, 76);
             this.txtDetalle.TabIndex = 4;
             this.txtDetalle.Tag = "Detalles";
             // 
@@ -273,7 +276,7 @@ namespace Proyecto_IEC
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(512, 61);
+            this.dtpFecha.Location = new System.Drawing.Point(143, 144);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(268, 20);
             this.dtpFecha.TabIndex = 3;
@@ -294,6 +297,37 @@ namespace Proyecto_IEC
             this.btnImprimir.UseVisualStyleBackColor = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
+            // txtIdEmpresa
+            // 
+            this.txtIdEmpresa.Location = new System.Drawing.Point(512, 147);
+            this.txtIdEmpresa.Name = "txtIdEmpresa";
+            this.txtIdEmpresa.Size = new System.Drawing.Size(39, 20);
+            this.txtIdEmpresa.TabIndex = 154;
+            this.txtIdEmpresa.TabStop = false;
+            this.txtIdEmpresa.Tag = "Fk_Empresa";
+            this.txtIdEmpresa.Visible = false;
+            this.txtIdEmpresa.TextChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
+            // 
+            // cbxIdEmpresa
+            // 
+            this.cbxIdEmpresa.FormattingEnabled = true;
+            this.cbxIdEmpresa.Location = new System.Drawing.Point(512, 147);
+            this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+            this.cbxIdEmpresa.Size = new System.Drawing.Size(268, 21);
+            this.cbxIdEmpresa.TabIndex = 156;
+            this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(440, 148);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 16);
+            this.label6.TabIndex = 155;
+            this.label6.Text = "Empresa:";
+            // 
             // frmAusencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,14 +335,17 @@ namespace Proyecto_IEC
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(794, 528);
-            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtIdEmpresa);
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.txtIdTipoAusencia);
             this.Controls.Add(this.txtIdEmpleado);
             this.Controls.Add(this.txtID);
+            this.Controls.Add(this.btnImprimir);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.cbxIdEmpresa);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.cbxIdEmpleado);
             this.Controls.Add(this.cbxIdTipoAusencia);
@@ -356,5 +393,8 @@ namespace Proyecto_IEC
         private System.Windows.Forms.ComboBox cbxIdTipoAusencia;
         private System.Windows.Forms.DateTimePicker dtpFecha;
 		private System.Windows.Forms.Button btnImprimir;
-	}
+        private System.Windows.Forms.TextBox txtIdEmpresa;
+        private System.Windows.Forms.ComboBox cbxIdEmpresa;
+        private System.Windows.Forms.Label label6;
+    }
 }

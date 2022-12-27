@@ -738,11 +738,11 @@ namespace CapaModeloProyectoIEC
 
             return tablainicial;
         }
-        public void guardarEncabezadoMes(string id, string fechainicio, string fechafin, string mes, string estado)
+        public void guardarEncabezadoMes(string id, string fechainicio, string fechafin, string mes,string empresa, string estado)
         {
             try
             {
-                string cadena = "INSERT INTO mensualesE VALUES ('" + id + "','" + fechainicio + "','" + fechafin + "','" + mes + "','" + estado + "');";
+                string cadena = "INSERT INTO mensualesE VALUES ('" + id + "','" + fechainicio + "','" + fechafin + "','" + mes + "','" + empresa + "','" + estado + "');";
                 OdbcCommand consulta = new OdbcCommand(cadena, cn.conexion());
                 consulta.ExecuteNonQuery();
             }

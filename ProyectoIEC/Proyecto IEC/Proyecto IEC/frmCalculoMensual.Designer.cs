@@ -43,6 +43,9 @@ namespace Proyecto_IEC
             this.label3 = new System.Windows.Forms.Label();
             this.txtMesTrabajado = new System.Windows.Forms.TextBox();
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+            this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -182,6 +185,35 @@ namespace Proyecto_IEC
             this.btnImprimir.UseVisualStyleBackColor = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
+            // txtIdEmpresa
+            // 
+            this.txtIdEmpresa.Location = new System.Drawing.Point(303, 16);
+            this.txtIdEmpresa.Name = "txtIdEmpresa";
+            this.txtIdEmpresa.Size = new System.Drawing.Size(39, 20);
+            this.txtIdEmpresa.TabIndex = 154;
+            this.txtIdEmpresa.TabStop = false;
+            this.txtIdEmpresa.Tag = "Fk_Empresa";
+            this.txtIdEmpresa.Visible = false;
+            // 
+            // cbxIdEmpresa
+            // 
+            this.cbxIdEmpresa.FormattingEnabled = true;
+            this.cbxIdEmpresa.Location = new System.Drawing.Point(302, 16);
+            this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+            this.cbxIdEmpresa.Size = new System.Drawing.Size(200, 21);
+            this.cbxIdEmpresa.TabIndex = 156;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(233, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 16);
+            this.label4.TabIndex = 155;
+            this.label4.Text = "Empresa:";
+            // 
             // frmCalculoMensual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +221,9 @@ namespace Proyecto_IEC
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1314, 483);
+            this.Controls.Add(this.txtIdEmpresa);
+            this.Controls.Add(this.cbxIdEmpresa);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.txtMesTrabajado);
             this.Controls.Add(this.txtID);
@@ -228,5 +263,8 @@ namespace Proyecto_IEC
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox txtMesTrabajado;
 		private System.Windows.Forms.Button btnImprimir;
-	}
+        private System.Windows.Forms.TextBox txtIdEmpresa;
+        private System.Windows.Forms.ComboBox cbxIdEmpresa;
+        private System.Windows.Forms.Label label4;
+    }
 }

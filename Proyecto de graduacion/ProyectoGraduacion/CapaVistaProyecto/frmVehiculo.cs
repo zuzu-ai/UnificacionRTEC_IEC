@@ -22,6 +22,7 @@ namespace CapaVistaProyecto
 			navegadorMantenimientos1.LlenarCombobox(cbxTipoCombustible, "tipocombustible", "ID_Tipo_Combustible", "nombre", "estado");
 			navegadorMantenimientos1.LlenarCombobox(cbxLinea, "linea", "ID_Linea", "nombre", "estado");
 			navegadorMantenimientos1.LlenarCombobox(cbxMarca, "MarcaVehiculo", "ID_Marca_Vehiculo", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 
 			//inicio de elementos para dar de baja
 			navegadorMantenimientos1.campoEstado = "estado";
@@ -115,6 +116,16 @@ namespace CapaVistaProyecto
         private void txtIdTipoCombustible_TextChanged(object sender, EventArgs e)
         {
 			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxTipoCombustible, txtIdTipoCombustible);
+		}
+
+        private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxIdEmpresa, txtIdEmpresa);
+		}
+
+        private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxIdEmpresa, txtIdEmpresa);
 		}
     }
 }

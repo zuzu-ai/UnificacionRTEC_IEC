@@ -62,7 +62,7 @@ namespace Proyecto_IEC
 			int contador = dgvVistaPrevia.Rows.Count;
 			try
 			{
-				cn.guardarEncabezadoMes(txtID.Text, txtfechainicio.Text, txtfechafin.Text, txtMesTrabajado.Text, "1");
+				cn.guardarEncabezadoMes(txtID.Text, txtfechainicio.Text, txtfechafin.Text, txtMesTrabajado.Text, txtIdEmpresa.Text ,"1");
 
 				try
 				{

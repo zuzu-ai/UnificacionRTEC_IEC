@@ -25,6 +25,7 @@ namespace Proyecto_IEC
 			navegadorMantenimientos1.MetodoSalirVista(this);
 			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpleado, "empleado", "ID_Empleado", "Nombre", "Estado");
 			navegadorMantenimientos1.LlenarCombobox(cbxIdTipoAusencia, "tipoausencia", "ID_Tipo_Ausencia", "Nombre", "Estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 
 			//inicio de elementos para dar de baja
 			navegadorMantenimientos1.campoEstado = "estado";
@@ -119,5 +120,15 @@ namespace Proyecto_IEC
 			Reporte1 reporte = new Reporte1();
 			reporte.Show();
 		}
-	}
+
+        private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxIdEmpresa, txtIdEmpresa);
+		}
+
+        private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxIdEmpresa, txtIdEmpresa);
+		}
+    }
 }

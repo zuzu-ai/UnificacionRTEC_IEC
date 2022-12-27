@@ -69,9 +69,9 @@ namespace CapaContoladorProyectoIEC
             return tabla;
         }
 
-        public void guardarEncabezadoMes(string id, string fechainicio, string fechafin, string mes, string estado)
+        public void guardarEncabezadoMes(string id, string fechainicio, string fechafin, string mes, string empresa, string estado)
         {
-            sn.guardarEncabezadoMes(id, fechainicio, fechafin, mes, estado);
+            sn.guardarEncabezadoMes(id, fechainicio, fechafin, mes, empresa, estado);
         }
         public void guardarDetalleMes(int idD, string idE, string empleado, string htrabajadas, string hdescontadas, string ausencias, string hextras, string pcomidas, string pcombustible, string pviaticos, string potros, string observaciones)
         {

@@ -47,11 +47,15 @@ namespace CapaVistaProyecto
 		{
 			txtProyecto.Enabled = false;
 			dtpFecha.Enabled = false;
+			txtIdEmpresa.Enabled = false;
+			cbxIdEmpresa.Enabled = false;
 		}
 		public void habilitarE()
 		{
 			txtProyecto.Enabled = true;
 			dtpFecha.Enabled = true;
+			txtIdEmpresa.Enabled = true;
+			cbxIdEmpresa.Enabled = true;
 		}
 		public void deshabilitarD()
 		{
@@ -84,6 +88,7 @@ namespace CapaVistaProyecto
 			dtpFecha.Value = DateTime.Now;
 			txtTotal.Text = "0.00";
 			rbnActivoE.Checked = true;
+			txtIdEmpresa.Text= "";			
 		}
 		public void limpiarD()
 		{
@@ -289,7 +294,8 @@ namespace CapaVistaProyecto
 				txtProyecto.Text = dgvCotizaciones.CurrentRow.Cells[1].Value.ToString();
 				txtFecha.Text = dgvCotizaciones.CurrentRow.Cells[2].Value.ToString();
 				txtTotal.Text = dgvCotizaciones.CurrentRow.Cells[3].Value.ToString();
-				txtEstadoE.Text = dgvCotizaciones.CurrentRow.Cells[4].Value.ToString();
+				txtIdEmpresa.Text = dgvCotizaciones.CurrentRow.Cells[4].Value.ToString();
+				txtEstadoE.Text = dgvCotizaciones.CurrentRow.Cells[5].Value.ToString();
 
 				LlenarDetalles();
 			}
@@ -354,7 +360,7 @@ namespace CapaVistaProyecto
 				case "1":
 					try
 					{
-						query = "INSERT INTO CotizacionProyectoE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtEstadoE.Text + "');";
+						query = "INSERT INTO CotizacionProyectoE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" +  txtIdEmpresa.Text + "', '" + txtEstadoE.Text + "');";
 						controlador.metodoInsertar(query);
 					}
 					catch (Exception excep)
@@ -368,7 +374,7 @@ namespace CapaVistaProyecto
 				case "2":
 					try
 					{
-						query = "UPDATE CotizacionProyectoE SET Proyecto ='" + txtProyecto.Text + "', Fecha_Emision='" + txtFecha.Text + "', Total ='" + txtTotal.Text + "', Estado='" + txtEstadoE.Text + "' WHERE ID_Encabezado = '" + txtIDE.Text + "';";
+						query = "UPDATE CotizacionProyectoE SET Proyecto ='" + txtProyecto.Text + "', Fecha_Emision='" + txtFecha.Text + "', Total ='" + txtTotal.Text + "', Fk_Empresa='" + txtIdEmpresa.Text + "', Estado='" + txtEstadoE.Text + "' WHERE ID_Encabezado = '" + txtIDE.Text + "';";
 						string estadoinicial = controlador.BuscaDato("CotizacionProyectoE", "estado", "ID_Encabezado", txtIDE.Text);
 						string nuevoestado = txtEstadoD.Text;
 						if (estadoinicial != nuevoestado)

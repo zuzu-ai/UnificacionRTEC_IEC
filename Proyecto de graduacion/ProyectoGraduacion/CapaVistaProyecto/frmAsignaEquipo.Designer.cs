@@ -53,6 +53,9 @@ namespace CapaVistaProyecto
             this.label7 = new System.Windows.Forms.Label();
             this.navegadorMantenimientos1 = new CapaVistaNavegador.NavegadorMantenimientos();
             this.txtCeldas = new System.Windows.Forms.Label();
+            this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+            this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgEmpleadosAsignados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dvgTodosEmpleados)).BeginInit();
@@ -61,9 +64,9 @@ namespace CapaVistaProyecto
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(183, 75);
+            this.txtID.Location = new System.Drawing.Point(158, 75);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(179, 20);
+            this.txtID.Size = new System.Drawing.Size(204, 20);
             this.txtID.TabIndex = 144;
             this.txtID.Tag = "ID_Encabezado";
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
@@ -73,7 +76,7 @@ namespace CapaVistaProyecto
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(89, 77);
+            this.label1.Location = new System.Drawing.Point(30, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 145;
@@ -84,23 +87,23 @@ namespace CapaVistaProyecto
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(404, 76);
+            this.label2.Location = new System.Drawing.Point(30, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 16);
+            this.label2.Size = new System.Drawing.Size(127, 16);
             this.label2.TabIndex = 145;
-            this.label2.Text = "Descripción de equipo:";
+            this.label2.Text = "Nombre del equipo:";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(557, 75);
+            this.txtDescripcion.Location = new System.Drawing.Point(158, 101);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(179, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(204, 20);
             this.txtDescripcion.TabIndex = 144;
             this.txtDescripcion.Tag = "nombre";
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(548, 123);
+            this.txtEstado.Location = new System.Drawing.Point(697, 102);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(39, 20);
             this.txtEstado.TabIndex = 151;
@@ -113,7 +116,7 @@ namespace CapaVistaProyecto
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbnEstatusimodulo);
             this.panel1.Controls.Add(this.rbnEstatusamodulo);
-            this.panel1.Location = new System.Drawing.Point(319, 115);
+            this.panel1.Location = new System.Drawing.Point(493, 102);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(198, 28);
             this.panel1.TabIndex = 150;
@@ -151,7 +154,7 @@ namespace CapaVistaProyecto
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(228, 115);
+            this.label8.Location = new System.Drawing.Point(398, 106);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 16);
             this.label8.TabIndex = 149;
@@ -315,14 +318,48 @@ namespace CapaVistaProyecto
             this.txtCeldas.TabIndex = 158;
             this.txtCeldas.Visible = false;
             // 
+            // txtIdEmpresa
+            // 
+            this.txtIdEmpresa.Location = new System.Drawing.Point(471, 74);
+            this.txtIdEmpresa.Name = "txtIdEmpresa";
+            this.txtIdEmpresa.Size = new System.Drawing.Size(37, 20);
+            this.txtIdEmpresa.TabIndex = 164;
+            this.txtIdEmpresa.TabStop = false;
+            this.txtIdEmpresa.Tag = "Fk_Empresa";
+            this.txtIdEmpresa.Visible = false;
+            this.txtIdEmpresa.TextChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
+            // 
+            // cbxIdEmpresa
+            // 
+            this.cbxIdEmpresa.FormattingEnabled = true;
+            this.cbxIdEmpresa.Location = new System.Drawing.Point(470, 74);
+            this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+            this.cbxIdEmpresa.Size = new System.Drawing.Size(251, 21);
+            this.cbxIdEmpresa.TabIndex = 166;
+            this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label9.Location = new System.Drawing.Point(398, 74);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 16);
+            this.label9.TabIndex = 165;
+            this.label9.Text = "Empresa:";
+            // 
             // frmAsignaEquipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 691);
             this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtIdEmpresa);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtID);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.cbxIdEmpresa);
             this.Controls.Add(this.navegadorMantenimientos1);
             this.Controls.Add(this.dgvVistaPrevia);
             this.Controls.Add(this.dvgEmpleadosAsignados);
@@ -381,5 +418,8 @@ namespace CapaVistaProyecto
         private System.Windows.Forms.Label label7;
         private CapaVistaNavegador.NavegadorMantenimientos navegadorMantenimientos1;
         private System.Windows.Forms.Label txtCeldas;
+        private System.Windows.Forms.TextBox txtIdEmpresa;
+        private System.Windows.Forms.ComboBox cbxIdEmpresa;
+        private System.Windows.Forms.Label label9;
     }
 }

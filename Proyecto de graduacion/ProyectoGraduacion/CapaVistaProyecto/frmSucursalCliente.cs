@@ -75,5 +75,15 @@ namespace CapaVistaProyecto
 		{
 			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxIdEmpresa, txtIdEmpresaCliente);
 		}
-	}
+
+        private void cbxEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxEmpresa, txtEmpresa);
+		}
+
+        private void txtEmpresa_TextChanged(object sender, EventArgs e)
+        {
+			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxEmpresa, txtEmpresa);
+		}
+    }
 }
