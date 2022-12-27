@@ -2,10 +2,20 @@
 create database RTEC_IEC;
 use RTEC_IEC;
 
+-- TABLA EMPRESA
+create table empresa(
+ID_Empresa varchar(15) primary key,
+Nombre varchar(30),
+Estado varchar(1)
+)engine=InnoDB DEFAULT CHARSET=latin1;
+-- TABLA PUESTO
 create table puesto(
 ID_Puesto varchar(15) primary key,
 Nombre varchar(30),
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1), 
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA JORNADA
 create table jornada(
@@ -13,7 +23,10 @@ ID_Jornada varchar(15) primary key,
 Nombre varchar(30) null,
 Hora_Inicio time not null,
 Hora_Finalizacion time not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA FOTO
 create table foto (
@@ -30,8 +43,10 @@ Fk_Jornada varchar(15) not null,
 Fecha_Contratacion date default null,
 Fecha_Despido date default null,
 Fk_Fotografia varchar(15) default null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1),
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Puesto) references puesto(ID_Puesto),
 foreign key (Fk_Jornada) references jornada(ID_Jornada),
 foreign key (Fk_Fotografia) references foto(ID_Fotografia)
@@ -40,7 +55,10 @@ foreign key (Fk_Fotografia) references foto(ID_Fotografia)
 create table tipousuario(
 ID_Tipo_Usuario varchar(15) primary key,
 Nombre varchar(15) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA PREGUNTA
 create table pregunta(
@@ -57,7 +75,10 @@ Usuario varchar(15) not null,
 Contrasena varchar(100) not null,
 Fk_Pregunta varchar(15) not null,
 Repuesta varchar(100) not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Tipo_Usuario) references tipousuario(ID_Tipo_Usuario),
 foreign key (Fk_Pregunta) references pregunta(ID_Pregunta),
 foreign key (Fk_Empleado) references empleado(ID_Empleado)
@@ -74,7 +95,10 @@ Estado varchar(1) not null
 create table tipoAusencia(
 ID_Tipo_Ausencia varchar(15) primary key,
 Nombre varchar(30) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA AUSENCIA
 create table ausencia(
@@ -83,8 +107,10 @@ Fk_Empleado varchar(15) not null,
 Fk_Tipo_Ausencia varchar(15) not null,
 Fecha_Ausencia date not null,
 Detalles varchar(400) null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Empleado) references empleado(ID_Empleado),
 foreign key (Fk_Tipo_Ausencia) references tipoausencia(ID_Tipo_Ausencia)
 )engine=InnoDB DEFAULT CHARSET=latin1;
@@ -92,7 +118,10 @@ foreign key (Fk_Tipo_Ausencia) references tipoausencia(ID_Tipo_Ausencia)
 create table tipoPago(
 ID_Tipo_Pago varchar(15) primary key,
 Nombre varchar(30) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA PAGOEMPLEADO
 create table pagoEmpleado(
@@ -102,8 +131,10 @@ Fk_Tipo_Pago varchar(15) not null,
 Fecha_Gasto date not null,
 Monto double not null,
 Detalles varchar(400) null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Empleado) references empleado(ID_Empleado),
 foreign key (Fk_Tipo_Pago) references tipopago(ID_Tipo_Pago)
 )engine=InnoDB DEFAULT CHARSET=latin1;
@@ -111,14 +142,20 @@ foreign key (Fk_Tipo_Pago) references tipopago(ID_Tipo_Pago)
 create table dispositivo(
 ID_Dispositivo varchar(15) primary key,
 Nombre varchar(30) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA DATOSE
 create table datosE(
 ID_Encabezado varchar(15) primary key,
 Fk_Empleado varchar(15) not null,
 Fk_Dispositivo varchar(1) not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Empleado) references empleado(ID_Empleado),
 foreign key (Fk_Dispositivo) references dispositivo(ID_Dispositivo)
 )engine=InnoDB DEFAULT CHARSET=latin1;
@@ -137,7 +174,10 @@ foreign key (Fk_Gestion) references gestion(ID_Gestion)
 create table diariosE(
 ID_Encabezado varchar(15) primary key,
 Fecha_Trabajada varchar(45) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA DIARIOSD
 create table diariosD(
@@ -166,7 +206,10 @@ ID_Encabezado varchar(15) primary key,
 Fecha_Inicio varchar(45) not null,
 Fecha_Finalizacion varchar(45) not null,
 Mes_Trabajado varchar(2) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA MENSUALESD
 create table mensualesD(
@@ -193,13 +236,19 @@ foreign key (Fk_Empleado) references empleado(ID_Empleado)
 create table clasificacion(
 ID_Clasificacion varchar(15) primary key,
 Nombre varchar(35) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA BODEGA
 create table bodega(
 ID_Bodega varchar(15) primary key,
 Nombre varchar(35) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA UBICACION
 create table ubicacion(
@@ -214,7 +263,10 @@ foreign key (Fk_Bodega) references bodega(ID_Bodega)
 create table marca(
 ID_Marca varchar(15) primary key,
 Nombre varchar(35) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA PROVEEDOR
 create table proveedor(
@@ -223,7 +275,10 @@ Nombre varchar(35) not null,
 NIT varchar(15) null,
 Telefono varchar(20) null,
 Detalles varchar(200) null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA CATEGORIA
 create table categoria(
@@ -231,36 +286,50 @@ ID_Categoria varchar(15) primary key,
 Fk_Tipo_Categoria varchar(1) not null,
 Fk_Categoria_Superior varchar(15) null,
 Nombre varchar(35) not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1),
 
-foreign key (Fk_Categoria_Superior) references categoria(ID_Categoria)
+foreign key (Fk_Categoria_Superior) references categoria(ID_Categoria),
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA TIPO TRANSACCION
 create table tipotransac(
 ID_Tipo_Transaccion varchar(15) primary key,
 Nombre varchar(35) not null,
 Accion varchar(1) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA TIPO ALMACENAMIENTO
 create table tipoalmacen(
 ID_Tipo_Almacenamiento varchar(15) primary key,
 Nombre varchar(35) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA SUCURSAL
 create table sucursal(
 ID_Sucursal varchar(15) primary key,
 Nombre varchar(35) not null,
 Direccion varchar(50) not null,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 
 -- TABLAS DE PROYECTOS
 -- TABLA ENCABEZADO LISTA PROVEEDORES
 create table proveedorE(
 ID_Encabezado varchar(15) primary key,
-Estado varchar(1)
+Fk_Empresa varchar(15) not null,
+Estado varchar(1),
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA DETALLE LISTA PROVEEDORES
 create table proveedorD(
@@ -276,7 +345,10 @@ CREATE TABLE inventarioE (
     ID_Encabezado VARCHAR(15) PRIMARY KEY,
     Fk_Clasificacion VARCHAR(15) NOT NULL,
     Nombre VARCHAR(50) NOT NULL,
+    Fk_Empresa varchar(15) not null,
     Estado VARCHAR(1) NOT NULL,
+    
+    FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
     FOREIGN KEY (Fk_Clasificacion)
         REFERENCES clasificacion (ID_Clasificacion)
 )  ENGINE=INNODB DEFAULT CHARSET=LATIN1;
@@ -323,8 +395,10 @@ Fk_Tipo_Transaccion varchar(15) not null,
 Fecha_Transaccion date not null,
 Cantidad int not null,
 Precio float not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Encabezado) references inventarioE(ID_Encabezado),
 foreign key (Fk_Detalle) references inventarioD(ID_Detalle),
 foreign key (Fk_Tipo_Transaccion) references tipotransac(ID_Tipo_Transaccion)
@@ -335,7 +409,10 @@ ID_Encabezado varchar(15) primary key,
 Proyecto varchar(80) not null,
 Fecha_Emision date not null,
 Total float null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA COTIZACIOND
 create table cotizacionD(
@@ -362,26 +439,33 @@ Nombre varchar(60) not null,
 Telefono varchar(30) not null,
 NIT varchar(30) not null,
 Jefe varchar(60) default null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA SUCURSAL CLIENTE
 create table SucursalCliente(
 ID_Sucursal varchar(15) primary key,
-Fk_Empresa varchar(15) not null,
+Fk_Empresa_Cliente varchar(15) not null,
 Nombre varchar(50) not null,
 Telefono varchar(60) not null,
 Direccion varchar(30) not null,
 Contacto_Directo varchar(60) not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
 
-foreign key (Fk_Empresa) references EmpresaCliente (ID_Empresa)
+foreign key (Fk_Empresa_Cliente) references EmpresaCliente (ID_Empresa),
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA EQUIPO ENCABEZADO
 create table EquipoEncabezado(
 ID_Encabezado varchar(15) primary key,
 Nombre varchar(50) not null,
-Estado varchar (1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar (1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA EQUIPO DETALLE
 create table EquipoDetalle(
@@ -396,19 +480,28 @@ foreign key (Fk_Empleado) references Empleado (ID_Empleado)
 create table MarcaVehiculo(
 ID_Marca_Vehiculo varchar(15) primary key,
 Nombre varchar(30) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA LINEA
 create table Linea(
 ID_Linea varchar(15) primary key,
 Nombre varchar(30) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA TAMAÑO MOTOR
 create table TamanoMotor(
 ID_Tamano_Motor varchar(15) primary key,
 Nombre varchar(30) not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA TIPO COMBUSTIBLE
 create table TipoCombustible(
@@ -425,8 +518,10 @@ Fk_Linea varchar(15) not null,
 Modelo varchar(30) not null,
 Fk_Tamano_Motor varchar(15) not null,
 Fk_Tipo_Combustible varchar(15) not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Marca) references MarcaVehiculo (ID_Marca_Vehiculo),
 foreign key (Fk_Linea) references Linea (ID_Linea),
 foreign key (Fk_Tamano_Motor) references TamanoMotor (ID_Tamano_Motor),
@@ -438,7 +533,10 @@ ID_Encabezado varchar(15) primary key,
 Proyecto varchar(80) not null,
 Fecha_Emision date not null,
 Total float not null,
-Estado varchar(1) not null
+Fk_Empresa varchar(15) not null,
+Estado varchar(1) not null,
+
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 -- TABLA COTIZACION DETALLE
 create table CotizacionProyectoD(
@@ -469,8 +567,10 @@ Fk_Cliente varchar(15) not null,
 Fk_Equipo varchar(15) not null,
 Fk_Vehiculo varchar(15) not null,
 Fk_Cotizacion varchar(15) not null,
+Fk_Empresa varchar(15) not null,
 Estado varchar(1) not null,
 
+FOREIGN KEY (Fk_Empresa) REFERENCES empresa(ID_Empresa),
 foreign key (Fk_Cliente) references SucursalCliente (ID_Sucursal),
 foreign key (Fk_Equipo) references EquipoEncabezado (ID_Encabezado),
 foreign key (Fk_Vehiculo) references Vehiculo (ID_Vehiculo),
