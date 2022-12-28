@@ -1,0 +1,2715 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "3.11.0.0",
+        "fileVersion": "3.11.0-4.21451.6 (0b1a27fd)",
+        "semanticVersion": "3.11.0",
+        "language": "es-MX"
+      },
+      "results": [
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 30,
+                  "endLine": 197,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 30,
+                  "endLine": 215,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 30,
+                  "endLine": 234,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 30,
+                  "endLine": 254,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 329,
+                  "startColumn": 30,
+                  "endLine": 329,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 401,
+                  "startColumn": 30,
+                  "endLine": 401,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 30,
+                  "endLine": 429,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 457,
+                  "startColumn": 30,
+                  "endLine": 457,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 485,
+                  "startColumn": 30,
+                  "endLine": 485,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 512,
+                  "startColumn": 30,
+                  "endLine": 512,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 541,
+                  "startColumn": 30,
+                  "endLine": 541,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 558,
+                  "startColumn": 34,
+                  "endLine": 558,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 548,
+                  "startColumn": 17,
+                  "endLine": 548,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 576,
+                  "startColumn": 34,
+                  "endLine": 576,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 566,
+                  "startColumn": 17,
+                  "endLine": 566,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 595,
+                  "startColumn": 34,
+                  "endLine": 595,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 585,
+                  "startColumn": 17,
+                  "endLine": 585,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "La variable 'ex' se ha declarado pero nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 612,
+                  "startColumn": 34,
+                  "endLine": 612,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0219",
+          "level": "warning",
+          "message": "La variable 'ret' está asignada pero su valor nunca se usa",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 603,
+                  "startColumn": 17,
+                  "endLine": 603,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 56,
+                  "endLine": 51,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 56,
+                  "endLine": 73,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 17,
+                  "endLine": 147,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 16,
+                  "endLine": 172,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 15,
+                  "endLine": 199,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 217,
+                  "startColumn": 16,
+                  "endLine": 217,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 313,
+                  "startColumn": 17,
+                  "endLine": 313,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 320,
+                  "startColumn": 21,
+                  "endLine": 320,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 385,
+                  "startColumn": 17,
+                  "endLine": 385,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 392,
+                  "startColumn": 21,
+                  "endLine": 392,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 413,
+                  "startColumn": 17,
+                  "endLine": 413,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 420,
+                  "startColumn": 21,
+                  "endLine": 420,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 439,
+                  "startColumn": 17,
+                  "endLine": 439,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 441,
+                  "startColumn": 17,
+                  "endLine": 441,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 448,
+                  "startColumn": 21,
+                  "endLine": 448,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 469,
+                  "startColumn": 17,
+                  "endLine": 469,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 476,
+                  "startColumn": 21,
+                  "endLine": 476,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 496,
+                  "startColumn": 17,
+                  "endLine": 496,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 503,
+                  "startColumn": 21,
+                  "endLine": 503,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 523,
+                  "startColumn": 17,
+                  "endLine": 523,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 525,
+                  "startColumn": 17,
+                  "endLine": 525,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 532,
+                  "startColumn": 21,
+                  "endLine": 532,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 555,
+                  "startColumn": 17,
+                  "endLine": 555,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 560,
+                  "startColumn": 17,
+                  "endLine": 560,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 573,
+                  "startColumn": 17,
+                  "endLine": 573,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 578,
+                  "startColumn": 17,
+                  "endLine": 578,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 592,
+                  "startColumn": 17,
+                  "endLine": 592,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 597,
+                  "startColumn": 17,
+                  "endLine": 597,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 614,
+                  "startColumn": 17,
+                  "endLine": 614,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'tabla' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 19,
+                  "endLine": 14,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'cn' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 26,
+                  "endLine": 15,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private field 'tabla'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 9,
+                  "endLine": 14,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'metodoInsertar'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 564,
+                  "startColumn": 21,
+                  "endLine": 564,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 546,
+                  "startColumn": 21,
+                  "endLine": 546,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'metodoInsertar'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 583,
+                  "startColumn": 21,
+                  "endLine": 583,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 546,
+                  "startColumn": 21,
+                  "endLine": 546,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4144",
+          "level": "warning",
+          "message": "Update this method so that its implementation is not identical to 'metodoInsertar'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 601,
+                  "startColumn": 21,
+                  "endLine": 601,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 546,
+                  "startColumn": 21,
+                  "endLine": 546,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 39,
+                  "endLine": 52,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 24,
+                  "endLine": 50,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 39,
+                  "endLine": 121,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 20,
+                  "endLine": 117,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 39,
+                  "endLine": 96,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 20,
+                  "endLine": 92,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S1199",
+          "level": "warning",
+          "message": "Extract this nested code block into a separate method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 13,
+                  "endLine": 131,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 39,
+                  "endLine": 74,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 24,
+                  "endLine": 72,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 39,
+                  "endLine": 25,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 24,
+                  "endLine": 23,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S1168",
+          "level": "warning",
+          "message": "Return an empty collection instead of null.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 17,
+                  "endLine": 42,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 45,
+                  "endLine": 145,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 24,
+                  "endLine": 144,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 45,
+                  "endLine": 170,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 24,
+                  "endLine": 169,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 40,
+                  "endLine": 193,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 24,
+                  "endLine": 192,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 40,
+                  "endLine": 212,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 24,
+                  "endLine": 211,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 231,
+                  "startColumn": 40,
+                  "endLine": 231,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 24,
+                  "endLine": 230,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 251,
+                  "startColumn": 40,
+                  "endLine": 251,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 250,
+                  "startColumn": 24,
+                  "endLine": 250,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 27,
+                  "endLine": 30,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'bytefoto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 42,
+                  "endLine": 19,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 329,
+                  "startColumn": 13,
+                  "endLine": 331,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 330,
+                  "startColumn": 13,
+                  "endLine": 331,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 315,
+                  "startColumn": 39,
+                  "endLine": 315,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 312,
+                  "startColumn": 24,
+                  "endLine": 312,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 339,
+                  "startColumn": 41,
+                  "endLine": 339,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 337,
+                  "startColumn": 20,
+                  "endLine": 337,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 353,
+                  "startColumn": 41,
+                  "endLine": 353,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 351,
+                  "startColumn": 20,
+                  "endLine": 351,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'date'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 366,
+                  "startColumn": 13,
+                  "endLine": 366,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'date'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 22,
+                  "endLine": 364,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'fecha'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 373,
+                  "startColumn": 22,
+                  "endLine": 373,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 401,
+                  "startColumn": 13,
+                  "endLine": 403,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 402,
+                  "startColumn": 13,
+                  "endLine": 403,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 39,
+                  "endLine": 387,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 384,
+                  "startColumn": 24,
+                  "endLine": 384,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 429,
+                  "startColumn": 13,
+                  "endLine": 431,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 430,
+                  "startColumn": 13,
+                  "endLine": 431,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 415,
+                  "startColumn": 39,
+                  "endLine": 415,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 412,
+                  "startColumn": 24,
+                  "endLine": 412,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 10 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 266,
+                  "startColumn": 35,
+                  "endLine": 266,
+                  "endColumn": 228
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 457,
+                  "startColumn": 13,
+                  "endLine": 459,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 458,
+                  "startColumn": 13,
+                  "endLine": 459,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 443,
+                  "startColumn": 39,
+                  "endLine": 443,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 440,
+                  "startColumn": 24,
+                  "endLine": 440,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 485,
+                  "startColumn": 13,
+                  "endLine": 487,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 336,
+                  "startColumn": 22,
+                  "endLine": 336,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 486,
+                  "startColumn": 13,
+                  "endLine": 487,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 350,
+                  "startColumn": 22,
+                  "endLine": 350,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 498,
+                  "startColumn": 39,
+                  "endLine": 498,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 495,
+                  "startColumn": 24,
+                  "endLine": 495,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 471,
+                  "startColumn": 39,
+                  "endLine": 471,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 468,
+                  "startColumn": 24,
+                  "endLine": 468,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2486",
+          "level": "warning",
+          "message": "Handle the exception or explain in a comment why it can be ignored.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 541,
+                  "startColumn": 13,
+                  "endLine": 543,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 542,
+                  "startColumn": 13,
+                  "endLine": 543,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 527,
+                  "startColumn": 39,
+                  "endLine": 527,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 524,
+                  "startColumn": 24,
+                  "endLine": 524,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to insertQuery."
+            }
+          }
+        },
+        {
+          "ruleId": "S2077",
+          "level": "warning",
+          "message": "Make sure using a dynamically formatted SQL query is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 624,
+                  "startColumn": 41,
+                  "endLine": 624,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 622,
+                  "startColumn": 20,
+                  "endLine": 622,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "SQL Query is dynamically formatted and assigned to sql."
+            }
+          }
+        },
+        {
+          "ruleId": "S1117",
+          "level": "warning",
+          "message": "Rename 'cn' which hides the field with the same name.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///F:/Proyecto%20de%20graduacion/ProyectoGraduacion/CapaModeloProyecto/Sentencias.cs",
+                "region": {
+                  "startLine": 621,
+                  "startColumn": 22,
+                  "endLine": 621,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS0168": {
+          "id": "CS0168",
+          "shortDescription": "La variable está declarada pero nunca se usa",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0168)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS0219": {
+          "id": "CS0219",
+          "shortDescription": "La variable está asignada pero nunca se usa su valor",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0219)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S107": {
+          "id": "S107",
+          "shortDescription": "Methods should not have too many parameters",
+          "fullDescription": "A long parameter list can indicate that a new structure should be created to wrap the numerous parameters or that the function is doing too many things.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-107",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S108": {
+          "id": "S108",
+          "shortDescription": "Nested blocks of code should not be left empty",
+          "fullDescription": "Most of the time a block of code is empty when a piece of code is really missing. So such empty block must be either filled or removed.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-108",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1117": {
+          "id": "S1117",
+          "shortDescription": "Local variables should not shadow class fields",
+          "fullDescription": "Overriding or shadowing a variable declared in an outer scope can strongly impact the readability, and therefore the maintainability, of a piece of code. Further, it could lead maintainers to introduce bugs because they think they’re using one variable but are really using another.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1117",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General exceptions should never be thrown",
+          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "private or internal types or private members that are never executed or referenced are dead code: unnecessary, inoperative code that should be removed. Cleaning out dead code decreases the size of the maintained codebase, making it easier to understand the program and preventing bugs from being introduced.",
+          "defaultLevel": "note",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay",
+              "Unnecessary"
+            ]
+          }
+        },
+        "S1168": {
+          "id": "S1168",
+          "shortDescription": "Empty arrays and collections should be returned instead of null",
+          "fullDescription": "Returning null instead of an actual array, collection or map forces callers of the method to explicitly test for nullity, making them more complex and less readable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1168",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1199": {
+          "id": "S1199",
+          "shortDescription": "Nested code blocks should not be used",
+          "fullDescription": "Nested code blocks can be used to create a new scope and restrict the visibility of the variables defined inside it. Using this feature in a method typically indicates that the method has too many responsibilities, and should be refactored into smaller methods.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1199",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1854": {
+          "id": "S1854",
+          "shortDescription": "Unused assignments should be removed",
+          "fullDescription": "A dead store happens when a local variable is assigned a value that is not read by any subsequent instruction. Calculating or retrieving a value only to then overwrite it or throw it away, could indicate a serious error in the code. Even if it’s not an error, it is at best a waste of resources. Therefore all calculated values should be used.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1854",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2077": {
+          "id": "S2077",
+          "shortDescription": "Formatting SQL queries is security-sensitive",
+          "fullDescription": "Formatted SQL queries can be difficult to maintain, debug and can increase the risk of SQL injection when concatenating untrusted values into the query. However, this rule doesn’t detect SQL injections (unlike rule {rule:csharpsquid:S3649}), the goal is only to highlight complex/formatted queries.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2077",
+          "properties": {
+            "category": "Major Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2486": {
+          "id": "S2486",
+          "shortDescription": "Generic exceptions should not be ignored",
+          "fullDescription": "When exceptions occur, it is usually a bad idea to simply ignore them. Instead, it is better to handle them properly, or at least to log them.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2486",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4144": {
+          "id": "S4144",
+          "shortDescription": "Methods should not have identical implementations",
+          "fullDescription": "When two methods have the same implementation, either it was a mistake - something else was intended - or the duplication was intentional, but may be confusing to maintainers. In the latter case, one implementation should invoke the other.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

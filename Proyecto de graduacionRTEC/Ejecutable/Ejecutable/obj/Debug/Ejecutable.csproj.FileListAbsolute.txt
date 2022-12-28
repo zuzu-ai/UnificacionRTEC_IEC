@@ -1,0 +1,174 @@
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe.config
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\bin\Debug\Ejecutable.pdb
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\obj\Debug\Ejecutable.Properties.Resources.resources
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.GenerateResource.cache
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\obj\Debug\Ejecutable.exe
+C:\Users\Kevin\source\repos\Ejecutable\Ejecutable\obj\Debug\Ejecutable.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe.config
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaProyecto.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaProyecto.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.AssemblyReference.cache
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.Properties.Resources.resources
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.GenerateResource.cache
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CoreCompileInputs.cache
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CopyComplete
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.exe
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorProyecto.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaNavegador.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyecto.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorNavegador.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloNavegador.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorProyecto.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaNavegador.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyecto.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorNavegador.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloNavegador.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.exe
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaContoladorProyectoIEC.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.exe
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.Shared.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyectoIEC.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorSeguridad.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\AxShockwaveFlashObjects.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloSeguridad.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\ShockwaveFlashObjects.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\stdole.dll
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.exe.config
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaContoladorProyectoIEC.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.exe.config
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyectoIEC.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorSeguridad.pdb
+F:\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe.config
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaProyecto.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorProyecto.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.exe
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaNavegador.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.exe
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyecto.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaContoladorProyectoIEC.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorNavegador.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyectoIEC.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloNavegador.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\stdole.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaProyecto.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorProyecto.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.exe.config
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.exe.config
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaContoladorProyectoIEC.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyectoIEC.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.Properties.Resources.resources
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.GenerateResource.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.exe
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe.config
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.exe
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Ejecutable.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaProyecto.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.exe
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaNavegador.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.exe
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyecto.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaContoladorProyectoIEC.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorNavegador.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyectoIEC.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\stdole.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\Proyecto IEC.exe.config
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaVistaSeguridad.exe.config
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaContoladorProyectoIEC.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloProyectoIEC.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.Properties.Resources.resources
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.GenerateResource.cache
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.csproj.CopyComplete
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.exe
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\Ejecutable\Ejecutable\obj\Debug\Ejecutable.pdb

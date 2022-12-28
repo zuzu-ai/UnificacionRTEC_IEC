@@ -1,0 +1,36 @@
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.dll
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.pdb
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.AssemblyReference.cache
+C:\Users\Kevin\source\repos\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CopyComplete
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CopyComplete
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.dll
+C:\Users\Kevin\Desktop\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.pdb
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CopyComplete
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.dll
+C:\Users\ZUZU\Downloads\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.AssemblyReference.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CoreCompileInputs.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CopyComplete
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\Login\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.pdb

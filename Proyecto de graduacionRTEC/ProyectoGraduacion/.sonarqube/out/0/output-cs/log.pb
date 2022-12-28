@@ -1,0 +1,1 @@
+Roslyn version: 3.11.0.0Language version: CSharp7_3!Concurrent execution: enabled©¤File 'F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs' was recognized as generated

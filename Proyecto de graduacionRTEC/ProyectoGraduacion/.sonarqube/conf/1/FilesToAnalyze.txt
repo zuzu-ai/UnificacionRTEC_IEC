@@ -1,0 +1,3 @@
+﻿F:\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\Conexion.cs
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\Properties\AssemblyInfo.cs
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\Sentencias.cs

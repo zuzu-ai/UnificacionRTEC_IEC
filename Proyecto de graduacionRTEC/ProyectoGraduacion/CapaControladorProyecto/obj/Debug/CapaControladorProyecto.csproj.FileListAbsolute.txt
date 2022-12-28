@@ -1,0 +1,36 @@
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.AssemblyReference.cache
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.dll
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\Kevin\source\repos\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CopyComplete
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.dll
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.pdb
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.dll
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.pdb
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.AssemblyReference.cache
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CoreCompileInputs.cache
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CopyComplete
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.dll
+F:\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.dll
+C:\Users\ZUZU\Desktop\Unificado\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CopyComplete
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.pdb

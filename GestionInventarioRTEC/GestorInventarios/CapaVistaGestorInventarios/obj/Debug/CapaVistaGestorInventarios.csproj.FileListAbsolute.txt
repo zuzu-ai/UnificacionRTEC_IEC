@@ -1,0 +1,250 @@
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe.config
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.AssemblyReference.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Properties.Resources.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.GenerateResource.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.CoreCompileInputs.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.exe
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.MDIRTEC.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.CopyComplete
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.exe
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloSeguridad.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.exe.config
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloSeguridad.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmPuesto.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaNavegador.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorNavegador.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloNavegador.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaNavegador.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorNavegador.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloNavegador.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmJornada.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmBodega.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmEmpleado.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmTipoUsuario.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmUsuario.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmClasificacion.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmUbicacion.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmMarca.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmPregunta.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmProveedor.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmCategoria.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmAlmacenamiento.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmTransaccion.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmInventario.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmProducto.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmSucursal.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte1.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte10.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte11.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte12.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte2.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte3.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte4.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte5.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte6.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte7.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte8.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte9.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\AxShockwaveFlashObjects.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.Shared.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\ShockwaveFlashObjects.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\stdole.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte13.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmGestor.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmCotizacion.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte14.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte15.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmRecordatorios.resources
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmRecuperarContraseña.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe.config
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorGestorInventarios.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaNavegador.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.exe
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorNavegador.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\stdole.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorGestorInventarios.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.exe.config
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmAlmacenamiento.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmBodega.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmCategoria.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmClasificacion.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmCotizacion.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmEmpleado.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmGestor.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmInventario.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmJornada.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmMarca.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmPregunta.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmProducto.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmProveedor.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmPuesto.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmRecordatorios.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmRecuperarContraseña.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmSucursal.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmTipoUsuario.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmTransaccion.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmUbicacion.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmUsuario.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.MDIRTEC.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Properties.Resources.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte1.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte10.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte11.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte12.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte13.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte14.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte15.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte2.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte3.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte4.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte5.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte6.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte7.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte8.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte9.resources
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.GenerateResource.cache
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.CopyComplete
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.exe
+C:\Users\Kevin\Desktop\Unificacion\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe.config
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.exe
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorGestorInventarios.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaNavegador.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.exe
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorNavegador.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\stdole.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloNavegador.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaVistaSeguridad.exe.config
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmAlmacenamiento.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmBodega.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmCategoria.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmClasificacion.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmCotizacion.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmEmpleado.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmGestor.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmInventario.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmJornada.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmMarca.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmPregunta.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmProducto.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmProveedor.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmPuesto.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmRecordatorios.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmRecuperarContraseña.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmSucursal.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmTipoUsuario.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmTransaccion.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmUbicacion.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmUsuario.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.MDIRTEC.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Properties.Resources.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte1.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte10.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte11.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte12.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte13.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte14.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte15.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte2.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte3.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte4.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte5.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte6.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte7.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte8.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.Reporte9.resources
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.GenerateResource.cache
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.exe
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaVistaGestorInventarios\obj\Debug\CapaVistaGestorInventarios.frmConsultaProducto.resources

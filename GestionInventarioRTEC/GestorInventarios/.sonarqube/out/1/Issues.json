@@ -1,0 +1,508 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.3.0.0",
+        "fileVersion": "4.3.0-3.22465.2 (7d8de40e)",
+        "semanticVersion": "4.3.0",
+        "language": "es-MX"
+      },
+      "results": [
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 44,
+                  "endLine": 124,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 44,
+                  "endLine": 163,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 238,
+                  "startColumn": 44,
+                  "endLine": 238,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 44,
+                  "endLine": 244,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 250,
+                  "startColumn": 44,
+                  "endLine": 250,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make 'sn' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 10,
+                  "endLine": 23,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 20,
+                  "endLine": 12,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 10,
+                  "endLine": 35,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 17,
+                  "endLine": 14,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 10,
+                  "endLine": 28,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 17,
+                  "endLine": 13,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 10,
+                  "endLine": 40,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 17,
+                  "endLine": 15,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 10,
+                  "endLine": 45,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 17,
+                  "endLine": 16,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 10,
+                  "endLine": 50,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 17,
+                  "endLine": 17,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2696",
+          "level": "warning",
+          "message": "Make the enclosing instance property 'static' or remove this set on the 'static' field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 10,
+                  "endLine": 55,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Global.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 17,
+                  "endLine": 18,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3329",
+          "level": "warning",
+          "message": "Use a dynamically-generated, random IV.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Encriptar.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 46,
+                  "endLine": 24,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 10 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Documentos/UMG/0%20-Decimo%20Semestre/1.%20Proyecto%20de%20Graduaci%C3%B3n%20II/Software/GestionInventario/GestorInventarios/CapaControladorGestorInventarios/Controlador.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 35,
+                  "endLine": 58,
+                  "endColumn": 228
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S107": {
+          "id": "S107",
+          "shortDescription": "Methods should not have too many parameters",
+          "fullDescription": "A long parameter list can indicate that a new structure should be created to wrap the numerous parameters or that the function is doing too many things.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-107",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1135": {
+          "id": "S1135",
+          "shortDescription": "Track uses of \"TODO\" tags",
+          "fullDescription": "TODO tags are commonly used to mark places where some more code is required, but which the developer wants to implement later.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1135",
+          "properties": {
+            "category": "Info Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2696": {
+          "id": "S2696",
+          "shortDescription": "Instance members should not write to \"static\" fields",
+          "fullDescription": "Correctly updating a static field from a non-static method is tricky to get right and could easily lead to bugs if there are multiple class instances and/or multiple threads in play.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2696",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3329": {
+          "id": "S3329",
+          "shortDescription": "Cipher Block Chaining IVs should be unpredictable",
+          "fullDescription": "When encrypting data with the Cipher Block Chaining (CBC) mode an Initialization Vector (IV) is used to randomize the encryption, ie under a given key the same plaintext doesn’t always produce the same ciphertext. The IV doesn’t need to be secret but should be unpredictable to avoid \"Chosen-Plaintext Attack\".",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3329",
+          "properties": {
+            "category": "Critical Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

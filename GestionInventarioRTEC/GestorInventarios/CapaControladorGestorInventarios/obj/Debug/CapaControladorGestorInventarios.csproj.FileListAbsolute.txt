@@ -1,0 +1,18 @@
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaControladorGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaControladorGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.csproj.AssemblyReference.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.csproj.CoreCompileInputs.cache
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaControladorGestorInventarios.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaControladorGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.csproj.AssemblyReference.cache
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.csproj.CoreCompileInputs.cache
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.csproj.CopyComplete
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.dll
+C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\obj\Debug\CapaControladorGestorInventarios.pdb

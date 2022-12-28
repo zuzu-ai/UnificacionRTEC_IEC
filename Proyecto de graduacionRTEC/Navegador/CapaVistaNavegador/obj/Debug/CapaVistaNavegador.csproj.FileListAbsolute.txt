@@ -1,0 +1,51 @@
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.AssemblyReference.cache
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.NavegadorMantenimientos.resources
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.Properties.Resources.resources
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.GenerateResource.cache
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.dll
+C:\Users\Kevin\source\repos\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.pdb
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.pdb
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.AssemblyReference.cache
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.NavegadorMantenimientos.resources
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.Properties.Resources.resources
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.GenerateResource.cache
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CoreCompileInputs.cache
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CopyComplete
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.dll
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.pdb
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.dll
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.pdb
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.dll
+F:\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.pdb
+F:\IEC\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll
+F:\IEC\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.pdb
+F:\IEC\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.dll
+F:\IEC\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.dll
+F:\IEC\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.pdb
+F:\IEC\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.pdb
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.AssemblyReference.cache
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.NavegadorMantenimientos.resources
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.Properties.Resources.resources
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.GenerateResource.cache
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CoreCompileInputs.cache
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CopyComplete
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.dll
+F:\IEC\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.pdb
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.pdb
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.dll
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.dll
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.pdb
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.pdb
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.AssemblyReference.cache
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.NavegadorMantenimientos.resources
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.Properties.Resources.resources
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.GenerateResource.cache
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CoreCompileInputs.cache
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CopyComplete
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.dll
+F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.pdb

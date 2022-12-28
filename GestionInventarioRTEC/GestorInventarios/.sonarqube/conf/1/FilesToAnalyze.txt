@@ -1,0 +1,4 @@
+﻿D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\Controlador.cs
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\Encriptar.cs
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\Global.cs
+D:\Documentos\UMG\0 -Decimo Semestre\1. Proyecto de Graduación II\Software\GestionInventario\GestorInventarios\CapaControladorGestorInventarios\Properties\AssemblyInfo.cs
