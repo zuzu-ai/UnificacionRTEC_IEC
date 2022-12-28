@@ -578,21 +578,31 @@ foreign key (Fk_Cotizacion) references CotizacionProyectoE (ID_Encabezado)
 )engine=InnoDB DEFAULT CHARSET=latin1;
 
 -- INSERTS NECESARIOS
-insert into puesto values ("1","Gerente","1");
-insert into puesto values ("2","Vendedor","1");
+insert into empresa values ("1","IEC","1");
+insert into empresa values ("2","RTEC","1");
 
-insert into jornada values ("2","Administracion", "08:00:00","16:30:00","1");
+insert into puesto values ("1","Gerente","1","1");
+insert into puesto values ("2","Gerente","2","1");
 
-insert into empleado values ("1","1", "David Enrique Guerra Lucio","2145896250101","2",null,null,null,"1");
+insert into jornada values ("1","Administracion", "08:00:00","16:30:00","1","1");
+insert into jornada values ("2","Administracion", "08:00:00","16:30:00","2","1");
 
-insert into tipousuario values ("1", "Administrador", "1");
-insert into tipousuario values ("2", "Supervisor", "1");
-insert into tipousuario values ("3", "Visitante", "1");
+
+insert into empleado values ("1","1", "David Enrique Guerra Lucio","2145896250101","1",null,null,null,"1","1");
+insert into empleado values ("2","2", "Carlos Daniel  Torres Estrada","1432456789045","2",null,null,null,"2","1");
+
+insert into tipousuario values ("1", "Administrador","1","1");
+insert into tipousuario values ("2", "Supervisor","1","1");
+insert into tipousuario values ("3", "Visitante","1","1");
+insert into tipousuario values ("4", "Administrador","2","1");
+insert into tipousuario values ("5", "Supervisor","2","1");
+insert into tipousuario values ("6", "Visitante","2","1");
 
 insert into pregunta values ("1", "¿Año de nacimiento?", "1");
 
-insert into usuario values ("1", "1", "1", "admin","LKAekHU9EtweB49HAaTRfg==","1","1","1");
+insert into usuario values ("1", "1", "1", "adminIEC","LKAekHU9EtweB49HAaTRfg==","1","1","1","1");
+insert into usuario values ("2", "4", "2", "adminRTEC","LKAekHU9EtweB49HAaTRfg==","1","1","2","1");
 
-insert into categoria values ("1","1","1","Ninguna","1");
-insert into categoria values ("2","2","1","Ninguna","1");
-insert into categoria values ("3","3","2","Ninguna","1");
+insert into categoria values ("1","1","1","Ninguna","2","1");
+insert into categoria values ("2","2","1","Ninguna","2","1");
+insert into categoria values ("3","3","2","Ninguna","2","1");
