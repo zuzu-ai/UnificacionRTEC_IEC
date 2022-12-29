@@ -59,7 +59,6 @@ namespace CapaControladorNavegador
                 MessageBox.Show("Error en la capa controlador, revisar la funcion funAsignarSalidadControl");
             }
         }
-        /*2*/
         public int idSiguienteDeNuevoIngreso(string tabla)
         {
             int longitud = texts.Length;
@@ -99,8 +98,6 @@ namespace CapaControladorNavegador
                 MessageBox.Show("Error en la capa controlador, revisar la funcion activaRadiobtn");
             }
         }
-
-        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
         public void CambioEstadoTextBox(TextBox estado, RadioButton AI, string cadenaEstado)
         {
             try
@@ -112,8 +109,6 @@ namespace CapaControladorNavegador
                 MessageBox.Show("Error en la capa controlador, revisar la funcion CambioEstadoTextBox");
             }
         }
-
-        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
         public void enviarDatoCbxaTextbox(ComboBox combo, TextBox combotexto)
         {
             try
@@ -125,8 +120,6 @@ namespace CapaControladorNavegador
                 MessageBox.Show("Error en la capa controlador, revisar la funcion enviarDatoCbxaTextbox");
             }
         }
-
-        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
         public void SeleccionarElementoEnComboBox(ComboBox combo, TextBox combotexto)
         {
             try
@@ -149,8 +142,6 @@ namespace CapaControladorNavegador
                 MessageBox.Show("Error en la capa controlador, revisar la funcion CambiarFormatoFecha");
             }
         }
-
-        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
         public void SeleccionarFechaDTP(DateTimePicker date, TextBox textoDate)
         {
             try
@@ -169,15 +160,12 @@ namespace CapaControladorNavegador
         }
         public DataTable ActualizarDGV(string tablaDB)
         {
-            //cambiado 18/10/2021-01:30pm, todo el odbc se paso a realizar solo en la modelo
-            //para aumentar la seguridad
             return Modelo.ActualizarDGV(tablaDB);
         }
         public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
         {
             return Modelo.Modificar(campos, tablas);
         }
-        /*1*/
         public bool insertarDatostabla(TextBox[] campos, string tablas)
         {
             return Modelo.metodoInsertarDatosTabla(campos, tablas);
@@ -227,19 +215,11 @@ namespace CapaControladorNavegador
             }
         }
 
-        /*Liam Patrick Bernard García - 0901-18-10092
-        public string funObtienePermisos(string idUsuario, string idAplicacion)
-        {
-            CapaModeloSeguridadHSC.llamarPermisos modeloSeguridad = new CapaModeloSeguridadHSC.llamarPermisos();
-            return modeloSeguridad.llenarpermisos(idUsuario, idAplicacion);
-        }*/
-
         public void bloquearBtn(Button Agregar, Button Modificar, Button Guardar, Button Cancelar, Button Eliminar, Button Reporte, Button Actualizar, Button Inicio, Button Anterior, Button Siguiente, Button Final, Button Ayuda, Button Salir, string tipousuario)
         {
 
             try
             {
-                //MessageBox.Show(id_usuario + " " + usuario);
                 Modelo.bloquearBtn(Agregar, Modificar, Guardar, Cancelar, Eliminar, Reporte, Actualizar, Inicio, Anterior, Siguiente, Final, Ayuda, Salir, tipousuario);
             }
             catch

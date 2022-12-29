@@ -134,7 +134,7 @@ namespace CapaModeloNavegador
             try
             {
                 cbx.DataSource = null; cbx.Items.Clear();
-                String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' ";
+                String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' AND Fk_Empresa= '2';";
                 OdbcConnection conect = conexion.conexion();
                 try
                 {
@@ -505,7 +505,7 @@ namespace CapaModeloNavegador
         public DataTable ActualizarDGV(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
+            string sql = "select * from " + tabla + " AND Fk_Empresa= '2' " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
@@ -600,15 +600,6 @@ namespace CapaModeloNavegador
 
         public void bloquearBtn( Button Agregar, Button Modificar, Button Guardar, Button Cancelar, Button Eliminar, Button Reporte, Button Actualizar, Button Inicio, Button Anterior, Button Siguiente, Button Final, Button Ayuda, Button Salir, string nombre)
         {
-            //string id = "";
-           // string nombre = "";
-
-           // var (dato1, dato2) = permisos(usuario, id_usuario);
-
-          //  nombre = dato1;
-           // id = dato2;
-
-           // MessageBox.Show(nombre);
             if(nombre == "Administrador" || nombre == "administrador" || nombre == "ADMINISTRADOR" || nombre == "ADMIN" || nombre == "Admin" || nombre == "admin")
             {
                 Agregar.Enabled = true;

@@ -197,7 +197,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_tipo_categoria = '" + tipo + "' AND fk_categoria_superior ='" + catsup + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_tipo_categoria = '" + tipo + "' AND fk_categoria_superior ='" + catsup + "' AND Fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -223,7 +223,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_tipo_categoria = '" + tipo + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_tipo_categoria = '" + tipo + "' AND fk_empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -249,7 +249,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_empresa= '1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -274,7 +274,7 @@ namespace CapaModeloGestorInventarios
             string dato = "";
             try
             {
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND " + campoid + " = '" + pkid + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND " + campoid + " = '" + pkid + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -402,7 +402,7 @@ namespace CapaModeloGestorInventarios
         public DataTable ActualizarDGV(string tabla, string campoid)
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " " + "ORDER BY " + campoid + ";";
+            string sql = "select * from " + tabla + "  WHERE fk_Empresa='1' " + "ORDER BY " + campoid + ";";
             OdbcConnection conect = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conect);
             cn.desconexion(conect);
@@ -417,7 +417,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -443,7 +443,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_tipo_categoria = '" + tipo + "' AND fk_categoria_superior = '" + catsup + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_tipo_categoria = '" + tipo + "' AND fk_categoria_superior = '" + catsup + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -469,7 +469,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_bodega = '" + bodega + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_bodega = '" + bodega + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -492,7 +492,7 @@ namespace CapaModeloGestorInventarios
         public DataTable LlenarProveedores(string tabla)
         {
             Conexion cn = new Conexion();
-            string sql = "select id_proveedor, nombre from " + tabla + " " + "ORDER BY id_proveedor;";
+            string sql = "select id_proveedor, nombre from " + tabla + " AND fk_Empresa='1' " + "ORDER BY id_proveedor;";
             OdbcConnection conect = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conect);
             cn.desconexion(conect);
@@ -508,7 +508,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_tipo_categoria = '" + tipo + "' AND fk_categoria_superior = '" + catsup + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_tipo_categoria = '" + tipo + "' AND fk_categoria_superior = '" + catsup + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -534,7 +534,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_tipo_categoria = '" + tipo + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_tipo_categoria = '" + tipo + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -611,7 +611,7 @@ namespace CapaModeloGestorInventarios
             string dato = ""; Boolean chequeado = false;
             try
             {
-                string insertQuery = "SELECT * FROM " + tabla + " where  fk_proveedor = '" + fkproveedores + "' and fk_encabezado = '" + fkproveedore +"';";
+                string insertQuery = "SELECT * FROM " + tabla + " where  fk_proveedor = '" + fkproveedores + "' and fk_encabezado = '" + fkproveedore + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -638,7 +638,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 cbx.Items.Clear();
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_encabezado = '" + inventario + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND fk_encabezado = '" + inventario + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -664,7 +664,7 @@ namespace CapaModeloGestorInventarios
             try
             {
                 textbox.Text = "";
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_encabezado = '" + inventario + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND nombre = '" + nombre + "' AND fk_encabezado = '" + inventario + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -689,7 +689,7 @@ namespace CapaModeloGestorInventarios
             string dato = "";
             try
             {
-                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND ID_Detalle = '" + pkid + "' AND fk_encabezado = '" + inventario + "';";
+                string insertQuery = "SELECT * FROM " + tabla + " WHERE estado = '1' AND ID_Detalle = '" + pkid + "' AND fk_encabezado = '" + inventario + "' AND fk_Empresa='1';";
                 OdbcConnection conect = cn.conexion();
                 OdbcCommand command = new OdbcCommand(insertQuery, conect);
                 command.ExecuteNonQuery(); OdbcDataReader busquedac;
@@ -790,7 +790,7 @@ namespace CapaModeloGestorInventarios
         //función para obtener los proveedores de un producto
         public DataTable ObtenerProveedores(string encabezado)
         {
-            string sql = "select nombre from proveedor, proveedord where proveedor.ID_Proveedor = proveedord.Fk_Proveedor and proveedord.Fk_Encabezado= '" + encabezado + "';";
+            string sql = "select nombre from proveedor, proveedord where proveedor.ID_Proveedor = proveedord.Fk_Proveedor and proveedor.Fk_Empresa='1' and proveedord.Fk_Encabezado= '" + encabezado + "';";
             OdbcConnection conect = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conect);
             DataTable table = new DataTable();
@@ -803,7 +803,7 @@ namespace CapaModeloGestorInventarios
         {
             AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
 
-            string sql = "select inventariod.Nombre from inventariod where inventariod.Nombre like '%" + texto + "%';";
+            string sql = "select inventariod.Nombre from inventariod,inventarioe where inventariod.fk_encabezado = inventarioe.id_encabezado and inventarioe.fk_empresa = '1' and inventariod.Nombre like '%" + texto + "%';";
             OdbcConnection conect = cn.conexion();
             OdbcDataAdapter adaptador = new OdbcDataAdapter(sql, conect);
             DataTable table = new DataTable();
@@ -819,7 +819,7 @@ namespace CapaModeloGestorInventarios
         public DataTable LlenarProductos()
         {
             Conexion cn = new Conexion();
-            string sql = "select inventariod.Nombre as 'Producto', inventariod.Precio_Venta as 'Precio Venta', inventariod.Precio_Compra as 'Precio Compra', inventariod.Cantidad as 'Disponibilidad', Marca.Nombre as 'Marca', inventariod.Serie as 'Serie' from inventariod, marca where marca.ID_Marca = inventariod.Fk_Marca;";
+            string sql = "select inventariod.Nombre as 'Producto', inventariod.Precio_Venta as 'Precio Venta', inventariod.Precio_Compra as 'Precio Compra', inventariod.Cantidad as 'Disponibilidad', Marca.Nombre as 'Marca', inventariod.Serie as 'Serie' from inventarioe, inventariod, marca where marca.ID_Marca = inventariod.Fk_Marca and inventarioe.Fk_Empresa='1';";
             OdbcConnection conect = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conect);
             cn.desconexion(conect);
