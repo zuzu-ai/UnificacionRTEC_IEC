@@ -93,7 +93,8 @@ namespace CapaVistaGestorInventarios
 				{
 					cbxProducto.Items.Clear();
 				}
-			} catch (Exception excepti) { }
+			}
+			catch (Exception excepti) { }
 		}
 
 		private void cbxProducto_SelectedIndexChanged(object sender, EventArgs e)
@@ -142,7 +143,7 @@ namespace CapaVistaGestorInventarios
 		{
 			if (rbnActivo.Checked == true)
 			{
-				txtEstado.Text="1";
+				txtEstado.Text = "1";
 			}
 		}
 
@@ -252,8 +253,8 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO transacciones VALUES( '" + txtID.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtTransaccion.Text + "', '" + txtFecha.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtEstado.Text + "');";
-						string acciontransac = controlador.BuscaDato("tipotransac","Accion","ID_Transacciones",txtTransaccion.Text);
+						query = "INSERT INTO transacciones VALUES( '" + txtID.Text + "', '" + txtInventario.Text + "', '" + txtProducto.Text + "', '" + txtTransaccion.Text + "', '" + txtFecha.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtEmpresa.Text + "', '" + txtEstado.Text + "');";
+						string acciontransac = controlador.BuscaDato("tipotransac", "Accion", "ID_Transacciones", txtTransaccion.Text);
 						string precio = "";
 						if (acciontransac == "1")
 						{
@@ -311,7 +312,7 @@ namespace CapaVistaGestorInventarios
 				case "2":
 					try
 					{
-						query = "UPDATE transacciones SET Fk_Encabezado = '" + txtInventario.Text + "', Fk_Detalle ='" + txtProducto.Text + "', Fk_Tipo_Transaccion ='" + txtTransaccion.Text + "', Fecha_Transaccion ='" + txtFecha.Text + "', Cantidad ='" + txtCantidad.Text + "', Precio ='" + txtPrecio.Text + "', Estado='" + txtEstado.Text + "' WHERE ID_Transacciones = '" + txtID.Text + "';";
+						query = "UPDATE transacciones SET Fk_Encabezado = '" + txtInventario.Text + "', Fk_Detalle ='" + txtProducto.Text + "', Fk_Tipo_Transaccion ='" + txtTransaccion.Text + "', Fecha_Transaccion ='" + txtFecha.Text + "', Cantidad ='" + txtCantidad.Text + "', Precio ='" + txtPrecio.Text + "', fk_Empresa = '" + txtEmpresa.Text + "', Estado='" + txtEstado.Text + "' WHERE ID_Transacciones = '" + txtID.Text + "';";
 						string acciontransac = controlador.BuscaDato("tipotransac", "Accion", "Fk_Tipo_Transaccion", txtTransaccion.Text);
 						string precio = "";
 						if (acciontransac == "1")
@@ -337,7 +338,7 @@ namespace CapaVistaGestorInventarios
 								}
 							}
 							else { }
-							
+
 						}
 						else if (acciontransac == "2")
 						{

@@ -114,6 +114,7 @@ namespace CapaVistaGestorInventarios
 			this.dgvIM1.Name = "dgvIM1";
 			this.dgvIM1.Size = new System.Drawing.Size(283, 176);
 			this.dgvIM1.TabIndex = 2;
+			this.dgvIM1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIM1_CellContentClick);
 			// 
 			// label2
 			// 

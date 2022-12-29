@@ -365,7 +365,7 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO cotizacionE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtEstadoE.Text + "');";
+						query = "INSERT INTO cotizacionE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtEmpresa.Text + "', '" + txtEstadoE.Text + "');";
 						controlador.metodoInsertar(query);
 					}
 					catch (Exception excep)
@@ -379,7 +379,7 @@ namespace CapaVistaGestorInventarios
 				case "2":
 					try
 					{
-						query = "UPDATE cotizacionE SET proyecto ='" + txtProyecto.Text + "', fecha_emision ='" + txtFecha.Text + "', total ='" + txtTotal.Text + "', estado='" + txtEstadoE.Text + "' WHERE pkid = '" + txtIDE.Text + "';";
+						query = "UPDATE cotizacionE SET proyecto ='" + txtProyecto.Text + "', fecha_emision ='" + txtFecha.Text + "', total ='" + txtTotal.Text + "', fk_empresa ='" + txtEmpresa.Text + "', estado='" + txtEstadoE.Text + "' WHERE pkid = '" + txtIDE.Text + "';";
 						
 						string estadoinicial = controlador.BuscaDato("cotizacione", "estado", "ID_Encabezado", txtIDE.Text);
 						string nuevoestado = txtEstadoD.Text;

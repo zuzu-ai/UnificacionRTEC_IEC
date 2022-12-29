@@ -218,10 +218,12 @@ namespace CapaVistaGestorInventarios
 			controlador.IDCombo(txtInventario, "inventarioe", "ID_Encabezado", cbxInventario.Text);
 			if (txtInventario.Text != "")
 			{
-				try{
+				try
+				{
 					controlador.LlenarCBXProducto(cbxProducto, "inventariod", "nombre", txtInventario.Text);
 				}
-				catch (Exception exx) {
+				catch (Exception exx)
+				{
 					cbxProducto.Items.Clear();
 				}
 			}
@@ -303,7 +305,7 @@ namespace CapaVistaGestorInventarios
 
 		private void txtProducto_TextChanged(object sender, EventArgs e)
 		{
-			controlador.NombreIDProducto(cbxProducto, "inventariod","nombre", txtProducto.Text, txtInventario.Text);
+			controlador.NombreIDProducto(cbxProducto, "inventariod", "nombre", txtProducto.Text, txtInventario.Text);
 		}
 
 		private void btnIngresarD_Click(object sender, EventArgs e)
@@ -365,7 +367,7 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO cotizacionE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtEstadoE.Text + "');";
+						query = "INSERT INTO cotizacionE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtEmpresa.Text + "', '" + txtEstadoE.Text + "');";
 						controlador.metodoInsertar(query);
 					}
 					catch (Exception excep)
@@ -379,8 +381,8 @@ namespace CapaVistaGestorInventarios
 				case "2":
 					try
 					{
-						query = "UPDATE cotizacionE SET proyecto ='" + txtProyecto.Text + "', fecha_emision ='" + txtFecha.Text + "', total ='" + txtTotal.Text + "', estado='" + txtEstadoE.Text + "' WHERE pkid = '" + txtIDE.Text + "';";
-						
+						query = "UPDATE cotizacionE SET proyecto ='" + txtProyecto.Text + "', fecha_emision ='" + txtFecha.Text + "', total ='" + txtTotal.Text + "', fk_empresa ='" + txtEmpresa.Text + "', estado='" + txtEstadoE.Text + "' WHERE pkid = '" + txtIDE.Text + "';";
+
 						string estadoinicial = controlador.BuscaDato("cotizacione", "estado", "ID_Encabezado", txtIDE.Text);
 						string nuevoestado = txtEstadoD.Text;
 						if (estadoinicial != nuevoestado)
@@ -393,7 +395,7 @@ namespace CapaVistaGestorInventarios
 							}
 						}
 
-							controlador.metodoModificar(query);
+						controlador.metodoModificar(query);
 						deshabilitarE();
 						actualizar();
 					}
@@ -518,7 +520,7 @@ namespace CapaVistaGestorInventarios
 						}
 						else if (estadoinicial != nuevoestado)
 						{
-							
+
 							if (nuevoestado == "1")
 							{
 								string nueva = (Convert.ToInt32(totalcotizacion) + Convert.ToInt32(modificar)).ToString();
@@ -743,7 +745,7 @@ namespace CapaVistaGestorInventarios
 				txtProducto.Text = dgvDetalles.CurrentRow.Cells[3].Value.ToString();
 				txtCantidad.Text = dgvDetalles.CurrentRow.Cells[4].Value.ToString();
 				txtPrecio.Text = dgvDetalles.CurrentRow.Cells[5].Value.ToString();
-				txtDescuento.Text= dgvDetalles.CurrentRow.Cells[6].Value.ToString();
+				txtDescuento.Text = dgvDetalles.CurrentRow.Cells[6].Value.ToString();
 				txtSubtotal.Text = dgvDetalles.CurrentRow.Cells[7].Value.ToString();
 				txtEstadoD.Text = dgvDetalles.CurrentRow.Cells[8].Value.ToString();
 			}
@@ -753,7 +755,7 @@ namespace CapaVistaGestorInventarios
 		private void btnImprimir_Click(object sender, EventArgs e)
 		{
 			g.cotizacionseleccionada = txtIDE.Text;
-			Reporte15 reporte= new Reporte15();
+			Reporte15 reporte = new Reporte15();
 			reporte.Show();
 		}
 
@@ -766,9 +768,9 @@ namespace CapaVistaGestorInventarios
 			else
 			{
 				string preciounitario = txtPrecio.Text;
-				string porcentaje = (Convert.ToDouble(txtPrecio.Text)*Convert.ToDouble(txtDescuento.Text)).ToString();
+				string porcentaje = (Convert.ToDouble(txtPrecio.Text) * Convert.ToDouble(txtDescuento.Text)).ToString();
 				string cantidad = txtCantidad.Text;
-				txtSubtotal.Text = (( Convert.ToDouble(preciounitario)-Convert.ToDouble(porcentaje))*Convert.ToDouble(cantidad)).ToString();
+				txtSubtotal.Text = ((Convert.ToDouble(preciounitario) - Convert.ToDouble(porcentaje)) * Convert.ToDouble(cantidad)).ToString();
 			}
 		}
 	}

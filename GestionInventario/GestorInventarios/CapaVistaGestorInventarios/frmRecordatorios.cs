@@ -18,18 +18,23 @@ namespace CapaVistaGestorInventarios
 		{
 			InitializeComponent();
 
-			string SQL1IM = "select nombre as 'Producto', cantidad as 'Existencias', inventario_minimo as 'I.M.' from inventariod where cantidad between inventario_minimo+1 and inventario_minimo+20;";
+			string SQL1IM = "select inventariod.nombre as 'Producto', inventariod.cantidad as 'Existencias', inventariod.inventario_minimo as 'I.M.' from inventarioe,inventariod where inventariod.Fk_Encabezado = inventarioe.ID_Encabezado and inventarioe.Fk_Empresa='1' and inventariod.cantidad between inventario_minimo+1 and inventario_minimo+20;";
 			DataTable IM1 = new DataTable();
 			IM1 = controlador.CargarRecordatorio(SQL1IM);
 			dgvIM1.DataSource = IM1;
-			string SQL2IM = "select nombre as 'Producto', cantidad as 'Existencias', inventario_minimo as 'I.M.' from inventariod where cantidad = inventario_minimo;";
+			string SQL2IM = "select inventariod.nombre as 'Producto', inventariod.cantidad as 'Existencias', inventariod.inventario_minimo as 'I.M.' from inventarioe,inventariod where inventariod.Fk_Encabezado = inventarioe.ID_Encabezado and inventarioe.Fk_Empresa='1' and inventariod.cantidad = inventariod.inventario_minimo;";
 			DataTable IM2 = new DataTable();
 			IM2 = controlador.CargarRecordatorio(SQL2IM);
 			dgvIM2.DataSource = IM2;
-			string SQL3IM = "select nombre as 'Producto', cantidad as 'Existencias', inventario_minimo as 'I.M.' from inventariod where cantidad < inventario_minimo;";
+			string SQL3IM = "select inventariod.nombre as 'Producto', inventariod.cantidad as 'Existencias', inventariod.inventario_minimo as 'I.M.' from inventarioe,inventariod where inventariod.Fk_Encabezado = inventarioe.ID_Encabezado and inventarioe.Fk_Empresa='1' and inventariod.cantidad < inventariod.inventario_minimo;";
 			DataTable IM3 = new DataTable();
 			IM3 = controlador.CargarRecordatorio(SQL3IM);
 			dgvIM3.DataSource = IM3;
+		}
+
+		private void dgvIM1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
 		}
 	}
 }
