@@ -134,7 +134,7 @@ namespace CapaModeloNavegador
             try
             {
                 cbx.DataSource = null; cbx.Items.Clear();
-                String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' ";
+                String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' and where Fk_Empresa= '1' ;";
                 OdbcConnection conect = conexion.conexion();
                 try
                 {
@@ -505,7 +505,7 @@ namespace CapaModeloNavegador
         public DataTable ActualizarDGV(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
+            string sql = "select * from " + tabla + " where Fk_Empleado= '1' " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);

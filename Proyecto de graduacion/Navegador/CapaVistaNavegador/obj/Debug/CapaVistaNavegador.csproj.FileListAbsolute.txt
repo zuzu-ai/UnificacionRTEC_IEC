@@ -49,3 +49,17 @@ F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavega
 F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CopyComplete
 F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.dll
 F:\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.NavegadorMantenimientos.resources
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.Properties.Resources.resources
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.GenerateResource.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.csproj.CopyComplete
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\Navegador\CapaVistaNavegador\obj\Debug\CapaVistaNavegador.pdb
