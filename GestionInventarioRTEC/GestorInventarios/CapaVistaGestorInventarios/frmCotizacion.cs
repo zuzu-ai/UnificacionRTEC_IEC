@@ -28,6 +28,7 @@ namespace CapaVistaGestorInventarios
 			rbnActivoD.Checked = true;
 			LlenarTabla();
 			controlador.LlenarCBX(cbxInventario, "inventarioe", "nombre");
+			controlador.LlenarCBX(cbxIdEmpresa, "empresa", "nombre");
 		}
 		public void deshabilitar()
 		{
@@ -367,7 +368,7 @@ namespace CapaVistaGestorInventarios
 				case "1":
 					try
 					{
-						query = "INSERT INTO cotizacionE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtEmpresa.Text + "', '" + txtEstadoE.Text + "');";
+						query = "INSERT INTO cotizacionE VALUES( '" + txtIDE.Text + "', '" + txtProyecto.Text + "', '" + txtFecha.Text + "', '" + txtTotal.Text + "', '" + txtIdEmpresa.Text + "', '" + txtEstadoE.Text + "');";
 						controlador.metodoInsertar(query);
 					}
 					catch (Exception excep)
@@ -381,7 +382,7 @@ namespace CapaVistaGestorInventarios
 				case "2":
 					try
 					{
-						query = "UPDATE cotizacionE SET proyecto ='" + txtProyecto.Text + "', fecha_emision ='" + txtFecha.Text + "', total ='" + txtTotal.Text + "', fk_empresa ='" + txtEmpresa.Text + "', estado='" + txtEstadoE.Text + "' WHERE pkid = '" + txtIDE.Text + "';";
+						query = "UPDATE cotizacionE SET proyecto ='" + txtProyecto.Text + "', fecha_emision ='" + txtFecha.Text + "', total ='" + txtTotal.Text + "', fk_empresa ='" + txtIdEmpresa.Text + "', estado='" + txtEstadoE.Text + "' WHERE pkid = '" + txtIDE.Text + "';";
 
 						string estadoinicial = controlador.BuscaDato("cotizacione", "estado", "ID_Encabezado", txtIDE.Text);
 						string nuevoestado = txtEstadoD.Text;
@@ -773,5 +774,27 @@ namespace CapaVistaGestorInventarios
 				txtSubtotal.Text = ((Convert.ToDouble(preciounitario) - Convert.ToDouble(porcentaje)) * Convert.ToDouble(cantidad)).ToString();
 			}
 		}
-	}
+
+        private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+        {
+			controlador.NombreID(cbxIdEmpresa, "empresa", "nombre", txtIdEmpresa.Text, "ID_Empresa");
+			controlador.LlenarCBXProducto(cbxIdEmpresa, "empresa", "nombre", txtIdEmpresa.Text);
+		}
+
+        private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			controlador.IDCombo(txtIdEmpresa, "Empresa", "ID_Empresa", cbxIdEmpresa.Text);
+			if (txtIdEmpresa.Text != "")
+			{
+				try
+				{
+					controlador.LlenarCBXProducto(cbxIdEmpresa, "empresa", "nombre", txtIdEmpresa.Text);
+				}
+				catch (Exception exx)
+				{
+					cbxProducto.Items.Clear();
+				}
+			}
+		}
+    }
 }

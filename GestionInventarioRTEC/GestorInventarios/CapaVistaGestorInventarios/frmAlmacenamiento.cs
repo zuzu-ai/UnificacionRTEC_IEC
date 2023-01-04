@@ -24,7 +24,7 @@ namespace CapaVistaGestorInventarios
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
 			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "tipoalmacen", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
-
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 			navegadorMantenimientos1.campoEstado = "Estado";
 
 			navegadorMantenimientos1.ObtenerNombreDGV(this.dgvVistaPrevia);
