@@ -453,5 +453,10 @@ namespace CapaVistaGestorInventarios
 			}
 			else { }
 		}
-	}
+
+        private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			
+		}
+    }
 }
