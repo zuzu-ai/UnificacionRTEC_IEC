@@ -45,6 +45,9 @@ namespace CapaVistaGestorInventarios
 			this.txtIdBodega = new System.Windows.Forms.TextBox();
 			this.cbxBodega = new System.Windows.Forms.ComboBox();
 			this.label4 = new System.Windows.Forms.Label();
+			this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+			this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+			this.label3 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
 			this.SuspendLayout();
@@ -79,7 +82,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			this.panel1.Controls.Add(this.rbnActivo);
 			this.panel1.Controls.Add(this.rbnInactivo);
-			this.panel1.Location = new System.Drawing.Point(383, 94);
+			this.panel1.Location = new System.Drawing.Point(418, 94);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(200, 30);
 			this.panel1.TabIndex = 175;
@@ -172,15 +175,15 @@ namespace CapaVistaGestorInventarios
 			this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 130);
+			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 169);
 			this.dgvVistaPrevia.Name = "dgvVistaPrevia";
-			this.dgvVistaPrevia.Size = new System.Drawing.Size(632, 228);
+			this.dgvVistaPrevia.Size = new System.Drawing.Size(632, 204);
 			this.dgvVistaPrevia.TabIndex = 176;
 			this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
 			// 
 			// txtIdBodega
 			// 
-			this.txtIdBodega.Location = new System.Drawing.Point(589, 68);
+			this.txtIdBodega.Location = new System.Drawing.Point(284, 130);
 			this.txtIdBodega.Name = "txtIdBodega";
 			this.txtIdBodega.Size = new System.Drawing.Size(39, 20);
 			this.txtIdBodega.TabIndex = 180;
@@ -192,7 +195,7 @@ namespace CapaVistaGestorInventarios
 			// cbxBodega
 			// 
 			this.cbxBodega.FormattingEnabled = true;
-			this.cbxBodega.Location = new System.Drawing.Point(383, 67);
+			this.cbxBodega.Location = new System.Drawing.Point(78, 129);
 			this.cbxBodega.Name = "cbxBodega";
 			this.cbxBodega.Size = new System.Drawing.Size(200, 21);
 			this.cbxBodega.TabIndex = 3;
@@ -203,22 +206,54 @@ namespace CapaVistaGestorInventarios
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
 			this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.label4.Location = new System.Drawing.Point(321, 68);
+			this.label4.Location = new System.Drawing.Point(16, 130);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(61, 17);
 			this.label4.TabIndex = 179;
 			this.label4.Text = "Bodega:";
 			// 
+			// txtIdEmpresa
+			// 
+			this.txtIdEmpresa.Location = new System.Drawing.Point(400, 68);
+			this.txtIdEmpresa.Name = "txtIdEmpresa";
+			this.txtIdEmpresa.Size = new System.Drawing.Size(39, 20);
+			this.txtIdEmpresa.TabIndex = 181;
+			this.txtIdEmpresa.TabStop = false;
+			this.txtIdEmpresa.Tag = "Fk_Empresa";
+			this.txtIdEmpresa.Visible = false;
+			// 
+			// cbxIdEmpresa
+			// 
+			this.cbxIdEmpresa.FormattingEnabled = true;
+			this.cbxIdEmpresa.Location = new System.Drawing.Point(399, 67);
+			this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+			this.cbxIdEmpresa.Size = new System.Drawing.Size(242, 21);
+			this.cbxIdEmpresa.TabIndex = 183;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.label3.Location = new System.Drawing.Point(321, 69);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(66, 16);
+			this.label3.TabIndex = 182;
+			this.label3.Text = "Empresa:";
+			// 
 			// frmUbicacion
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(656, 370);
+			this.ClientSize = new System.Drawing.Size(656, 385);
 			this.Controls.Add(this.txtEstado);
+			this.Controls.Add(this.txtIdEmpresa);
 			this.Controls.Add(this.txtIdBodega);
 			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.txtID);
 			this.Controls.Add(this.label4);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.cbxIdEmpresa);
 			this.Controls.Add(this.cbxBodega);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.lblEstatus);
@@ -256,5 +291,8 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.TextBox txtIdBodega;
 		private System.Windows.Forms.ComboBox cbxBodega;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.TextBox txtIdEmpresa;
+		private System.Windows.Forms.ComboBox cbxIdEmpresa;
+		private System.Windows.Forms.Label label3;
 	}
 }

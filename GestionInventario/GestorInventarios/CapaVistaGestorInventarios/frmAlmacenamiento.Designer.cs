@@ -42,6 +42,9 @@ namespace CapaVistaGestorInventarios
 			this.btnImprimir = new System.Windows.Forms.Button();
 			this.navegadorMantenimientos1 = new CapaVistaNavegador.NavegadorMantenimientos();
 			this.dgvVistaPrevia = new System.Windows.Forms.DataGridView();
+			this.cbxEmpresa = new System.Windows.Forms.ComboBox();
+			this.txtEmpresa = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
 			this.SuspendLayout();
@@ -176,11 +179,42 @@ namespace CapaVistaGestorInventarios
 			this.dgvVistaPrevia.TabIndex = 176;
 			this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
 			// 
+			// cbxEmpresa
+			// 
+			this.cbxEmpresa.FormattingEnabled = true;
+			this.cbxEmpresa.Location = new System.Drawing.Point(381, 65);
+			this.cbxEmpresa.Name = "cbxEmpresa";
+			this.cbxEmpresa.Size = new System.Drawing.Size(200, 21);
+			this.cbxEmpresa.TabIndex = 196;
+			this.cbxEmpresa.Visible = false;
+			// 
+			// txtEmpresa
+			// 
+			this.txtEmpresa.Location = new System.Drawing.Point(587, 66);
+			this.txtEmpresa.Name = "txtEmpresa";
+			this.txtEmpresa.Size = new System.Drawing.Size(33, 20);
+			this.txtEmpresa.TabIndex = 198;
+			this.txtEmpresa.Tag = "Fk_Empresa";
+			this.txtEmpresa.Visible = false;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+			this.label3.Location = new System.Drawing.Point(315, 66);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(68, 17);
+			this.label3.TabIndex = 197;
+			this.label3.Text = "Empresa:";
+			// 
 			// frmAlmacenamiento
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(658, 370);
+			this.Controls.Add(this.cbxEmpresa);
+			this.Controls.Add(this.txtEmpresa);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.txtEstado);
 			this.Controls.Add(this.txtNombre);
 			this.Controls.Add(this.txtID);
@@ -217,5 +251,8 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.Button btnImprimir;
 		private CapaVistaNavegador.NavegadorMantenimientos navegadorMantenimientos1;
 		private System.Windows.Forms.DataGridView dgvVistaPrevia;
+		private System.Windows.Forms.ComboBox cbxEmpresa;
+		private System.Windows.Forms.TextBox txtEmpresa;
+		private System.Windows.Forms.Label label3;
 	}
 }
