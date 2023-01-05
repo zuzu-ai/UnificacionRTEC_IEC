@@ -85,7 +85,7 @@ namespace CapaModeloNavegador
                 {
                     if (arreglo[i].Tag.ToString() == campoEstado)
                     {
-                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " =" + "'" + '0' + "'" + " " + "WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;                        
+                        string sql = "UPDATE" + " " + tabla + " " + "SET" + " " + campoEstado + " =" + "'" + '0' + "'" + " " + "WHERE" + " " + arreglo[0].Tag.ToString() + " = " + arreglo[0].Text;
                         try
                         {
                             OdbcCommand eliminar = new OdbcCommand(sql, conexion);
@@ -134,7 +134,7 @@ namespace CapaModeloNavegador
             try
             {
                 cbx.DataSource = null; cbx.Items.Clear();
-                String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' ";
+                String psql = "SELECT * FROM " + " " + tabla + " " + "WHERE " + " " + estatus + "= 'A' or " + estatus + "= '1' and where fk_empresa = '2'";
                 OdbcConnection conect = conexion.conexion();
                 try
                 {
@@ -246,7 +246,7 @@ namespace CapaModeloNavegador
                 leer = comando.ExecuteReader();
                 while (leer.Read())
                 {
-                    ultimoEntero = leer.GetString(0);                    
+                    ultimoEntero = leer.GetString(0);
                     enteroSumado = int.Parse(ultimoEntero) + 1;
                 }
             }
@@ -343,7 +343,7 @@ namespace CapaModeloNavegador
             }
             catch (OdbcException ex)
             {
-                MessageBox.Show("Error al cargar los datos" + ex.Message);                
+                MessageBox.Show("Error al cargar los datos" + ex.Message);
             }
             finally
             {
@@ -380,7 +380,6 @@ namespace CapaModeloNavegador
                     conect = conexion.conexion();
                     try
                     {
-                        //MySqlCommand buscarCantidad = new MySqlCommand(cantidadCampos, conexionBD);
                         OdbcCommand buscarCantidad = new OdbcCommand(cantidadCampos, conect);
                         cantidadTotalCampos = buscarCantidad.ExecuteScalar().ToString();
                         int cantidadEntero = int.Parse(cantidadTotalCampos);
@@ -505,7 +504,7 @@ namespace CapaModeloNavegador
         public DataTable ActualizarDGV(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             Conexion cn = new Conexion();
-            string sql = "select * from " + tabla + " " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
+            string sql = "select * from " + tabla + " where fk_empresa = '2' " + "ORDER BY" + " " + "length(" + arreglo[0].Tag.ToString() + ")ASC";
             OdbcConnection conn = cn.conexion();
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, conn);
             cn.desconexion(conn);
@@ -515,7 +514,7 @@ namespace CapaModeloNavegador
             dataTable.Fill(table);
             return table;
         }
-        public bool Modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
+        public bool Modificar(TextBox[] campos, string tablas)//Modificar
         {
             int resultado = 0;
             Conexion cn = new Conexion();
@@ -558,6 +557,118 @@ namespace CapaModeloNavegador
                 return false;
             }
         }
+        public void metodoColocaHora(DateTimePicker date, TextBox textoDate)
+        {
+            String dt = "";
+            dt = date.Value.ToString("HH:mm:ss");//lo pasa al formato necesitado por mysql
+            textoDate.Text = dt;
+        }
+        public void metodoColocaAño(DateTimePicker date, TextBox textoDate)
+        {
+            String dt = "";
+            dt = date.Value.ToString("yyyy");//lo pasa al formato necesitado por mysql
+            textoDate.Text = dt;
+        }
+        public void metodoRecibeHora(DateTimePicker date, TextBox textoDate)
+        {
+            if (textoDate.Text != "")
+            {
+                date.Value = Convert.ToDateTime(textoDate.Text.ToString());
+            }
+        }
+        public void metodoRecibeAño(DateTimePicker date, TextBox textoDate)
+        {
+            if (textoDate.Text != "")
+            {
+                date.Value = Convert.ToDateTime(textoDate.Text.ToString());
+            }
+        }
+
+        public (string, string) permisos(string admin, string id)
+        {
+            string per1 = "";
+            string per2 = ""; int CT = 0; OdbcDataReader leer = null;
+            string query = "SELECT usuario.Fk_Tipo_Usuario AS 'id',tipousuario.nombre AS 'nombre' from usuario, tipousuario where usuario.usuario = '" + admin + "' and usuario.ID_Usuario = '" + id + "' and usuario.Fk_Tipo_Usuario = tipousuario.ID_Tipo_Usuario and fk_empresa='2';";
+
+            Conexion cn = new Conexion();
+            OdbcConnection conn = cn.conexion();
+
+            OdbcCommand command = new OdbcCommand(query, conn);
+            leer = command.ExecuteReader();
+            if (!leer.HasRows)
+            {
+                per1 = "0";
+                per2 = "0";
+            }
+            if (leer.Read())
+            {
+                per1 = leer[id].ToString();
+                per2 = leer[id].ToString();
+            }
+            { cn.desconexion(conn); }
+
+            return (per1, per2);
+        }
+
+        public void bloquearBtn( Button Agregar, Button Modificar, Button Guardar, Button Cancelar, Button Eliminar, Button Reporte, Button Actualizar, Button Inicio, Button Anterior, Button Siguiente, Button Final, Button Ayuda, Button Salir, string nombre)
+        {
+            //string id = "";
+           // string nombre = "";
+
+           // var (dato1, dato2) = permisos(usuario, id_usuario);
+
+          //  nombre = dato1;
+           // id = dato2;
+
+           // MessageBox.Show(nombre);
+            if(nombre == "Administrador" || nombre == "administrador" || nombre == "ADMINISTRADOR" || nombre == "ADMIN" || nombre == "Admin" || nombre == "admin")
+            {
+                Agregar.Enabled = true;
+                Modificar.Enabled = true;
+                Guardar.Enabled = true;
+                Cancelar.Enabled = true;
+                Eliminar.Enabled = true;
+                Reporte.Enabled = false;
+                Actualizar.Enabled = true;
+                Inicio.Enabled = true;
+                Anterior.Enabled = true;
+                Siguiente.Enabled = true;
+                Final.Enabled = true;
+                Ayuda.Enabled = true;
+                Salir.Enabled = true;
+            }else if(nombre == "Supervisor" || nombre == "supervisor" || nombre == "SUPERVISOR" )
+            {
+                Agregar.Enabled = false;
+                Modificar.Enabled = false;
+                Guardar.Enabled = false;
+                Cancelar.Enabled = false;
+                Eliminar.Enabled = false;
+                Reporte.Enabled = false;
+                Actualizar.Enabled = true;
+                Inicio.Enabled = true;
+                Anterior.Enabled = true;
+                Siguiente.Enabled = true;
+                Final.Enabled = true;
+                Ayuda.Enabled = true;
+                Salir.Enabled = true;
+            }else if (nombre == "Visitante" || nombre == "visitante" || nombre == "VISITANTE")
+            {
+                Agregar.Enabled = false;
+                Modificar.Enabled = false;
+                Guardar.Enabled = false;
+                Cancelar.Enabled = false;
+                Eliminar.Enabled = false;
+                Reporte.Enabled = false;
+                Actualizar.Enabled = true;
+                Inicio.Enabled = true;
+                Anterior.Enabled = true;
+                Siguiente.Enabled = true;
+                Final.Enabled = true;
+                Ayuda.Enabled = true;
+                Salir.Enabled = true;
+            }
+
+        }// fin bloquearBtn
     }
 }
 

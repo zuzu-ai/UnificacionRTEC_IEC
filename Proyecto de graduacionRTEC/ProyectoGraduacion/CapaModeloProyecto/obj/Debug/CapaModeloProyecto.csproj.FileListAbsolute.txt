@@ -22,3 +22,9 @@ C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaModeloP
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.csproj.CoreCompileInputs.cache
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.dll
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\bin\Debug\CapaModeloProyecto.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaModeloProyecto\obj\Debug\CapaModeloProyecto.pdb

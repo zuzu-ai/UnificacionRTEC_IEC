@@ -12,7 +12,7 @@ namespace CapaModeloNavegador
         public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=conexionIEC");
+            OdbcConnection conn = new OdbcConnection("Dsn=conexionRTEC_IEC");
             try
             {
                 conn.Open();

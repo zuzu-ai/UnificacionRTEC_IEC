@@ -20,6 +20,8 @@ namespace CapaVistaNavegador
         string tablas; string DB;
         public string campoEstado = ""; public string tablaAyuda = "";
         public string campoAyuda = ""; public string idAplicacion = "";
+        string usuario = "", idusuario = "";
+        //LLAMADA A FUNCION DE PERMISOS
         //public reporte formReporte = new reporte();
 
         DataGridView dataE;
@@ -38,13 +40,15 @@ namespace CapaVistaNavegador
         public Boolean permisoReporteador = true;  //Valor que debe llegar de seguridad
 
         public string permisos;
-        public string usuario = "";
+        //public string usuario = "";
         public string aplicacion = "";
-        public string idusuario;
+        //public string idusuario;
         public string idmodulo;
         public NavegadorMantenimientos()
         {
             InitializeComponent();
+            
+            //bloquearBtn(btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnInicio, btnAnterior, btnSiguiente, btnFinal, btnAyuda, btnSalir, idusuario, usuario);
         }
 
         public TextBox[] ClasificaTextboxsegunParent(Control parent)
@@ -200,7 +204,7 @@ namespace CapaVistaNavegador
                 if (tipo == 0)
                 {
                     //activa
-                    //Función de Validar Permisos, Liam Patrick Bernard Garcia, 0901-18-10092
+                    //Función de Validar Permisos
                     if (permisoIngreso == false)
                     {
                         btnIngresar.Enabled = false;
@@ -270,7 +274,7 @@ namespace CapaVistaNavegador
 
             }
         }
-        private void btnCancelar_Click(object sender, EventArgs e)//Jaime López 0901-18-735
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -302,7 +306,7 @@ namespace CapaVistaNavegador
                             MessageBox.Show("El ingreso no se realizó con éxito!");
                         }
                         break;
-                    case 2://Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
+                    case 2://Modificar 
                         bool resultado;//Varaible para saber si se ejecutó con éxito la sentencia SQL
                         resultado = control.modificar(campos, tablas);
                         if (resultado == true)
@@ -354,6 +358,7 @@ namespace CapaVistaNavegador
                     if (ctr is ComboBox)
                     {
                         ctr.Enabled = true;
+                        ctr.Text = "Seleccione un elemento";
                     }
                     if (ctr is DateTimePicker)
                     {
@@ -405,7 +410,7 @@ namespace CapaVistaNavegador
             }
         }
 
-        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
+        
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
@@ -423,7 +428,7 @@ namespace CapaVistaNavegador
         }
         //boton de verificacion para navegacion sin registros
         public Boolean VerificarContenidodeTabla()
-        {//Kevin Rolando González Ramírez 0901-18-1387
+        {
             try
             {
 
@@ -432,7 +437,7 @@ namespace CapaVistaNavegador
             {
 
             }
-            if (dvgConsulta.RowCount +1 < 0)
+            if (dvgConsulta.RowCount - 1 > 0)
 
                 return true;
             else
@@ -451,7 +456,7 @@ namespace CapaVistaNavegador
 
             }
         }
-        public void LlenarTabla() //Jaime López 0901-18-735
+        public void LlenarTabla() 
         {
             try
             {
@@ -471,14 +476,14 @@ namespace CapaVistaNavegador
                 //verificacion de la existencia de registros
                 if (VerificarContenidodeTabla() == false)
                 {
-                    MessageBox.Show("No tiene registros actualmente, no se puede navegar");
+                    MessageBox.Show("No hay más registros disponibles, no se puede navegar");
                     return;
                 }
                 //obtengo el indicie actual
                 int actual = dvgConsulta.CurrentCell.RowIndex;
                 int numColumnas = dvgConsulta.ColumnCount;//cuenta cuantos columnas 
                 int numFilas = dvgConsulta.RowCount;            
-                if (actual == numFilas - 2)
+                if (actual == numFilas - 1)
                 {
                     dvgConsulta.CurrentCell = dvgConsulta.Rows[0].Cells[0];
                 }
@@ -517,7 +522,7 @@ namespace CapaVistaNavegador
                 if (actual == 0)
                 {
                     // MessageBox.Show("Lo siento no puede retroceder mas esta en el primer campo");
-                    dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 2].Cells[0];
+                    dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 1].Cells[0];
                 }
                 else
                 {
@@ -538,7 +543,7 @@ namespace CapaVistaNavegador
 
             }
         }
-        private void btnInicio_Click(object sender, EventArgs e)//Kevin Rolando González Ramírez 0901-18-1387
+        private void btnInicio_Click(object sender, EventArgs e)
         {
             try
             {
@@ -574,7 +579,7 @@ namespace CapaVistaNavegador
                     MessageBox.Show("No tiene registros actualmente, no se puede navegar");
                     return;
                 }
-                dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 2].Cells[0];
+                dvgConsulta.CurrentCell = dvgConsulta.Rows[dvgConsulta.RowCount - 1].Cells[0];
                 var arList = new ArrayList();//todos los campos a obtener de la tabla
                 int numColumnas = dvgConsulta.ColumnCount;//cuenta cuantos columnas 
                 for (int i = 0; i < numColumnas; i++)
@@ -619,15 +624,22 @@ namespace CapaVistaNavegador
         }
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult respuesta;
+            respuesta = MessageBox.Show("¿Realmente desea salir?", "Salir",
+           MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta == DialogResult.Yes)
             {
-                
-            }
-            catch
-            {
+                try
+                {
+                    generic.Close();
+                }
+                catch
+                {
 
+                }
             }
-            generic.Close();
+            else { }          
+            
         }
         Form generic;
         public void ObtenerReferenciaFormActual(Form generico)
@@ -669,7 +681,7 @@ namespace CapaVistaNavegador
                         if (ctr is ComboBox)
                         {
                             ctr.Enabled = false;
-                            ctr.Text = "";
+                            ctr.Text = "Seleccione un elemento";
                         }
                         if (ctr is DateTimePicker)
                         {
@@ -707,6 +719,7 @@ namespace CapaVistaNavegador
                         if (ctr is ComboBox)
                         {
                             ctr.Enabled = true;
+                            ctr.Text = "Seleccione un elemento";
                         }
                         if (ctr is DateTimePicker)
                         {
@@ -763,5 +776,55 @@ namespace CapaVistaNavegador
 
             }
         }
+        public void RecibeHora(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                control.metodoRecibeHora(date, textoDate);
+            }
+            catch
+            {
+
+            }
+        }
+        public void RecibeAño(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                control.metodoRecibeAño(date, textoDate);
+            }
+            catch
+            {
+
+            }
+        }
+        public void ColocaHora(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                control.metodoColocaHora(date, textoDate);
+            }
+            catch
+            {
+
+            }
+        }
+        public void ColocaAño(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                control.metodoColocaAño(date, textoDate);
+            }
+            catch
+            {
+
+            }
+        }
+        public void bloquearBtn(string tipousuario)
+        {
+            //MessageBox.Show(id_usuario + " " + usuario);
+            control.bloquearBtn(btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnInicio, btnAnterior, btnSiguiente, btnFinal, btnAyuda, btnSalir, tipousuario);
+        }
+
     }
 }

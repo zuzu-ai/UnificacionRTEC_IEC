@@ -34,3 +34,12 @@ C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControl
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CopyComplete
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.dll
 C:\Users\Kevin\Desktop\git\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaControladorProyecto.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\bin\Debug\CapaModeloProyecto.pdb
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.csproj.CopyComplete
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.dll
+C:\Users\Kevin\Desktop\git2\Proyecto de graduacion\ProyectoGraduacion\CapaControladorProyecto\obj\Debug\CapaControladorProyecto.pdb

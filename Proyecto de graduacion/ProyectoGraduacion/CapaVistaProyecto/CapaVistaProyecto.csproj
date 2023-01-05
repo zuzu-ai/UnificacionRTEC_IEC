@@ -37,7 +37,7 @@
     </Reference>
     <Reference Include="CapaVistaNavegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\Kevin\Desktop\Escritorio 06-11-2022\ProyectoIEC\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll</HintPath>
+      <HintPath>..\..\Navegador\CapaVistaNavegador\bin\Debug\CapaVistaNavegador.dll</HintPath>
     </Reference>
     <Reference Include="CapaVistaSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

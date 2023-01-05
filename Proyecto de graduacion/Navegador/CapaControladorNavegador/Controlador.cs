@@ -38,7 +38,7 @@ namespace CapaControladorNavegador
             {
                 MessageBox.Show("Error en la capa controlador, revisar la funcion comparaTagscampoBD");
             }
-        }        
+        }
         public void funAsignarSalidadControl(Form menu)
         {
             try
@@ -100,7 +100,7 @@ namespace CapaControladorNavegador
             }
         }
 
-        /*Brayan Mauricio Cifuentes López - 9959-18-11113*/
+       
         public void CambioEstadoTextBox(TextBox estado, RadioButton AI, string cadenaEstado)
         {
             try
@@ -113,7 +113,7 @@ namespace CapaControladorNavegador
             }
         }
 
-        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
+        
         public void enviarDatoCbxaTextbox(ComboBox combo, TextBox combotexto)
         {
             try
@@ -126,7 +126,7 @@ namespace CapaControladorNavegador
             }
         }
 
-        /*Wilmer Alexander Torres Lemus - 9959-18-9131*/
+        
         public void SeleccionarElementoEnComboBox(ComboBox combo, TextBox combotexto)
         {
             try
@@ -137,7 +137,7 @@ namespace CapaControladorNavegador
             {
                 MessageBox.Show("Error en la capa controlador, revisar la funcion SeleccionarElementoEnComboBox");
             }
-        }        
+        }
         public void CambiarFormatoFecha(DateTimePicker date, TextBox textoDate)
         {
             try
@@ -150,7 +150,7 @@ namespace CapaControladorNavegador
             }
         }
 
-        /*Josue Daniel Zapata Azañon - 9959-18-4829*/
+        
         public void SeleccionarFechaDTP(DateTimePicker date, TextBox textoDate)
         {
             try
@@ -173,7 +173,7 @@ namespace CapaControladorNavegador
             //para aumentar la seguridad
             return Modelo.ActualizarDGV(tablaDB);
         }
-        public bool modificar(TextBox[] campos, string tablas)//Modificar de Wilber Enrique Segura Ramirez 0901-18-13952
+        public bool modificar(TextBox[] campos, string tablas)//Modificar
         {
             return Modelo.Modificar(campos, tablas);
         }
@@ -204,12 +204,72 @@ namespace CapaControladorNavegador
                 MessageBox.Show("Error en la capa controlador, revisar la funcion LlamadaAyudas");
             }
         }
-        /*Liam Patrick Bernard García - 0901-18-10092
+        public void metodoRecibeHora(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                Modelo.metodoRecibeHora(date, textoDate);
+            }
+            catch
+            {
+                MessageBox.Show("Error en la capa controlador, revisar la funcion SeleccionarFechaDTP");
+            }
+        }
+        public void metodoRecibeAño(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                Modelo.metodoRecibeAño(date, textoDate);
+            }
+            catch
+            {
+                //MessageBox.Show("Error en la capa controlador, revisar la funcion SeleccionarFechaDTP");
+            }
+        }
+        public void metodoColocaHora(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                Modelo.metodoColocaHora(date, textoDate);
+            }
+            catch
+            {
+                MessageBox.Show("Error en la capa controlador, revisar la funcion CambiarFormatoFecha");
+            }
+        }
+        public void metodoColocaAño(DateTimePicker date, TextBox textoDate)
+        {
+            try
+            {
+                Modelo.metodoColocaAño(date, textoDate);
+            }
+            catch
+            {
+                //MessageBox.Show("Error en la capa controlador, revisar la funcion CambiarFormatoFecha");
+            }
+        }
+
+        /*
         public string funObtienePermisos(string idUsuario, string idAplicacion)
         {
             CapaModeloSeguridadHSC.llamarPermisos modeloSeguridad = new CapaModeloSeguridadHSC.llamarPermisos();
             return modeloSeguridad.llenarpermisos(idUsuario, idAplicacion);
         }*/
 
+        public void bloquearBtn(Button Agregar, Button Modificar, Button Guardar, Button Cancelar, Button Eliminar, Button Reporte, Button Actualizar, Button Inicio, Button Anterior, Button Siguiente, Button Final, Button Ayuda, Button Salir, string tipousuario)
+        {
+
+            try
+            {
+                //MessageBox.Show(id_usuario + " " + usuario);
+                Modelo.bloquearBtn(Agregar, Modificar, Guardar, Cancelar, Eliminar, Reporte, Actualizar, Inicio, Anterior, Siguiente, Final, Ayuda, Salir, tipousuario);
+            }
+            catch
+            {
+                MessageBox.Show("Error en la capa controlador, revisar la funcion bloquearBtn");
+            }
+
+
+        }
     }
 }
