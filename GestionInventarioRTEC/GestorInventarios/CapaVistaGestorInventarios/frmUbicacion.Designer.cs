@@ -221,6 +221,7 @@ namespace CapaVistaGestorInventarios
 			this.txtIdEmpresa.TabStop = false;
 			this.txtIdEmpresa.Tag = "Fk_Empresa";
 			this.txtIdEmpresa.Visible = false;
+			this.txtIdEmpresa.TextChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
 			// 
 			// cbxIdEmpresa
 			// 
@@ -229,6 +230,7 @@ namespace CapaVistaGestorInventarios
 			this.cbxIdEmpresa.Name = "cbxIdEmpresa";
 			this.cbxIdEmpresa.Size = new System.Drawing.Size(242, 21);
 			this.cbxIdEmpresa.TabIndex = 183;
+			this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
 			// 
 			// label3
 			// 

@@ -25,6 +25,7 @@ namespace CapaVistaGestorInventarios
 			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "ubicacion", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
 			navegadorMantenimientos1.LlenarCombobox(cbxBodega, "bodega", "ID_Bodega", "nombre", "estado");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "empresa", "ID_Empresa", "nombre", "estado");
 
 			navegadorMantenimientos1.campoEstado = "Estado";
 
@@ -61,6 +62,15 @@ namespace CapaVistaGestorInventarios
 		private void cbxBodega_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxBodega, txtIdBodega);
+		}
+		private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxIdEmpresa, txtIdEmpresa);
+		}
+
+		private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+		{
+			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxIdEmpresa, txtIdEmpresa);
 		}
 	}
 }

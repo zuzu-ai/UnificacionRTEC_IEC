@@ -45,8 +45,8 @@ namespace CapaVistaGestorInventarios
 			this.label3 = new System.Windows.Forms.Label();
 			this.txtIdAccion = new System.Windows.Forms.TextBox();
 			this.cbxAccion = new System.Windows.Forms.ComboBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+			this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
@@ -214,26 +214,28 @@ namespace CapaVistaGestorInventarios
 			this.cbxAccion.TabIndex = 3;
 			this.cbxAccion.SelectedIndexChanged += new System.EventHandler(this.cbxAccion_SelectedIndexChanged);
 			// 
-			// textBox1
+			// txtIdEmpresa
 			// 
-			this.textBox1.Location = new System.Drawing.Point(284, 127);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(39, 20);
-			this.textBox1.TabIndex = 198;
-			this.textBox1.TabStop = false;
-			this.textBox1.Tag = "Accion";
-			this.textBox1.Visible = false;
+			this.txtIdEmpresa.Location = new System.Drawing.Point(284, 127);
+			this.txtIdEmpresa.Name = "txtIdEmpresa";
+			this.txtIdEmpresa.Size = new System.Drawing.Size(39, 20);
+			this.txtIdEmpresa.TabIndex = 198;
+			this.txtIdEmpresa.TabStop = false;
+			this.txtIdEmpresa.Tag = "Accion";
+			this.txtIdEmpresa.Visible = false;
+			this.txtIdEmpresa.TextChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
 			// 
-			// comboBox1
+			// cbxIdEmpresa
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.cbxIdEmpresa.FormattingEnabled = true;
+			this.cbxIdEmpresa.Items.AddRange(new object[] {
             "Suma",
             "Resta"});
-			this.comboBox1.Location = new System.Drawing.Point(78, 126);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(200, 21);
-			this.comboBox1.TabIndex = 196;
+			this.cbxIdEmpresa.Location = new System.Drawing.Point(78, 126);
+			this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+			this.cbxIdEmpresa.Size = new System.Drawing.Size(200, 21);
+			this.cbxIdEmpresa.TabIndex = 196;
+			this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
 			// 
 			// label4
 			// 
@@ -250,8 +252,8 @@ namespace CapaVistaGestorInventarios
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(661, 406);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.txtIdEmpresa);
+			this.Controls.Add(this.cbxIdEmpresa);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.txtEstado);
 			this.Controls.Add(this.txtIdAccion);
@@ -295,8 +297,8 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox txtIdAccion;
 		private System.Windows.Forms.ComboBox cbxAccion;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.TextBox txtIdEmpresa;
+		private System.Windows.Forms.ComboBox cbxIdEmpresa;
 		private System.Windows.Forms.Label label4;
 	}
 }

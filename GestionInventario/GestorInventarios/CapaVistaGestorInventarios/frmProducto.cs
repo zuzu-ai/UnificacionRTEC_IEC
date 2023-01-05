@@ -23,7 +23,7 @@ namespace CapaVistaGestorInventarios
 			controlador.bloqueabotones(g.obtienenombretusuario, btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnAyuda);
 			rbnActivo.Checked = true;
 			LlenarTabla();
-			controlador.LlenarCBX(cbxInventario,"inventarioe","nombre");
+			controlador.LlenarCBX(cbxInventario, "inventarioe", "nombre");
 			controlador.LlenarCBX(cbxMarca, "marca", "nombre");
 			controlador.LlenarCBX(cbxAlmacenamiento, "tipoalmacen", "nombre");
 			controlador.LlenarCat(cbxCat1, "categoria", "nombre", "1", "1");
@@ -151,39 +151,39 @@ namespace CapaVistaGestorInventarios
 				}
 				else if (accion == "2")
 				{
-						bool bChecked = Convert.ToBoolean(row.Cells["Añadir"].Value);
-						string idproveedor = row.Cells["ID_Proveedor"].Value.ToString();
+					bool bChecked = Convert.ToBoolean(row.Cells["Añadir"].Value);
+					string idproveedor = row.Cells["ID_Proveedor"].Value.ToString();
 
-						if (bChecked == true)
+					if (bChecked == true)
+					{
+						try
 						{
-							try
+							Boolean coincide = controlador.registroexiste("proveedord", idproveedor, txtIdProveedores.Text);
+							if (coincide == false)
 							{
-								Boolean coincide = controlador.registroexiste("proveedord", idproveedor, txtIdProveedores.Text);
-								if (coincide == false)
-								{
-									string pkid = controlador.idSiguienteDeNuevoIngreso("proveedord", "ID_Detalle").ToString();
-									string query2 = "INSERT INTO proveedord VALUES('" + pkid + "', '" + txtIdProveedores.Text + "', '" + idproveedor + "', '1');";
-									controlador.metodoInsertar(query2);
-								}
-								else if (coincide == true)
-								{ }
+								string pkid = controlador.idSiguienteDeNuevoIngreso("proveedord", "ID_Detalle").ToString();
+								string query2 = "INSERT INTO proveedord VALUES('" + pkid + "', '" + txtIdProveedores.Text + "', '" + idproveedor + "', '1');";
+								controlador.metodoInsertar(query2);
 							}
-							catch (Exception except) { }
+							else if (coincide == true)
+							{ }
 						}
-						else if (bChecked == false)
+						catch (Exception except) { }
+					}
+					else if (bChecked == false)
+					{
+						try
 						{
-							try
+							Boolean coincide = controlador.registroexiste("proveedord", idproveedor, txtIdProveedores.Text);
+							if (coincide == false)
+							{ }
+							else if (coincide == true)
 							{
-								Boolean coincide = controlador.registroexiste("proveedord", idproveedor, txtIdProveedores.Text);
-								if (coincide == false)
-								{ }
-								else if (coincide == true)
-								{
-									string query2 = "DELETE FROM proveedord WHERE Fk_Proveedor = '" + idproveedor + "' AND Fk_Encabezado ='" + txtIdProveedores.Text + "';";
-									controlador.metodoEliminar(query2);
-								}
+								string query2 = "DELETE FROM proveedord WHERE Fk_Proveedor = '" + idproveedor + "' AND Fk_Encabezado ='" + txtIdProveedores.Text + "';";
+								controlador.metodoEliminar(query2);
 							}
-							catch (Exception except) { }
+						}
+						catch (Exception except) { }
 					}
 				}
 			}
@@ -218,7 +218,7 @@ namespace CapaVistaGestorInventarios
 
 		private void dgvVistaPrevia_SelectionChanged(object sender, EventArgs e)
 		{
-			
+
 		}
 
 		private void txtIdInventario_TextChanged(object sender, EventArgs e)
@@ -262,7 +262,7 @@ namespace CapaVistaGestorInventarios
 		}
 		private void cbxCat1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			controlador.IDCAT(txtIdCat1, "categoria", "ID_Categoria", cbxCat1.Text, "1","1");
+			controlador.IDCAT(txtIdCat1, "categoria", "ID_Categoria", cbxCat1.Text, "1", "1");
 			if (txtIdCat1.Text == "")
 			{
 				cbxCat2.Items.Clear();
@@ -277,7 +277,7 @@ namespace CapaVistaGestorInventarios
 
 		private void cbxCat2_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			controlador.IDCAT(txtIdCat2, "categoria", "ID_Categoria", cbxCat2.Text,"2",txtIdCat1.Text);
+			controlador.IDCAT(txtIdCat2, "categoria", "ID_Categoria", cbxCat2.Text, "2", txtIdCat1.Text);
 			if (txtIdCat2.Text == "")
 			{
 				cbxCat3.Items.Clear();
@@ -376,14 +376,15 @@ namespace CapaVistaGestorInventarios
 
 						query = "INSERT INTO inventariod VALUES( '" + txtID.Text + "', '" + txtIdInventario.Text + "', '" + txtSerie.Text + "', '" + txtNombre.Text + "', '" + txtDescripcion.Text + "', '" + txtCantidad.Text + "', '" + txtPrecio.Text + "', '" + txtPVenta.Text + "', '" + txtIdMarca.Text + "', '" + txtIdAlmacenamiento.Text + "', '" + txtIdCat1.Text + "', '" + txtIdCat2.Text + "', '" + txtIdCat3.Text + "', '" + txtIdSucursal.Text + "', '" + txtIdBodega.Text + "', '" + txtIdUbicacion.Text + "', '" + txtIdProveedores.Text + "', '" + txtMin.Text + "','" + txtMax.Text + "', '" + txtEstado.Text + "');";
 						controlador.metodoInsertar(query);
-						
+
 						deshabilitar();
 						actualizar();
 						txtIdProveedores.Text = controlador.idSiguienteDeNuevoIngreso("proveedore", "ID_Encabezado").ToString();
 						deschequear();
 						LlenarTabla();
 					}
-					catch (Exception excep) {
+					catch (Exception excep)
+					{
 						string querydetalles = "delete from proveedord where Fk_Encabezado = '" + txtIdProveedores.Text + "';";
 						string queryencabezado = "delete from proveedore where ID_Encabezado = '" + txtIdProveedores.Text + "';";
 
@@ -409,7 +410,7 @@ namespace CapaVistaGestorInventarios
 						deschequear();
 						LlenarTabla();
 					}
-					catch (Exception ex) { MessageBox.Show("Error al editar el registro"); deshabilitar();}
+					catch (Exception ex) { MessageBox.Show("Error al editar el registro"); deshabilitar(); }
 					break;
 				case "":
 					MessageBox.Show("No se ha seleccionado una acción");
@@ -459,7 +460,7 @@ namespace CapaVistaGestorInventarios
 				{
 					MessageBox.Show("Error al dar de baja el registro");
 				}
-				}
+			}
 			else
 			{
 				MessageBox.Show("No se ha seleccionado un registro para eliminar");
@@ -479,12 +480,12 @@ namespace CapaVistaGestorInventarios
 		}
 		private void dgvProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-			
+
 		}
 		public void actualizar()
 		{
 			LlenarTabla();
-			cbxInventario.Items.Clear(); cbxMarca.Items.Clear();cbxAlmacenamiento.Items.Clear();
+			cbxInventario.Items.Clear(); cbxMarca.Items.Clear(); cbxAlmacenamiento.Items.Clear();
 			cbxCat1.Items.Clear(); cbxSucursal.Items.Clear(); cbxBodega.Items.Clear();
 			controlador.LlenarCBX(cbxInventario, "inventarioe", "nombre");
 			controlador.LlenarCBX(cbxMarca, "marca", "nombre");
@@ -493,10 +494,11 @@ namespace CapaVistaGestorInventarios
 			controlador.LlenarCBX(cbxSucursal, "sucursal", "nombre");
 			controlador.LlenarCBX(cbxBodega, "bodega", "nombre");
 		}
-		public void deschequear() {
+		public void deschequear()
+		{
 			foreach (DataGridViewRow row in dgvProveedores.Rows)
 			{
-					row.Cells["Añadir"].Value = false;
+				row.Cells["Añadir"].Value = false;
 			}
 		}
 		public void chequearProveedores()
@@ -574,9 +576,9 @@ namespace CapaVistaGestorInventarios
 			txtPrecio.Text = "";
 			txtPVenta.Text = "";
 
-			cbxInventario.Text=""; cbxMarca.Text = ""; cbxAlmacenamiento.Text = "";
-			cbxCat1.Text = ""; cbxSucursal.Text=""; cbxBodega.Text = ""; cbxCat2.Text = "";
-			cbxCat3.Text = "";cbxUbicacion.Text = "";
+			cbxInventario.Text = ""; cbxMarca.Text = ""; cbxAlmacenamiento.Text = "";
+			cbxCat1.Text = ""; cbxSucursal.Text = ""; cbxBodega.Text = ""; cbxCat2.Text = "";
+			cbxCat3.Text = ""; cbxUbicacion.Text = "";
 			actualizar();
 		}
 

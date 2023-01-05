@@ -82,7 +82,7 @@ namespace CapaModeloGestorInventarios
                 string cadena = "UPDATE " + tabla + " SET contrasena = '" + contrasena + "' " + "WHERE ID_Usuario='" + id + "' AND usuario.usuario='" + usuario + "';";
                 OdbcConnection conect = cn.conexion();
 
-                OdbcCommand consulta = new OdbcCommand(cadena,conect);
+                OdbcCommand consulta = new OdbcCommand(cadena, conect);
                 consulta.ExecuteNonQuery();
                 MessageBox.Show("La contraseña se ha actualizado");
                 cn.desconexion(conect);
@@ -556,7 +556,7 @@ namespace CapaModeloGestorInventarios
         //función para encontrar los proveedores de un producto
         public Boolean encuentraProveedor(string fkproveedore, string fkproveedor, string nombre)
         {
-            string dato = ""; Boolean chequeado= false;
+            string dato = ""; Boolean chequeado = false;
             try
             {
                 string insertQuery = "SELECT * FROM proveedord, proveedore, proveedor where proveedord.fk_encabezado = '" + fkproveedore + "' AND proveedord.fk_proveedor = '" + fkproveedor + "' AND proveedore.id_encabezado = proveedord.fk_encabezado AND proveedor.id_proveedor = proveedord.fk_proveedor AND proveedor.nombre = '" + nombre + "';";
@@ -580,7 +580,7 @@ namespace CapaModeloGestorInventarios
             return chequeado;
         }
         //función para obtener el id coincidente
-        public Boolean idcoincidente(string tabla, string pkid, string  campoid)
+        public Boolean idcoincidente(string tabla, string pkid, string campoid)
         {
             string dato = ""; Boolean chequeado = false;
             try
@@ -684,7 +684,7 @@ namespace CapaModeloGestorInventarios
             }
         }
         //obtener el nombre del producto
-        public void NombreIDProducto(ComboBox combo, string tabla,string campobuscado, string pkid, string inventario)
+        public void NombreIDProducto(ComboBox combo, string tabla, string campobuscado, string pkid, string inventario)
         {
             string dato = "";
             try

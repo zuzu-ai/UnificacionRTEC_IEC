@@ -48,6 +48,10 @@ namespace CapaVistaGestorInventarios
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtDetalles = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
+			this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+			this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+			this.label9 = new System.Windows.Forms.Label();
+			this.navegadorMantenimientos2 = new CapaVistaNavegador.NavegadorMantenimientos();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
 			this.SuspendLayout();
@@ -176,9 +180,9 @@ namespace CapaVistaGestorInventarios
 			this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 185);
+			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 213);
 			this.dgvVistaPrevia.Name = "dgvVistaPrevia";
-			this.dgvVistaPrevia.Size = new System.Drawing.Size(637, 199);
+			this.dgvVistaPrevia.Size = new System.Drawing.Size(637, 186);
 			this.dgvVistaPrevia.TabIndex = 176;
 			this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
 			// 
@@ -237,11 +241,57 @@ namespace CapaVistaGestorInventarios
 			this.label5.TabIndex = 182;
 			this.label5.Text = "Detalles:";
 			// 
+			// txtIdEmpresa
+			// 
+			this.txtIdEmpresa.Location = new System.Drawing.Point(294, 178);
+			this.txtIdEmpresa.Name = "txtIdEmpresa";
+			this.txtIdEmpresa.Size = new System.Drawing.Size(39, 20);
+			this.txtIdEmpresa.TabIndex = 275;
+			this.txtIdEmpresa.TabStop = false;
+			this.txtIdEmpresa.Tag = "Fk_Empresa";
+			this.txtIdEmpresa.Visible = false;
+			this.txtIdEmpresa.TextChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
+			// 
+			// cbxIdEmpresa
+			// 
+			this.cbxIdEmpresa.FormattingEnabled = true;
+			this.cbxIdEmpresa.Location = new System.Drawing.Point(78, 177);
+			this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+			this.cbxIdEmpresa.Size = new System.Drawing.Size(200, 21);
+			this.cbxIdEmpresa.TabIndex = 277;
+			this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.label9.Location = new System.Drawing.Point(15, 178);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(66, 16);
+			this.label9.TabIndex = 276;
+			this.label9.Text = "Empresa:";
+			// 
+			// navegadorMantenimientos2
+			// 
+			this.navegadorMantenimientos2.BackColor = System.Drawing.Color.Transparent;
+			this.navegadorMantenimientos2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.navegadorMantenimientos2.Location = new System.Drawing.Point(37, 2);
+			this.navegadorMantenimientos2.Name = "navegadorMantenimientos2";
+			this.navegadorMantenimientos2.Size = new System.Drawing.Size(658, 49);
+			this.navegadorMantenimientos2.TabIndex = 278;
+			this.navegadorMantenimientos2.TabStop = false;
+			this.navegadorMantenimientos2.Visible = false;
+			// 
 			// frmProveedor
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(661, 396);
+			this.ClientSize = new System.Drawing.Size(661, 411);
+			this.Controls.Add(this.navegadorMantenimientos2);
+			this.Controls.Add(this.txtIdEmpresa);
+			this.Controls.Add(this.cbxIdEmpresa);
+			this.Controls.Add(this.label9);
 			this.Controls.Add(this.txtEstado);
 			this.Controls.Add(this.txtDetalles);
 			this.Controls.Add(this.txtTelefono);
@@ -290,5 +340,9 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox txtDetalles;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox txtIdEmpresa;
+		private System.Windows.Forms.ComboBox cbxIdEmpresa;
+		private System.Windows.Forms.Label label9;
+		private CapaVistaNavegador.NavegadorMantenimientos navegadorMantenimientos2;
 	}
 }

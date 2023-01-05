@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace CapaModeloGestorInventarios
 {
-	class Conexion
-	{
+    class Conexion
+    {
         public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC

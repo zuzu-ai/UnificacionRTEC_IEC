@@ -56,13 +56,17 @@ namespace CapaVistaGestorInventarios
 			this.btnEditar = new System.Windows.Forms.Button();
 			this.btnIngresar = new System.Windows.Forms.Button();
 			this.cbxCategoria2 = new System.Windows.Forms.ComboBox();
+			this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+			this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.navegadorMantenimientos1 = new CapaVistaNavegador.NavegadorMantenimientos();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// txtEstado
 			// 
-			this.txtEstado.Location = new System.Drawing.Point(755, 126);
+			this.txtEstado.Location = new System.Drawing.Point(755, 150);
 			this.txtEstado.Name = "txtEstado";
 			this.txtEstado.Size = new System.Drawing.Size(33, 20);
 			this.txtEstado.TabIndex = 190;
@@ -93,7 +97,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.label4.Location = new System.Drawing.Point(376, 94);
+			this.label4.Location = new System.Drawing.Point(376, 93);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(62, 17);
 			this.label4.TabIndex = 196;
@@ -113,7 +117,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			this.panel1.Controls.Add(this.rbnActivo);
 			this.panel1.Controls.Add(this.rbnInactivo);
-			this.panel1.Location = new System.Drawing.Point(508, 123);
+			this.panel1.Location = new System.Drawing.Point(516, 147);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(200, 30);
 			this.panel1.TabIndex = 191;
@@ -148,7 +152,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			this.lblEstatus.AutoSize = true;
 			this.lblEstatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.lblEstatus.Location = new System.Drawing.Point(376, 127);
+			this.lblEstatus.Location = new System.Drawing.Point(376, 151);
 			this.lblEstatus.Name = "lblEstatus";
 			this.lblEstatus.Size = new System.Drawing.Size(56, 17);
 			this.lblEstatus.TabIndex = 189;
@@ -216,7 +220,7 @@ namespace CapaVistaGestorInventarios
 			// 
 			// txtNombre
 			// 
-			this.txtNombre.Location = new System.Drawing.Point(508, 97);
+			this.txtNombre.Location = new System.Drawing.Point(508, 96);
 			this.txtNombre.Name = "txtNombre";
 			this.txtNombre.Size = new System.Drawing.Size(214, 20);
 			this.txtNombre.TabIndex = 5;
@@ -377,11 +381,57 @@ namespace CapaVistaGestorInventarios
 			this.cbxCategoria2.Visible = false;
 			this.cbxCategoria2.SelectedIndexChanged += new System.EventHandler(this.cbxCategoria2_SelectedIndexChanged);
 			// 
+			// txtIdEmpresa
+			// 
+			this.txtIdEmpresa.Location = new System.Drawing.Point(755, 117);
+			this.txtIdEmpresa.Name = "txtIdEmpresa";
+			this.txtIdEmpresa.Size = new System.Drawing.Size(33, 20);
+			this.txtIdEmpresa.TabIndex = 218;
+			this.txtIdEmpresa.TabStop = false;
+			this.txtIdEmpresa.Tag = "Fk_Empresa";
+			this.txtIdEmpresa.Visible = false;
+			this.txtIdEmpresa.TextChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
+			// 
+			// cbxIdEmpresa
+			// 
+			this.cbxIdEmpresa.FormattingEnabled = true;
+			this.cbxIdEmpresa.Location = new System.Drawing.Point(508, 120);
+			this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+			this.cbxIdEmpresa.Size = new System.Drawing.Size(214, 21);
+			this.cbxIdEmpresa.TabIndex = 220;
+			this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.label5.Location = new System.Drawing.Point(376, 121);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(66, 16);
+			this.label5.TabIndex = 219;
+			this.label5.Text = "Empresa:";
+			// 
+			// navegadorMantenimientos1
+			// 
+			this.navegadorMantenimientos1.BackColor = System.Drawing.Color.Transparent;
+			this.navegadorMantenimientos1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.navegadorMantenimientos1.Location = new System.Drawing.Point(25, 1);
+			this.navegadorMantenimientos1.Name = "navegadorMantenimientos1";
+			this.navegadorMantenimientos1.Size = new System.Drawing.Size(658, 49);
+			this.navegadorMantenimientos1.TabIndex = 221;
+			this.navegadorMantenimientos1.TabStop = false;
+			this.navegadorMantenimientos1.Visible = false;
+			// 
 			// frmCategoria
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(793, 422);
+			this.Controls.Add(this.navegadorMantenimientos1);
+			this.Controls.Add(this.txtIdEmpresa);
+			this.Controls.Add(this.cbxIdEmpresa);
+			this.Controls.Add(this.label5);
 			this.Controls.Add(this.cbxCategoria2);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnAyuda);
@@ -446,5 +496,9 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.Button btnEditar;
 		private System.Windows.Forms.Button btnIngresar;
 		private System.Windows.Forms.ComboBox cbxCategoria2;
+        private System.Windows.Forms.TextBox txtIdEmpresa;
+        private System.Windows.Forms.ComboBox cbxIdEmpresa;
+        private System.Windows.Forms.Label label5;
+		private CapaVistaNavegador.NavegadorMantenimientos navegadorMantenimientos1;
 	}
 }

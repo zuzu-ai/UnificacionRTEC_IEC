@@ -21,6 +21,7 @@ namespace CapaVistaGestorInventarios
 			deshabilitar();
 			controlador.LlenarCA(cbxCategoria1, "categoria", "nombre", "1", "1");
 			controlador.LlenarCA(cbxCategoria2, "categoria", "nombre", "2", "1");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 			controlador.bloqueabotones(g.obtienenombretusuario, btnIngresar, btnEditar, btnGuardar, btnCancelar, btnEliminar, btnImprimir, btnActualizar, btnAyuda);
 			rbnActivo.Checked = true;
 			LlenarTabla();
@@ -452,6 +453,16 @@ namespace CapaVistaGestorInventarios
 				controlador.IDCATE(txtCategoria, "categoria", "id_categoria", cbxCategoria2.Text, "2");
 			}
 			else { }
+		}
+
+		private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			navegadorMantenimientos1.EnviarDatoComboaTextbox(cbxIdEmpresa, txtIdEmpresa);
+		}
+
+		private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+		{
+			navegadorMantenimientos1.SeleccionarElementosenCombo(cbxIdEmpresa, txtIdEmpresa);
 		}
 	}
 }

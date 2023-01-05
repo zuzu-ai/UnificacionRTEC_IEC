@@ -24,6 +24,7 @@ namespace CapaVistaGestorInventarios
 			TextBox[] alias = navegadorMantenimientos1.ClasificaTextboxsegunParent(this);
 			navegadorMantenimientos1.ObtenerCamposdeTabla(alias, "proveedor", "RTEC_IEC");
 			navegadorMantenimientos1.MetodoSalirVista(this);
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 
 			navegadorMantenimientos1.campoEstado = "Estado";
 
@@ -56,6 +57,15 @@ namespace CapaVistaGestorInventarios
 		{
 			Reporte9 reporte = new Reporte9();
 			reporte.Show();
+		}
+		private void cbxIdEmpresa_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtIdEmpresa_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

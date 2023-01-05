@@ -24,6 +24,7 @@ namespace CapaVistaGestorInventarios
 			LlenarTabla();
 			controlador.LlenarCBX(cbxInventario, "inventarioe", "Nombre");
 			controlador.LlenarCBX(cbxTransaccion, "tipotransac", "Nombre");
+			navegadorMantenimientos1.LlenarCombobox(cbxIdEmpresa, "Empresa", "ID_Empresa", "nombre", "estado");
 		}
 		public void deshabilitar()
 		{

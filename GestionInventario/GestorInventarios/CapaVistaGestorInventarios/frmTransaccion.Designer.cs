@@ -45,6 +45,9 @@ namespace CapaVistaGestorInventarios
 			this.label3 = new System.Windows.Forms.Label();
 			this.txtIdAccion = new System.Windows.Forms.TextBox();
 			this.cbxAccion = new System.Windows.Forms.ComboBox();
+			this.txtIdEmpresa = new System.Windows.Forms.TextBox();
+			this.cbxIdEmpresa = new System.Windows.Forms.ComboBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvVistaPrevia)).BeginInit();
 			this.SuspendLayout();
@@ -172,9 +175,9 @@ namespace CapaVistaGestorInventarios
 			this.dgvVistaPrevia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvVistaPrevia.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvVistaPrevia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 131);
+			this.dgvVistaPrevia.Location = new System.Drawing.Point(12, 153);
 			this.dgvVistaPrevia.Name = "dgvVistaPrevia";
-			this.dgvVistaPrevia.Size = new System.Drawing.Size(637, 221);
+			this.dgvVistaPrevia.Size = new System.Drawing.Size(637, 241);
 			this.dgvVistaPrevia.TabIndex = 176;
 			this.dgvVistaPrevia.SelectionChanged += new System.EventHandler(this.dgvVistaPrevia_SelectionChanged);
 			// 
@@ -211,11 +214,47 @@ namespace CapaVistaGestorInventarios
 			this.cbxAccion.TabIndex = 3;
 			this.cbxAccion.SelectedIndexChanged += new System.EventHandler(this.cbxAccion_SelectedIndexChanged);
 			// 
+			// txtIdEmpresa
+			// 
+			this.txtIdEmpresa.Location = new System.Drawing.Point(284, 127);
+			this.txtIdEmpresa.Name = "txtIdEmpresa";
+			this.txtIdEmpresa.Size = new System.Drawing.Size(39, 20);
+			this.txtIdEmpresa.TabIndex = 198;
+			this.txtIdEmpresa.TabStop = false;
+			this.txtIdEmpresa.Tag = "Accion";
+			this.txtIdEmpresa.Visible = false;
+			this.txtIdEmpresa.VisibleChanged += new System.EventHandler(this.txtIdEmpresa_TextChanged);
+			// 
+			// cbxIdEmpresa
+			// 
+			this.cbxIdEmpresa.FormattingEnabled = true;
+			this.cbxIdEmpresa.Items.AddRange(new object[] {
+            "Suma",
+            "Resta"});
+			this.cbxIdEmpresa.Location = new System.Drawing.Point(78, 126);
+			this.cbxIdEmpresa.Name = "cbxIdEmpresa";
+			this.cbxIdEmpresa.Size = new System.Drawing.Size(200, 21);
+			this.cbxIdEmpresa.TabIndex = 196;
+			this.cbxIdEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbxIdEmpresa_SelectedIndexChanged);
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+			this.label4.Location = new System.Drawing.Point(12, 127);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(68, 17);
+			this.label4.TabIndex = 197;
+			this.label4.Text = "Empresa:";
+			// 
 			// frmTransaccion
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(661, 364);
+			this.ClientSize = new System.Drawing.Size(661, 406);
+			this.Controls.Add(this.txtIdEmpresa);
+			this.Controls.Add(this.cbxIdEmpresa);
+			this.Controls.Add(this.label4);
 			this.Controls.Add(this.txtEstado);
 			this.Controls.Add(this.txtIdAccion);
 			this.Controls.Add(this.txtNombre);
@@ -258,5 +297,8 @@ namespace CapaVistaGestorInventarios
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox txtIdAccion;
 		private System.Windows.Forms.ComboBox cbxAccion;
+		private System.Windows.Forms.TextBox txtIdEmpresa;
+		private System.Windows.Forms.ComboBox cbxIdEmpresa;
+		private System.Windows.Forms.Label label4;
 	}
 }

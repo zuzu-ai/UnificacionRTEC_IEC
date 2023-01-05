@@ -10,3 +10,9 @@ C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaModeloGe
 C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.csproj.CoreCompileInputs.cache
 C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.dll
 C:\Users\ZUZU\Desktop\Unificado\GestionInventario\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.pdb
+C:\Users\Kevin\Desktop\git2\GestionInventarioRTEC\GestorInventarios\CapaModeloGestorInventarios\bin\Debug\CapaModeloGestorInventarios.dll
+C:\Users\Kevin\Desktop\git2\GestionInventarioRTEC\GestorInventarios\CapaModeloGestorInventarios\bin\Debug\CapaModeloGestorInventarios.pdb
+C:\Users\Kevin\Desktop\git2\GestionInventarioRTEC\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.csproj.AssemblyReference.cache
+C:\Users\Kevin\Desktop\git2\GestionInventarioRTEC\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\git2\GestionInventarioRTEC\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.dll
+C:\Users\Kevin\Desktop\git2\GestionInventarioRTEC\GestorInventarios\CapaModeloGestorInventarios\obj\Debug\CapaModeloGestorInventarios.pdb
